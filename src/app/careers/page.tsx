@@ -1,6 +1,6 @@
 "use client";
 
-import { CareerCard } from "@/components/career-card";
+import CareerCard from "@/components/career-card";
 import { useState } from "react";
 import { Career } from "types";
 

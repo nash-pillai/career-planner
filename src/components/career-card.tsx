@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Briefcase, Building, GraduationCap, DollarSign } from "lucide-react";
 import { Career } from "types";
 
-export function CareerCard({ career }: { career: Career }) {
+export default function CareerCard({ career }: { career: Career }) {
   return (
     <Card className="mx-auto w-full max-w-md">
       <CardHeader className="pb-4">

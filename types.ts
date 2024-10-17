@@ -6,3 +6,13 @@ export interface Career {
   education: string;
   industry: string;
 }
+
+export interface Course {
+  name: string;
+  description: string;
+  credits: number;
+  weight: number;
+  recommendedGrades: number[];
+  prerequisites: string[];
+  department: string;
+}
