@@ -42,12 +42,41 @@ export default function Careers() {
       education: "Bachelor's Degree",
       industry: "Tech",
     },
+    {
+      title: "Software Engineer",
+      description:
+        "As a Software Engineer at TechCorp Inc., you'll be responsible for designing, developing, and maintaining high-quality software solutions. You'll work collaboratively with cross-functional teams to create innovative products that solve complex problems and deliver value to our customers.",
+      salary: 115000,
+      company: "Google",
+      education: "Bachelor's Degree",
+      industry: "Tech",
+    },
+    {
+      title: "Software Engineer",
+      description:
+        "As a Software Engineer at TechCorp Inc., you'll be responsible for designing, developing, and maintaining high-quality software solutions. You'll work collaboratively with cross-functional teams to create innovative products that solve complex problems and deliver value to our customers.",
+      salary: 120000,
+      company: "Google",
+      education: "Bachelor's Degree",
+      industry: "Tech",
+    },
+    {
+      title: "Software Engineer",
+      description: "Software Engineer",
+      salary: 125000,
+      company: "Google",
+      education: "Bachelor's Degree",
+      industry: "Tech",
+    },
   ]);
   return (
-    <div className="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {careers.map((career) => (
-        <CareerCard key={career.title} career={career} />
-      ))}
+    <div className="flex flex-col items-center justify-center space-y-12 p-12">
+      <h1 className="text-4xl font-bold">Careers</h1>
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {careers.map((career) => (
+          <CareerCard key={career.title} career={career} />
+        ))}
+      </div>
     </div>
   );
 }
