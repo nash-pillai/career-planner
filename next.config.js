@@ -5,6 +5,15 @@
 await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  rewrites: async () => {
+    return [
+      {
+        source: "/",
+        destination: `https://jjcareer.framer.website`,
+      },
+    ];
+  },
+};
 
 export default config;
