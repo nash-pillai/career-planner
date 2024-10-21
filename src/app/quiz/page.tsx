@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
 import { PersonalityArea } from "types";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const allQuestions = [
   {
     area: "Realistic",
@@ -397,8 +398,9 @@ export default function Quiz() {
     Enterprising: 0,
     Conventional: 0,
   });
+  const router = useRouter();
 
-  const [questionIndex, setQuestionIndex] = useState(-1);
+  const [questionIndex, setQuestionIndex] = useState(61);
 
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
 
@@ -592,25 +594,33 @@ export default function Quiz() {
           </>
         )}
         <div className="flex justify-between">
-          {/* {questionIndex > -1 && ( */}
           <Button
             variant="outline"
-            className="flex items-center"
+            className={`flex items-center ${questionIndex === -1 ? "invisible" : ""}`}
             onClick={() => setQuestionIndex(questionIndex - 1)}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
-          {/* )} */}
           <Button
             disabled={
               selectedRatings[questionIndex] === undefined &&
               !(questionIndex >= allQuestions.length || questionIndex < 0)
             }
             className="flex items-center"
-            onClick={() => {
-              setQuestionIndex(questionIndex + 1);
-            }}
+            onClick={() =>
+              questionIndex === allQuestions.length + 1
+                ? router.push(
+                    `/careers?${Object.entries(results)
+                      .map(([area, rating]) => `${area}=${rating}`)
+                      .join("&")}${
+                      selectedTrainingLevel
+                        ? `&job_zone=${selectedTrainingLevel + 1}`
+                        : ""
+                    }`,
+                  )
+                : setQuestionIndex(questionIndex + 1)
+            }
           >
             Next
             <ArrowRight className="ml-2 h-4 w-4" />
