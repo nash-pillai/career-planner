@@ -16,3 +16,11 @@ export interface Course {
   prerequisites: string[];
   department: string;
 }
+
+export type PersonalityArea =
+  | "Realistic"
+  | "Investigative"
+  | "Artistic"
+  | "Social"
+  | "Enterprising"
+  | "Conventional";

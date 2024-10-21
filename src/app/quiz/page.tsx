@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
+import { PersonalityArea } from "types";
 
 const allQuestions = [
   {
@@ -245,7 +246,10 @@ const allQuestions = [
     area: "Conventional",
     text: "Stamping, sorting, and distributing mail for an organization.",
   },
-];
+] as {
+  area: PersonalityArea;
+  text: string;
+}[];
 
 export default function Quiz() {
   const [results, setResults] = useState({
@@ -269,6 +273,26 @@ export default function Quiz() {
     "Strongly Like",
   ];
 
+  useEffect(() => {
+    const newResults = {
+      Realistic: 0,
+      Social: 0,
+      Investigative: 0,
+      Artistic: 0,
+      Enterprising: 0,
+      Conventional: 0,
+    };
+    if (
+      questionIndex === allQuestions.length &&
+      selectedRatings.length === allQuestions.length
+    ) {
+      for (let i = 0; i < allQuestions.length; i++) {
+        newResults[allQuestions[i]!.area] += selectedRatings[i]!;
+      }
+      setResults(newResults);
+    }
+  }, [questionIndex, selectedRatings]);
+
   return (
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Quiz</h1>
@@ -284,7 +308,7 @@ export default function Quiz() {
             </p>
           </>
         )}
-        {questionIndex > -1 && (
+        {questionIndex > -1 && questionIndex < allQuestions.length && (
           <>
             <h2 className="text-center text-2xl font-bold">
               Question {questionIndex + 1}/60
@@ -325,6 +349,25 @@ export default function Quiz() {
             )}
           </>
         )}
+        {questionIndex === allQuestions.length && (
+          <>
+            <p className="text-center text-lg font-semibold">
+              You have completed the quiz.
+            </p>
+            <p className="text-center">Here are your results:</p>
+            <div className="mx-auto w-fit">
+              {Object.entries(results).map(([area, rating]) => (
+                <div key={area}>
+                  <span>{area}: </span>
+                  <span className="font-bold">{rating}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-center">
+              Move on to the next page to see your recommended careers.
+            </p>
+          </>
+        )}
         <div className="flex justify-between">
           <Button
             variant="outline"
@@ -335,7 +378,10 @@ export default function Quiz() {
             Back
           </Button>
           <Button
-            disabled={selectedRatings[questionIndex] === undefined}
+            disabled={
+              selectedRatings[questionIndex] === undefined &&
+              !(questionIndex >= allQuestions.length || questionIndex < 0)
+            }
             className="flex items-center"
             onClick={() => {
               setQuestionIndex(questionIndex + 1);
