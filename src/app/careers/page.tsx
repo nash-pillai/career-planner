@@ -293,7 +293,7 @@ export default function Careers() {
       education: {
         job_zone: 4,
         education_usually_needed: {
-          category: ["bachelor's degree"],
+          category: ["bachelor's degree", "associate's degree"],
         },
       },
       job_outlook: {
