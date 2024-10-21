@@ -10,7 +10,7 @@ const config = {
     return [
       {
         source: "/",
-        destination: `https://jjcareer.framer.website`,
+        destination: `https://jjcareers.framer.website`,
       },
     ];
   },
