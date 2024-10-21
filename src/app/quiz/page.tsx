@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
 import { PersonalityArea } from "types";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 const allQuestions = [
   {
