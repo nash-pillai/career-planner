@@ -430,7 +430,7 @@ export default function Quiz() {
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Quiz</h1>
       <div className="mx-auto w-full max-w-3xl space-y-6 p-6">
-        {/* {questionIndex === -1 && (
+        {questionIndex === -1 && (
           <>
             <p className="text-center text-lg font-semibold">
               Rate how much you would enjoy each of the following activities.
@@ -440,7 +440,7 @@ export default function Quiz() {
               activity or how much money it would earn.
             </p>
           </>
-        )} */}
+        )}
         {questionIndex > -1 && questionIndex < allQuestions.length && (
           <>
             <h2 className="text-center text-2xl font-bold">
