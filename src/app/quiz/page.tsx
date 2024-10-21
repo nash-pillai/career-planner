@@ -252,73 +252,6 @@ const allQuestions = [
   text: string;
 }[];
 
-// {
-//    "code" : "17-2071.00",
-//    "title" : "Electrical Engineers",
-//    "tags" : {
-//       "bright_outlook" : true,
-//       "green" : false,
-//       "apprenticeship" : false
-//    },
-//    "also_called" : {
-//       "title" : [
-//          "Design Engineer",
-//          "Electrical Design Engineer",
-//          "Electrical Engineer",
-//          "Project Engineer"
-//       ]
-//    },
-//    "what_they_do" : "Research, design, develop, test, or supervise the manufacturing and installation of electrical equipment, components, or systems for commercial, industrial, military, or scientific use.",
-//    "on_the_job" : {
-//       "task" : [
-//          "Design, implement, maintain, or improve electrical instruments, equipment, facilities, components, products, or systems for commercial, industrial, or domestic purposes.",
-//          "Oversee project production efforts to assure projects are completed on time and within budget.",
-//          "Direct or coordinate manufacturing, construction, installation, maintenance, support, documentation, or testing activities to ensure compliance with specifications, codes, or customer requirements."
-//       ]
-//    },
-//    "career_video" : true,
-//    "resources" : {
-//       "resource" : [
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/knowledge",
-//             "title" : "Knowledge"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/skills",
-//             "title" : "Skills"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/abilities",
-//             "title" : "Abilities"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/personality",
-//             "title" : "Personality"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/technology",
-//             "title" : "Technology"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/education",
-//             "title" : "Education"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/job_outlook",
-//             "title" : "Job Outlook"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/check_out_my_state",
-//             "title" : "Check Out My State"
-//          },
-//          {
-//             "href" : "https://services.onetcenter.org/ws/mnm/careers/17-2071.00/explore_more",
-//             "title" : "Explore More"
-//          }
-//       ]
-//    }
-// }
-
 const ratings = [
   "Strongly Dislike",
   "Dislike",
@@ -504,7 +437,7 @@ export default function Quiz() {
           <>
             <h2 className="text-center text-2xl font-bold">
               How much training, education, or experience are you willing to
-              obtain?
+              obtain? (optional)
             </h2>
             <div className="grid grid-cols-1 gap-4">
               {trainingLevel.map((level, index) => (
