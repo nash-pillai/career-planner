@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Building, GraduationCap, DollarSign } from "lucide-react";
 import { FullCareer } from "types";
-import Link from "next/link";
 
 export default function CareerCard({ career }: { career: FullCareer }) {
   return (
