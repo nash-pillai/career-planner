@@ -1,6 +1,7 @@
 "use client";
 
 import CareerCard from "@/components/career-card";
+import CareerModal from "@/components/career-modal";
 import CareerSearch from "@/components/career-search";
 import { useState } from "react";
 import { FullCareer } from "types";
@@ -729,7 +730,7 @@ export default function Careers() {
       />
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {careers.map((career) => (
-          <CareerCard key={career.code} career={career} />
+          <CareerModal key={career.code} career={career} />
         ))}
       </div>
     </div>

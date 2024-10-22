@@ -60,7 +60,7 @@ export interface FullCareer {
         name: string;
       };
       example: {
-        hot_technology: string;
+        hot_technology?: string;
         name: string;
       }[];
     }[];
