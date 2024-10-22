@@ -1,0 +1,539 @@
+[
+	{
+		"department": "Business",
+		"course_name": "College and Career Planning",
+		"course_code": "0700",
+		"half_full_year": "Half Year",
+		"eligible_grades": [
+			9,
+			10,
+			11,
+			12
+		],
+		"credits": 0.5,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"pathways": [
+			"CTE Pathway"
+		],
+		"description": "College and Career Planning is one of our required courses for the CTE pathway. It is designed to give you the big picture about where your life might go in the future. You take personality and interest tests to help you make an informed decision about a good field to pursue. You look at colleges and student funding, and you plan a budget for your first shot at living on your own. You explore the basics of employment law, and consider the differences in working in different types of organizations: the military, government agencies, big business, small business, entrepreneurial endeavors and trade unions. You consider the management styles you are most likely to encounter in different working environments. Finally, you set personal, professional, and financial goals for your 60-year-old self."
+	},
+	{
+		"department": "Business",
+		"course_name": "Microsoft Office with Keyboarding",
+		"course_code": "B545",
+		"half_full_year": "Half Year",
+		"eligible_grades": [
+			9,
+			10,
+			11,
+			12
+		],
+		"credits": 0.5,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"pathways": [
+			"CTE Pathway"
+		],
+		"description": "This ½ credit course offers you the opportunity to improve your typing skills, and use Microsoft’s Suite of Office Products in a more sophisticated manner. You will format documents, spreadsheets, and workbooks, including headers, footers, picture formatting, inserting tables, cover pages, works cited lists. You will collaborate with other students and use the editing features of Word, Excel, and PowerPoint. You will write a resume and cover letter using templates and learn the basics of Excel including creating formulas, graphing, sorting, filtering, and conditional formatting. You will also add sophistication to presentations with master slides, animations, and transitions."
+	},
+	{
+		"department": "Business",
+		"course_name": "Money Management",
+		"course_code": "B650",
+		"half_full_year": "Half Year",
+		"eligible_grades": [
+			10,
+			11,
+			12
+		],
+		"credits": 0.5,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"pathways": [
+			"CTE Pathway"
+		],
+		"description": "Every adult should have a basic grasp of finances! As you prepare to navigate through life, this course helps prepare you to be an educated consumer. Topics include emergency funds, budgeting, goal setting, paying for college, avoiding debt, insurance, investing, and retirement planning. Students have the opportunity to earn W!se Certification in financial literacy. This course is core to the CTE pathway."
+	},
+	{
+		"department": "Business",
+		"course_name": "Business Ownership",
+		"course_code": "B653",
+		"half_full_year": "Full Year",
+		"eligible_grades": [
+			9,
+			10,
+			11,
+			12
+		],
+		"credits": 1,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"pathways": [
+			"CTE Pathway"
+		],
+		"description": "Business Ownership is a survey course designed around the idea of running a small business. You explore entrepreneurship through economics, marketing, sales, accounting, finance, human resources, contract law, patents, and trademarks. The course includes public speaking coaching and culminates with a pitch project similar to Shark Tank."
+	},
+	{
+		"department": "Business",
+		"course_name": "College Virtual Enterprise I and II",
+		"course_code": "B800/B801",
+		"half_full_year": "Full Year",
+		"eligible_grades": [
+			11,
+			12
+		],
+		"credits": 1,
+		"rank_weighting": 1.10,
+		"prerequisites": "None (Business Ownership or Accounting is suggested)",
+		"pathways": [
+			"Optional for CTE Pathway"
+		],
+		"description": "This college-level course provides students the opportunity to run a virtual business that sells products/services to other virtual businesses globally. Students participate in business operations, competitions, and personal finance management. College credits may be available through Dutchess Community College."
+	},
+	{
+		"department": "Business",
+		"course_name": "Work-Based Learning (Business Co-Op)",
+		"course_code": "B770",
+		"half_full_year": "Full Year",
+		"eligible_grades": [
+			11,
+			12
+		],
+		"credits": 1,
+		"rank_weighting": 1.00,
+		"prerequisites": "Previous CTE Course Required",
+		"pathways": [
+			"CTE Pathway"
+		],
+		"description": "Work-Based Learning (Business Co-Op) provides students the opportunity to work and receive high school credit while exploring career options. Students reflect on business courses and apply them in real-world work experiences, submitting journals and pay stubs for credit. This course can be taken in both junior and senior years."
+	},
+	{
+		"department": "Business",
+		"course_name": "Business Law",
+		"course_code": "B610",
+		"half_full_year": "Full Year",
+		"eligible_grades": [
+			9,
+			10,
+			11,
+			12
+		],
+		"credits": 1,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"description": "Business Law provides an understanding of legal rights and responsibilities in various situations, including school, car purchases, and courtroom proceedings. This course is a foundation for other business courses like Business Ownership and Sports & Entertainment Law."
+	},
+	{
+		"department": "Business",
+		"course_name": "Sports & Entertainment Law",
+		"course_code": "B625",
+		"half_full_year": "Half Year",
+		"eligible_grades": [
+			9,
+			10,
+			11,
+			12
+		],
+		"credits": 0.5,
+		"rank_weighting": 1.00,
+		"prerequisites": "None",
+		"description": "Do you like to prove a point? Are you the person who enjoys defending others? Maybe you are a huge sports fan, but do not consider yourself an athlete. Or perhaps you'd prefer to explore how the law impacts the Entertainment industry. No problem! This course will explore how the law impacts sports and entertainment. Find out what power the NCAA has over student-athletes and why players are in a union. Learn why individuals in the movie, television, music, or theater industries need to know about the law. You will study legal cases related to these industries. You will have the opportunity to review areas of law that include contracts, labor law, collective bargaining, discrimination, employment, crimes, constitutional and common law, discrimination, securities, copyright infringement, the right of privacy, libel, slander, defamation, advertising, tax, plus many more. See how you can feed your interest to work in the Sports or Entertainment industry from the legal side."
+	},
+	{
+		"department": "Business",
+		"course_name": "Computer Game Design",
+		"course_code": "B680",
+		"year_type": "Half-Year",
+		"eligible_grades": "9-12",
+		"credits": "½ credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Plug in your imagination for this ½ credit course in computer gaming. All types of students are encouraged to learn the basics of coding in a social and creative environment. Using drag and drop block code in Scratch, you will work individually and in teams to learn how to use loops, conditionals, variables, and functions to make games. You will even have a chance to use graphic software to design your own playing pieces and take a turn programming your own background music. This course is a great choice for anyone considering a career in Computer Science, Business Information Systems, or any STEM field. Most STEM majors require one or more courses in computer science. Students who have had exposure to coding in high school do significantly better in CS courses in college. By taking this in high school, you get to learn the basics of computational thinking in a low-stakes environment where the learning feels like fun."
+	},
+	{
+		"department": "Business",
+		"course_name": "Mobile App Development",
+		"course_code": "B685",
+		"year_type": "Half-Year",
+		"eligible_grades": "9-12",
+		"credits": "½ credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "Computer Game Design (or Proficiency on local exam)",
+		"pathways": null,
+		"description": "This is a course for creative people. This ½ credit course is offered in the spring after the prerequisite Computer Game Design. It uses drag and drop blocks to code, but moves from games into business applications. MIT App Inventor offers more sophisticated logic and gives you the chance to use mobile features like GPS, the accelerometer, text messaging, and voice recognition in your apps. This course is a great choice for anyone considering a career in Computer Science, Business Information Systems, or any STEM field. Most STEM majors require one or more courses in computer science. Students who have had exposure to coding in high school do significantly better in CS courses in college. By taking this course in high school, you get to learn the basics of computational thinking in a low-stakes environment where the learning feels like fun. Bring your creativity to make it beautiful, make it sing, make it dance, and maybe even make some money."
+	},
+	{
+		"department": "Business",
+		"course_name": "Financial Math",
+		"course_code": "B415",
+		"year_type": "Full Year",
+		"eligible_grades": "11-12",
+		"credits": "1 credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "Two Years of Math",
+		"pathways": null,
+		"description": "Does hearing the word math send shivers down your spine? Do you ever wonder how you will use the math taught in class? Your wondering days are over! This class will teach you what you need to know to master the financial challenges you will face after graduation. From calculating the cost of a car loan to determining which credit card gives you the best options, these topics are real-world, every day! Find out how much sales tax you need to pay before you make a purchase. Financial Math is the course that will help build your understanding of the mathematical practices to solve problems found in the real-world, including banking, finance, salary and income, payroll, loans, and insurance. For those not interested in taking Algebra 2, this course satisfies the 3rd year of Math required for graduation."
+	},
+	{
+		"department": "Business",
+		"course_name": "College Accounting 104",
+		"course_code": "B652",
+		"year_type": "Full Year",
+		"eligible_grades": "11-12",
+		"credits": "1 credit",
+		"rank_weighting": "1.10",
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Learn the language of money. Many consider accounting to be the best route to a successful career in business because accounting has always been considered the language and basic tool of every business. Learn to analyze, record, classify, summarize, and interpret accounting data for all types of businesses. Accounting is not a math course, but a study of money. We will discuss where it comes from, where it goes, and how much it has changed. Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College."
+	},
+	{
+		"department": "Business",
+		"course_name": "College Economics 105",
+		"course_code": "B656",
+		"year_type": "Half-Year",
+		"eligible_grades": "11-12",
+		"credits": "½ credit",
+		"rank_weighting": "1.10",
+		"prerequisites": "3 social studies credits",
+		"pathways": null,
+		"description": "This course satisfies the graduation requirement of a ½ credit in economics and may be taken instead of D655- Economics. This course emphasizes how economics affects you right now and provides insights into why all entrepreneurs want to come to America. Learn critical communication skills, including how to debate important economic topics that are valuable, regardless of your career path. You will even have the opportunity to learn how to make money in the stock market! Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College."
+	},
+	{
+		"department": "Business",
+		"course_name": "Sports and Entertainment Marketing",
+		"course_code": "B553",
+		"year_type": "Full Year",
+		"eligible_grades": "9-12",
+		"credits": "1 credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Do you know how much money is generated in the Sports & Entertainment Industries, and the economic impact they have on the local, state, national, and global economies? You will learn how to stay “plugged-in” to current marketing trends that are constantly shifting to the latest platforms, and how consumers, particularly younger viewers, watch sports and entertainment today. Examine how sports and entertainment fans are demanding a much more engaging and realistically immersive experience than ever before! Why is it important for marketers to address the challenge that younger “millennial” audiences are watching sports and entertainment on new platforms, particularly social networks? Why are marketers allowing fans to have an insider’s view and be closer to the action than ever before?"
+	},
+	{
+		"department": "Business",
+		"course_name": "Diversified Work-Based Learning (Diversified Co-Op)",
+		"course_code": "B700",
+		"year_type": "Full Year",
+		"eligible_grades": "12",
+		"credits": "1 credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "If you are a senior and have not taken a business elective but are interested in earning one credit while working, consider Diversified Work-Based Learning (Diversified Co-Op)! Gain valuable work experience that can launch your career. Not sure what your career plan is after high school? The work experience combined with online classroom activities will allow you to connect what you are learning in the classroom to the skills required for success in today’s workplace. You will earn a credit toward graduation too! Students must complete assignments virtually to help prepare them for employment. Students are required to be employed, and submit reflective journals and copies of their pay stubs to the supervisor."
+	},
+	{
+		"department": "Business",
+		"course_name": "Ethics and Decision Making",
+		"course_code": "B640",
+		"year_type": "Half-Year",
+		"eligible_grades": "9-12",
+		"credits": "½ credit",
+		"rank_weighting": "1.00",
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Ethics & Decision Making is the study of how to make decisions. Every day we are faced with numerous decisions. Some seem easy and some difficult. Every decision requires thought: but many times we think of our own short term benefit. Students examine what they believe, and why they believe it, by actively participating in solution planning, debates, and case studies. Ethics & Decision Making focuses not on “right versus wrong”, but on thought development and the process of making a decision. Are we thinking of others? Our family? Our school? Our community? Our environment? For today, and beyond? Elements of interest to students include, but are not limited to: Personal Law, Consumer Rights, Individual Rights, Education, Medicine, Business Decisions, Animal Rights, Economics & Poverty, and the Environment."
+	},
+	{
+		"department": "Business",
+		"course_name": "AP Computer Science Principles",
+		"course_code": "B690",
+		"year_type": "Full Year",
+		"eligible_grades": "10-12",
+		"credits": "1 credit",
+		"rank_weighting": "1.10",
+		"prerequisites": "Completion of Geometry with a grade of 80+ or any student who has earned a 90 or higher in Computer Programming, Computer Game Design, Mobile App Development, or Web Design.",
+		"pathways": "CTE pathway in Computer Information Systems",
+		"description": "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/hex conversions, data storage and transmission protocols, data visualization ofpublicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May."
+	},
+	{
+		"department": "English",
+		"course_name": "English 9",
+		"course_code": "E341",
+		"year_type": "Full Year",
+		"eligible_grades": "9",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": null,
+		"pathways": null,
+		"description": "The first year of high school is an opportunity for students to begin the journey that will lead them to who they become as adults in our world. In English 9, students will read a variety of fiction and non-fiction texts in order to explore ideas and concepts dealing with identity, self-discovery, personal journeys, power struggles, conformity and nonconformity, and digital citizenship. Students will demonstrate critical thinking, learn how to identify various forms of author’s craft to aid their analyses of texts, and express their ideas through writing and speaking."
+	},
+	{
+		"department": "English",
+		"course_name": "English 9 Honors",
+		"course_code": "E361",
+		"year_type": "Full Year",
+		"eligible_grades": "9",
+		"credits": 1,
+		"rank_weighting": 1.05,
+		"prerequisites": "Completion of ELA 8 Honors with a final average of at least 85% and recommendation of ELA 8th grade teacher or completion of ELA 8 with a final average of at least 90% and recommendation of ELA 8th grade teacher with department approval.",
+		"pathways": null,
+		"description": "Honors classes generally incorporate more reading, writing and discussion and at a higher level, and use more challenging text books and other materials."
+	},
+	{
+		"department": "English",
+		"course_name": "English 9 Literacy Lab",
+		"course_code": "E386",
+		"year_type": "Full Year",
+		"eligible_grades": "9",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "Students assigned based on Grade 8 ELA State Exam Score and Grade 8 ELA class average as well as teacher recommendation.",
+		"pathways": null,
+		"description": "This course provides support in ELA skills and strategies in order to meet NY State Standards in English Language Arts. A variety of texts will be used to further develop skills and strategies."
+	},
+	{
+		"department": "English",
+		"course_name": "English 10",
+		"course_code": "E441",
+		"year_type": "Full Year",
+		"eligible_grades": "10",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "Pass English 9",
+		"pathways": null,
+		"description": "Second-year high school students will continue to explore their emerging independence that they began to cultivate on their ninth grade journey. In English 10, through a variety of genres, students will expand their world of reading and writing through more complex and diverse topics, such as understanding contemporary issues, contemplating moral and ethical questions, and coming to terms with difficult historical moments. In addition to adding new and more sophisticated writing skills involving fiction, students will involve themselves with more argument and opinion writing as they begin to find their voices."
+	},
+	{
+		"department": "English",
+		"course_name": "English 10 Honors",
+		"course_code": "E461",
+		"year_type": "Full Year",
+		"eligible_grades": "10",
+		"credits": 1,
+		"rank_weighting": 1.05,
+		"prerequisites": "Passed English 9 Honors with a grade of 85% or higher and teacher recommendation or completion of Regents 9 with a final average of at least 90% and recommendation of teacher with department approval.",
+		"pathways": null,
+		"description": "Honors classes generally incorporate more reading, writing and discussion and at a higher level, and use more challenging text books and other materials."
+	},
+	{
+		"department": "English",
+		"course_name": "English Language Arts Skills and Interventions I",
+		"course_code": "E640",
+		"year_type": "Full Year (every other day)",
+		"eligible_grades": "10",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "Must have passed English 9",
+		"pathways": null,
+		"description": "These two courses are intended for identified students who need to further develop their literacy skills in order to be successful in their course work. An emphasis will be placed on essential skills and strategies to help students read, write, listen, think, and speak effectively. A variety of texts will be used to further develop students’ skills and strategies."
+	},
+	{
+		"department": "English",
+		"course_name": "English Language Arts Skills and Interventions II",
+		"course_code": "E740",
+		"year_type": "Full Year (every other day)",
+		"eligible_grades": "11",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "Must have passed English 10",
+		"pathways": null,
+		"description": "These two courses are intended for identified students who need to further develop their literacy skills in order to be successful in their course work. An emphasis will be placed on essential skills and strategies to help students read, write, listen, think, and speak effectively. A variety of texts will be used to further develop students’ skills and strategies."
+	},
+	{
+		"department": "English",
+		"course_name": "English 11 Regents",
+		"course_code": "E540",
+		"year_type": "Full Year",
+		"eligible_grades": "11",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "Passed English 10 or English 10 Honors",
+		"pathways": null,
+		"description": "While students will spend a good portion of 11th grade English honing the skills they will need to excel on the Regents Examination, they will also have the opportunity to enrich their writing skills as they begin preparing for college-level writing and thinking. Much of the emphasis in English 11 will lie on the canon of American literature while leveling up sophistication in essay writing, developing the ability to write complex thesis statements, developing and supporting more nuanced arguments in writing and in speech, and writing a wide range of pieces: creative, short analysis, five-paragraph essays, research papers, presentations, and other projects."
+	},
+	{
+		"department": "English",
+		"course_name": "AP Language and Composition",
+		"course_code": "E563",
+		"year_type": "Full Year",
+		"eligible_grades": "11",
+		"credits": 1,
+		"rank_weighting": 1.1,
+		"prerequisites": "Completion of Honors English 10 with final average of at least 92% or teacher recommendation. Students are accepted only by departmental selection and approval.",
+		"pathways": null,
+		"description": "Students will learn about the elements of argument and composition as they develop critical reading and writing skills. They will read and analyze nonfiction from various periods and write essays with different aims: for example, to explain an idea, argue a point, or persuade a reader. Students are expected to take the Regents Examination in English in January and the AP exam for the course in May. There is a fee for this exam, which is the responsibility of the student."
+	},
+	{
+		"department": "English",
+		"course_name": "English 12",
+		"course_code": "E670",
+		"year_type": "Full Year",
+		"eligible_grades": "12",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "Pass English 11",
+		"pathways": null,
+		"description": "This course will explore the identity of self through the concept of journeys, major cultural events/movements, and an author’s ability to tell a story. Literature and nonfiction works will be analyzed to reveal challenges and how the meeting or succumbing to these challenges shapes one’s identity of self. Emphasis will be placed on cultural factors and how the world community influences its individual inhabitants."
+	},
+	{
+		"department": "English",
+		"course_name": "AP Literature and Composition",
+		"course_code": "E681",
+		"year": "Full Year",
+		"eligible_grades": "12",
+		"credits": 1,
+		"rank_weighting": 1.10,
+		"prerequisites": "Completion of English 11 or English 11AP with an average of at least 92% or teacher recommendation. Students are accepted only by departmental selection and approval.",
+		"pathways": null,
+		"description": "This is an introductory college-level literary analysis course. Students cultivate their understanding of literature through reading and analyzing texts while exploring concepts such as character, setting, structure, perspective, figurative language and literary analysis in the context of literary works. Students are expected to take the AP exam in May. There is a fee for the exam, which is the responsibility of the student. NOTE: This course, equivalent in difficulty to a second year college English course, is designed for the exceptional student who wishes to accept the challenge of a college-level literature and writing course."
+	},
+	{
+		"department": "English",
+		"course_name": "College English I and II",
+		"course_code": "E662 & E663",
+		"year": "Full Year",
+		"eligible_grades": "12",
+		"credits": 1,
+		"rank_weighting": 1.10,
+		"prerequisites": "Must have passed English 11 and the English Regents exam with at least 85%. Students must also have the recommendation of their grade 11 English teacher and/or the approval of the Director of English Language Arts.",
+		"pathways": null,
+		"description": "Students will explore principles of college writing, narrative and expository writing, argumentative writing, traditional rhetorical modes, effective composing, revising and editing strategies, MLA conventions, critical reading skills, critical thinking skills, and using language appropriately and imaginatively. Enrolled students are eligible for college credits for an additional fee payable directly to DCC."
+	},
+	{
+		"department": "English",
+		"course_name": "Art of Film: Elements and Analysis",
+		"course_code": "E777",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This course seeks to empower students to challenge themselves by taking a medium that they are familiar with, while using literary techniques to analyze film. The goal is to derive greater meaning from both the films they watch as well as to more fully realize their potential as thoughtful young members of our society. This course will also expose students to new ideas through the medium of film, to evaluate how these films are effective using devices/elements common to the ELA classroom, and to gain a better understanding of the medium in general. The goal is to use film and nonfiction articles as a way to focus upon and assess students’ critical thinking skills."
+	},
+	{
+		"department": "English",
+		"course_name": "Literature of Genocide",
+		"course_code": "E782",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This course will deal with the uniqueness and universality of this momentous event in the history of mankind. Participants will study the effect of genocide on the course of humanity during the five subsequent decades. The class will consist of historical readings, fictional accounts, films and guest speakers. There will be a variety of written assignments as well as a research project."
+	},
+	{
+		"department": "English",
+		"course_name": "Media Writing & Communication",
+		"course_code": "E738",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This course will focus on writing for different types of media including television, film and print. Students will be required to master appropriate speaking techniques and writing styles and apply those to the production of television broadcasts, short films, commercials, and news articles. Participation in various production projects that will necessitate out of class involvement will be required. There will also be several readings by leaders in the field of visual and print media. Students will study media theory, mass communication, media ethics, writing for the camera, broadcast news, and journalistic writing."
+	},
+	{
+		"department": "English",
+		"course_name": "Monsters and Marvels in Literature",
+		"course_code": "E732",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Monsters come in all shapes and sizes; they touch every walk of life. Throughout the ages stories of monsters and marvels have captured the imaginations of writers and readers alike, but where do monsters come from? What purpose do they serve? Why does one culture fear one type of monster and another culture, another type? Are monsters projections of our anxieties? More importantly, what exactly makes a monster? This class will examine monsters in classic and contemporary literature, culture, film and art from earliest times to modern times."
+	},
+	{
+		"department": "English",
+		"course_name": "College Public Speaking",
+		"course_code": "E664",
+		"year": "Half Year",
+		"eligible_grades": "12",
+		"credits": 0.5,
+		"rank_weighting": 1.10,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Public Speaking challenges students to get over the fear of presentations by simply presenting. If you want to work on your public speaking skills or if you have a fear of public speaking, this is for you. Public speaking is still the number one fear among the American population. Students are required to write and present their presentations on an ongoing basis. This is a course that will take students out of their comfort zones and challenge them in their presentations. Enrolled students are eligible for college credits for an additional fee payable directly to Dutchess Community College."
+	},
+	{
+		"department": "English",
+		"course_name": "Science Fiction and Popular Culture",
+		"course_code": "E731",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "Even the most perfect world that man can conceive is flawed. Students will explore the definition and characteristics of such dystopias by reading modern and classic sci-fi, investigating theories and cultural allusions behind the works, and analyzing films in the sci-fi genre. In addition, students will analyze what these pieces say about our current society and the future of the human race."
+	},
+	{
+		"department": "English",
+		"course_name": "Shakespeare",
+		"course_code": "E733",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This course is excellent preparation for college English and as a supplementary course for the AP Literature Exam. Students will explore Shakespeare, the man and his writings, the Elizabethan Age, and plays as performance pieces."
+	},
+	{
+		"department": "English",
+		"course_name": "Theatre I",
+		"course_code": "E810",
+		"year": "Full Year",
+		"eligible_grades": "9-12",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This course is an introduction to theatre arts. It is a participatory course in which students will learn basic stage movement and voice training, introductory acting and improvisational techniques as well as backstage elements such as lighting and costuming. It is intended for both the student who has always wanted to try their hand at the stage as well as the student who has a real interest in performing. Students are evaluated based on participation, grades, acting exercises, written projects, reading assignments, final projects and tests. NOTE: This course may be used to meet the 1 unit Regents Art/Music graduation requirement."
+	},
+	{
+		"department": "English",
+		"course_name": "Improvisational Theatre",
+		"course_code": "E445",
+		"year": "Half Year",
+		"eligible_grades": "10-12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "Theatre I or permission of instructor.",
+		"pathways": null,
+		"description": "This class provides students with the ability to explore the genre of applied theatre. Students will grow as performers through the intensive sound and movement work improvisational forms necessitate. They will focus on stage composition, learning how to use space in an interesting and meaningful way, and explore how to create music to support the story on stage in a non-traditional, improvisational way. Most importantly, performers practice listening skills in a highly motivated and active manner. It is through this listening that they will be able to explore the different purposes that improvisational theatre has: to increase self-knowledge, to build community, and to address specific issues within a community or society at large"
+	},
+	{
+		"department": "English",
+		"course_name": "Theatre II",
+		"course_code": "E820",
+		"year": "Full Year",
+		"eligible_grades": "10-12",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "Must have successfully completed Theatre I or have permission of the instructor.",
+		"pathways": null,
+		"description": "This course is a continuation of Theatre I for the advanced student."
+	},
+	{
+		"department": "English",
+		"course_name": "Theatre III",
+		"course_code": "E821",
+		"year": "Full Year",
+		"eligible_grades": "11 or 12",
+		"credits": 1,
+		"rank_weighting": 1.0,
+		"prerequisites": "Theatre II",
+		"pathways": null,
+		"description": "This course is a continuation of Theatre II for the advanced student."
+	},
+	{
+		"department": "English",
+		"course_name": "Writers Workshop",
+		"course_code": "E737",
+		"year": "Half Year",
+		"eligible_grades": "11 or 12",
+		"credits": 0.5,
+		"rank_weighting": 1.0,
+		"prerequisites": "None",
+		"pathways": null,
+		"description": "This is a course for the student who enjoys writing creatively. A writing journal is required of all students. A critical aspect of this class is reading and discussing all students’ work in a supportive community of writers. In this class, students are formulating ideas, exploring techniques of writing poetry and prose, studying models, drafting, revising, and preparing for publication."
+	}
+]
