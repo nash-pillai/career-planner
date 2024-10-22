@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
 import { PersonalityArea } from "types";
 import { useRouter } from "next/navigation";
+
 const allQuestions = [
   {
     area: "Realistic",
@@ -332,7 +333,7 @@ export default function Quiz() {
   });
   const router = useRouter();
 
-  const [questionIndex, setQuestionIndex] = useState(61);
+  const [questionIndex, setQuestionIndex] = useState(-1);
 
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
 
