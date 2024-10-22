@@ -143,7 +143,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
         </DialogHeader>
         <ScrollArea className="h-[calc(90vh-120px)] pr-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="col-span-1 md:col-span-2 lg:col-span-3">
+            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2 lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Briefcase className="mr-2" />
@@ -161,7 +161,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-none bg-[#FBF7B8]">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <BookOpen className="mr-2" />
@@ -182,7 +182,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-none bg-[#D8FFD8]">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Lightbulb className="mr-2" />
@@ -203,7 +203,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 md:col-span-2 lg:col-span-1">
+            <Card className="col-span-1 border-none bg-[#E0E9FE] md:col-span-2 lg:col-span-1">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Brain className="mr-2" />
@@ -224,7 +224,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 md:col-span-2">
+            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Cpu className="mr-2" />
@@ -257,7 +257,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-none bg-[#FBF7B8]">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <User className="mr-2" />
@@ -279,7 +279,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-none bg-[#D8FFD8]">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <GraduationCap className="mr-2" />
@@ -303,7 +303,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 md:col-span-2">
+            <Card className="col-span-1 border-none bg-[#E0E9FE] md:col-span-2">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <TrendingUp className="mr-2" />
@@ -372,7 +372,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 md:col-span-2">
+            <Card className="col-span-1 border-none bg-[#FBF7B8] md:col-span-2">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Users className="mr-2" />
