@@ -203,7 +203,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="col-span-1 md:col-span-2 lg:col-span-1">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Brain className="mr-2" />
@@ -242,8 +242,11 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                         <li key={elementIndex} className="flex items-center">
                           {element.name}
                           {element.hot_technology && (
-                            <Badge variant="secondary" className="ml-2">
-                              Hot Technology
+                            <Badge
+                              variant="secondary"
+                              className="ml-2 bg-orange-500/30 hover:bg-orange-500/30"
+                            >
+                              🔥 Hot Technology
                             </Badge>
                           )}
                         </li>
@@ -276,7 +279,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 md:col-span-2 lg:col-span-1">
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <GraduationCap className="mr-2" />
@@ -290,7 +293,10 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 <ul className="list-disc pl-5">
                   {career.education.education_usually_needed.category.map(
                     (education, index) => (
-                      <li key={index}>{education}</li>
+                      <li key={index}>
+                        {education.substring(0, 1).toUpperCase()}
+                        {education.substring(1)}
+                      </li>
                     ),
                   )}
                 </ul>
@@ -309,8 +315,16 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                   <Badge
                     variant={
                       career.job_outlook.outlook.category === "Bright"
-                        ? "default"
+                        ? "brightOutlook"
                         : "secondary"
+                    }
+                    className={
+                      career.job_outlook.outlook.category === "Average"
+                        ? "bg-yellow-500/50 hover:bg-yellow-500/50"
+                        : career.job_outlook.outlook.category ===
+                            "Below Average"
+                          ? "bg-red-500/50 hover:bg-red-500/50"
+                          : ""
                     }
                   >
                     {career.job_outlook.outlook.category}
@@ -358,7 +372,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="col-span-1 md:col-span-2">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Users className="mr-2" />
@@ -369,7 +383,14 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 <ul className="list-disc pl-5">
                   {career.explore_more.careers.career.map(
                     (relatedCareer, index) => (
-                      <li key={index}>{relatedCareer.title}</li>
+                      <li key={index}>
+                        {relatedCareer.title}
+                        {relatedCareer.tags.bright_outlook && (
+                          <Badge variant="brightOutlook" className="ml-2">
+                            Bright Outlook
+                          </Badge>
+                        )}
+                      </li>
                     ),
                   )}
                 </ul>
