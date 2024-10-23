@@ -1,3 +1,5 @@
+import { departments, pathways } from "@/lib/constants";
+
 export interface CareerListing {
   code: string;
   title: string;
@@ -128,23 +130,6 @@ export interface FullCareer {
   };
   // where_do_they_work
 }
-
-export const departments = [
-  "Business",
-  "English",
-  "Family and Consumer Science",
-  "Fine Arts",
-  "Foreign Language",
-  "Math",
-  "Technology",
-  "Science",
-] as const;
-
-export const pathways = [
-  "CTE Pathway",
-  "Project Lead The Way (PLTW)",
-  "Science Research Program",
-] as const;
 
 export interface Course {
   course_name: string;

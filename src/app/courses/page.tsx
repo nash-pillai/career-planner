@@ -2,9 +2,10 @@
 
 import CourseCard from "@/components/course-card";
 import { useEffect, useState } from "react";
-import { Course, departments, pathways } from "types";
+import { Course } from "types";
 import CourseSearch from "@/components/course-search";
 import { courses } from "@/lib/courses";
+import { departments, pathways } from "@/lib/constants";
 
 export default function Courses() {
   const [filteredCourses, setFilteredCourses] = useState<Course[]>(courses);

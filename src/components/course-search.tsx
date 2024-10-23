@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Filter, Search, X } from "lucide-react";
-import { departments, pathways } from "types";
+import { departments, pathways } from "@/lib/constants";
 
 export default function CourseSearch({
   subject,

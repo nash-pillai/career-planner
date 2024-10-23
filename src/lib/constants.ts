@@ -1,4 +1,11 @@
-import { PersonalityArea } from "types";
+export const personalityAreas = [
+  "Realistic",
+  "Investigative",
+  "Artistic",
+  "Social",
+  "Enterprising",
+  "Conventional",
+] as const;
 
 export const allQuestions = [
   {
@@ -242,7 +249,7 @@ export const allQuestions = [
     text: "Stamping, sorting, and distributing mail for an organization.",
   },
 ] as {
-  area: PersonalityArea;
+  area: (typeof personalityAreas)[number];
   text: string;
 }[];
 
@@ -315,3 +322,379 @@ export const trainingLevel = [
     svp_range: "(8.0 and above)",
   },
 ];
+
+export const departments = [
+  "Business",
+  "English",
+  "Family and Consumer Science",
+  "Fine Arts",
+  "Foreign Language",
+  "Math",
+  "Technology",
+  "Science",
+] as const;
+
+export const pathways = [
+  "CTE Pathway",
+  "Project Lead The Way (PLTW)",
+  "Science Research Program",
+] as const;
+
+export const educationTags = [
+  {
+    code: "2.C.1",
+    name: "Business and Management",
+    description:
+      "Knowledge of principles and facts related to business administration and accounting, human and material resource management in organizations, sales and marketing, economics, and office information and organizing systems",
+  },
+  {
+    code: "2.C.1.a",
+    name: "Administration and Management",
+    description:
+      "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
+  },
+  {
+    code: "2.C.1.b",
+    name: "Administrative",
+    description:
+      "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+  },
+  {
+    code: "2.C.1.c",
+    name: "Economics and Accounting",
+    description:
+      "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+  },
+  {
+    code: "2.C.1.d",
+    name: "Sales and Marketing",
+    description:
+      "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+  },
+  {
+    code: "2.C.1.e",
+    name: "Customer and Personal Service",
+    description:
+      "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
+  },
+  {
+    code: "2.C.1.f",
+    name: "Personnel and Human Resources",
+    description:
+      "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+  },
+  {
+    code: "2.C.2",
+    name: "Manufacturing and Production",
+    description:
+      "Knowledge of principles and facts related to the production, processing, storage, and distribution of manufactured and agricultural goods",
+  },
+  {
+    code: "2.C.2.a",
+    name: "Production and Processing",
+    description:
+      "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+  },
+  {
+    code: "2.C.2.b",
+    name: "Food Production",
+    description:
+      "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+  },
+  {
+    code: "2.C.3",
+    name: "Engineering and Technology",
+    description:
+      "Knowledge of the design, development, and application of technology for specific purposes.",
+  },
+  {
+    code: "2.C.3.a",
+    name: "Computers and Electronics",
+    description:
+      "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+  },
+  {
+    code: "2.C.3.b",
+    name: "Engineering and Technology",
+    description:
+      "Knowledge of the practical application of engineering science and technology. This includes applying principles, techniques, procedures, and equipment to the design and production of various goods and services.",
+  },
+  {
+    code: "2.C.3.c",
+    name: "Design",
+    description:
+      "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+  },
+  {
+    code: "2.C.3.d",
+    name: "Building and Construction",
+    description:
+      "Knowledge of materials, methods, and the tools involved in the construction or repair of houses, buildings, or other structures such as highways and roads.",
+  },
+  {
+    code: "2.C.3.e",
+    name: "Mechanical",
+    description:
+      "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+  },
+  {
+    code: "2.C.4",
+    name: "Mathematics and Science",
+    description:
+      "Knowledge of the history, theories, methods, and applications of the physical, biological, social, mathematical, and geography",
+  },
+  {
+    code: "2.C.4.a",
+    name: "Mathematics",
+    description:
+      "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+  },
+  {
+    code: "2.C.4.b",
+    name: "Physics",
+    description:
+      "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+  },
+  {
+    code: "2.C.4.c",
+    name: "Chemistry",
+    description:
+      "Knowledge of the chemical composition, structure, and properties of substances and of the chemical processes and transformations that they undergo. This includes uses of chemicals and their interactions, danger signs, production techniques, and disposal methods.",
+  },
+  {
+    code: "2.C.4.d",
+    name: "Biology",
+    description:
+      "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+  },
+  {
+    code: "2.C.4.e",
+    name: "Psychology",
+    description:
+      "Knowledge of human behavior and performance; individual differences in ability, personality, and interests; learning and motivation; psychological research methods; and the assessment and treatment of behavioral and affective disorders.",
+  },
+  {
+    code: "2.C.4.f",
+    name: "Sociology and Anthropology",
+    description:
+      "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+  },
+  {
+    code: "2.C.4.g",
+    name: "Geography",
+    description:
+      "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+  },
+  {
+    code: "2.C.5",
+    name: "Health Services",
+    description:
+      "Knowledge of principles and facts regarding diagnosing, curing, and preventing disease, and improving and preserving physical and mental health and well-being",
+  },
+  {
+    code: "2.C.5.a",
+    name: "Medicine and Dentistry",
+    description:
+      "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+  },
+  {
+    code: "2.C.5.b",
+    name: "Therapy and Counseling",
+    description:
+      "Knowledge of principles, methods, and procedures for diagnosis, treatment, and rehabilitation of physical and mental dysfunctions, and for career counseling and guidance.",
+  },
+  {
+    code: "2.C.6",
+    name: "Education and Training",
+    description:
+      "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+  },
+  {
+    code: "2.C.7",
+    name: "Arts and Humanities",
+    description:
+      "Knowledge of facts and principles related to the branches of learning concerned with human thought, language, and the arts.",
+  },
+  {
+    code: "2.C.7.a",
+    name: "English Language",
+    description:
+      "Knowledge of the structure and content of the English language including the meaning and spelling of words, rules of composition, and grammar.",
+  },
+  {
+    code: "2.C.7.b",
+    name: "Foreign Language",
+    description:
+      "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+  },
+  {
+    code: "2.C.7.c",
+    name: "Fine Arts",
+    description:
+      "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+  },
+  {
+    code: "2.C.7.d",
+    name: "History and Archeology",
+    description:
+      "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+  },
+  {
+    code: "2.C.7.e",
+    name: "Philosophy and Theology",
+    description:
+      "Knowledge of different philosophical systems and religions. This includes their basic principles, values, ethics, ways of thinking, customs, practices, and their impact on human culture.",
+  },
+  {
+    code: "2.C.8",
+    name: "Law and Public Safety",
+    description:
+      "Knowledge of regulations and methods for maintaining people and property free from danger, injury, or damage; the rules of public conduct established and enforced by legislation, and the political process establishing such rules.",
+  },
+  {
+    code: "2.C.8.a",
+    name: "Public Safety and Security",
+    description:
+      "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+  },
+  {
+    code: "2.C.8.b",
+    name: "Law and Government",
+    description:
+      "Knowledge of laws, legal codes, court procedures, precedents, government regulations, executive orders, agency rules, and the democratic political process.",
+  },
+  {
+    code: "2.C.9",
+    name: "Communications",
+    description: "Knowledge of the science and art of delivering information",
+  },
+  {
+    code: "2.C.9.a",
+    name: "Telecommunications",
+    description:
+      "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+  },
+  {
+    code: "2.C.9.b",
+    name: "Communications and Media",
+    description:
+      "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+  },
+  {
+    code: "2.C.10",
+    name: "Transportation",
+    description:
+      "Knowledge of principles and methods for moving people or goods by air, rail, sea, or road, including the relative costs and benefits.",
+  },
+  {
+    code: "2.D",
+    name: "Education",
+    description: "Prior educational experience required to perform in a job",
+  },
+  {
+    code: "2.D.1",
+    name: "Required Level of Education",
+    description: "The level of education required to perform a job.",
+  },
+  {
+    code: "2.D.2",
+    name: "Instructional Program Required",
+    description: "The instructional program required for this job",
+  },
+  {
+    code: "2.D.3",
+    name: "Education Level in Specific Subjects",
+    description:
+      "The amount of education required in 15 subject areas to perform in a job. Subject areas cover most of the courses that occur in high school, junior college, college undergraduate degree programs, and other education and training programs",
+  },
+  {
+    code: "2.D.3.a",
+    name: "Technical Vocational",
+    description:
+      "Courses focus on non-business technical skills, such as Agriculture, Industrial Arts, Automobile and Shop, and Electronics",
+  },
+  {
+    code: "2.D.3.b",
+    name: "Business Vocational",
+    description:
+      "Courses focus on basic business skills, such as Word Processing, Filing, Bookkeeping/Basic Accounting",
+  },
+  {
+    code: "2.D.3.c",
+    name: "English/language Arts",
+    description:
+      "Courses focus on reading, interpretation, and writing, such as Literature, Composition, Journalism, and Creative Writing",
+  },
+  {
+    code: "2.D.3.d",
+    name: "Oral Communication",
+    description:
+      "Courses focus on oral communication and speech, such as Oral Communication, Speech, and Interpersonal Communication",
+  },
+  {
+    code: "2.D.3.e",
+    name: "Languages",
+    description:
+      "Courses focus on reading, writing, and/or speaking languages other than English, such as French, Chinese, German, Japanese, Latin, Russian, and Spanish",
+  },
+  {
+    code: "2.D.3.f",
+    name: "Basic Math",
+    description:
+      "Courses focus on basic and applied math, such as General Math and Business Math",
+  },
+  {
+    code: "2.D.3.g",
+    name: "Advanced Math",
+    description:
+      "Courses focus on advanced topics in math, such as Algebra, Geometry, Calculus, and Statistics",
+  },
+  {
+    code: "2.D.3.h",
+    name: "Physical Science",
+    description:
+      "Courses focus on the study of matter and/or energy, such as Physics, Chemistry, and Astronomy",
+  },
+  {
+    code: "2.D.3.i",
+    name: "Computer Science",
+    description:
+      "Courses focus on computers and their uses, such as Programming, Information Systems Management, and Software Applications",
+  },
+  {
+    code: "2.D.3.j",
+    name: "Biological Science",
+    description:
+      "Courses focus on the study of life and living beings, such as life science, biology, anatomy and physiology",
+  },
+  {
+    code: "2.D.3.k",
+    name: "Applied Science",
+    description:
+      "Courses focus on the application of science, such as Engineering, Health, and Medicine",
+  },
+  {
+    code: "2.D.3.l",
+    name: "Social Science",
+    description:
+      "Courses focus on the behavioral sciences, such as Social Studies, Economics, History, Psychology, and Sociology",
+  },
+  {
+    code: "2.D.3.m",
+    name: "Arts",
+    description:
+      "Courses focus on visual and performing arts, such as Arts and Crafts, Music, Painting, Sculpture, Theater, and Voice",
+  },
+  {
+    code: "2.D.3.n",
+    name: "Humanities",
+    description:
+      "Courses focus on cultural and philosophical aspects of humans, such as Minority Studies, Philosophy, and Religion",
+  },
+  {
+    code: "2.D.3.o",
+    name: "Physical Education",
+    description:
+      "Courses focus on physical fitness and sports, such as Aerobics, Jogging, Weight Lifting, and Specific Sports",
+  },
+] as const;

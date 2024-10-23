@@ -4,10 +4,17 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { allQuestions, ratings, trainingLevel } from "@/lib/constants";
+import {
+  allQuestions,
+  personalityAreas,
+  ratings,
+  trainingLevel,
+} from "@/lib/constants";
 
 export default function Quiz() {
-  const [results, setResults] = useState({
+  const [results, setResults] = useState<{
+    [key in (typeof personalityAreas)[number]]: number;
+  }>({
     Realistic: 0,
     Social: 0,
     Investigative: 0,
@@ -15,6 +22,7 @@ export default function Quiz() {
     Enterprising: 0,
     Conventional: 0,
   });
+
   const router = useRouter();
 
   const [questionIndex, setQuestionIndex] = useState(-1);
