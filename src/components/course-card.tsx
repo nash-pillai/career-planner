@@ -5,7 +5,7 @@ import { Course } from "types";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <Card className="mx-auto w-max max-w-md">
+    <Card className="mx-auto w-full max-w-md">
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <div>
@@ -32,6 +32,7 @@ export default function CourseCard({ course }: { course: Course }) {
                   Math: "purple",
                   Science: "green",
                   Technology: "orange",
+                  "Social Studies": "red",
                 }[course.department] as keyof typeof badgeVariants
               }
               className="whitespace-nowrap text-sm"
@@ -47,6 +48,7 @@ export default function CourseCard({ course }: { course: Course }) {
                     "CTE Pathway": "purple",
                     "Project Lead The Way (PLTW)": "pink",
                     "Science Research Program": "blue",
+                    "4+1 Pathway": "orange",
                   }[course.pathway] as keyof typeof badgeVariants
                 }
                 className="whitespace-nowrap text-sm"
@@ -56,6 +58,7 @@ export default function CourseCard({ course }: { course: Course }) {
                     "CTE Pathway": "CTE",
                     "Project Lead The Way (PLTW)": "PLTW",
                     "Science Research Program": "Science Research",
+                    "4+1 Pathway": "4+1",
                   }[course.pathway]
                 }
               </Badge>

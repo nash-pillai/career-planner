@@ -2,7 +2,6 @@ import {
   type departments,
   type educationTags,
   type pathways,
-  personalityAreas,
 } from "@/lib/constants";
 
 export interface CareerListing {

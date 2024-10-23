@@ -104,7 +104,7 @@ export default function Courses() {
       />
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filteredCourses.map((course) => (
-          <CourseCard key={course.course_name} course={course} />
+          <CourseCard key={course.course_code} course={course} />
         ))}
       </div>
     </div>
