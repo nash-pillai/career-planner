@@ -5,7 +5,7 @@ import { Course } from "types";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <Card className="mx-auto w-full max-w-md">
+    <Card className="mx-auto w-max max-w-md">
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <div>
@@ -87,7 +87,9 @@ export default function CourseCard({ course }: { course: Course }) {
             <Book className="mr-2 h-5 w-5 text-muted-foreground" />
             Course Description
           </h3>
-          <p className="text-sm text-muted-foreground">{course.description}</p>
+          <p className="line-clamp-3 text-sm text-muted-foreground">
+            {course.description}
+          </p>
         </div>
         {
           <div>

@@ -6,7 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -23,6 +23,7 @@ import {
 import { FullCareer } from "types";
 import CareerCard from "./career-card";
 import { courses } from "@/lib/courses";
+import CourseCard from "./course-card";
 
 export default function CareerModal({ career }: { career: FullCareer }) {
   console.log(career.knowledge);
@@ -99,9 +100,14 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {recommendedCourses.map((course) => (
-                  <div key={course.course_code}>{course.course_name}</div>
-                ))}
+                <ScrollArea className="h-full">
+                  <div className="flex h-full w-max space-x-4 pb-2">
+                    {recommendedCourses.map((course) => (
+                      <CourseCard key={course.course_code} course={course} />
+                    ))}
+                  </div>
+                  <ScrollBar orientation="horizontal" />
+                </ScrollArea>
               </CardContent>
             </Card>
 
