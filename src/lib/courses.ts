@@ -690,18 +690,6 @@ export const courses = [
   {
     department: "Fine Arts",
     course_name: "Studio-In-Art/ Ceramics",
-    course_code: "F591",
-
-    eligible_grades: [9, 10, 11, 12],
-    credits: 1,
-    rank_weighting: 1.0,
-    prerequisites: [],
-    description:
-      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
-  },
-  {
-    department: "Fine Arts",
-    course_name: "Studio-In-Art/ Ceramics",
     course_code: "F791",
 
     eligible_grades: [9, 10, 11, 12],
@@ -731,18 +719,6 @@ export const courses = [
 
     eligible_grades: [9, 10, 11, 12],
     credits: 1,
-    rank_weighting: 1.0,
-    prerequisites: [],
-    description:
-      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
-  },
-  {
-    department: "Fine Arts",
-    course_name: "Studio-In-Art/ Photomedia",
-    course_code: "F735",
-
-    eligible_grades: [9, 10, 11, 12],
-    credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
     description:
@@ -1574,19 +1550,6 @@ export const courses = [
 
     description:
       "AP Computer Science A focuses on core aspects of computer science which are used to create solutions that are understandable, adaptable, and when appropriate, reusable. The design and implementation of computer programs to solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
-  },
-  {
-    department: "Technology",
-    course_name: "SIA/ Communication Systems",
-    course_code: "T710",
-
-    eligible_grades: [9, 10, 11, 12],
-    credits: 0.5,
-    rank_weighting: 1,
-    prerequisites: [],
-
-    description:
-      "Communication Systems is a HALF YEAR, half credit course, taught by the Department of Technology. Students learn about the different systems of communications including, audio, audio/ visual, visual, and electronic. Students will use various Communication Technology Equipment including mixing boards, video cameras, Apple Computers, and other video production equipment. Students work will be displayed on MSG Varsity Network.",
   },
   {
     department: "Technology",

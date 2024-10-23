@@ -43,6 +43,8 @@ export default function CourseSearch({
   setWeight: Dispatch<SetStateAction<number | null>>;
   setPathway: Dispatch<SetStateAction<(typeof pathways)[number] | null>>;
 }) {
+  const [typedGrade, setTypedGrade] = useState<number | null>(null);
+
   return (
     <div className="mx-auto w-full max-w-3xl p-4">
       <div className="flex items-center space-x-2">
@@ -77,7 +79,7 @@ export default function CourseSearch({
                     </SelectTrigger>
                     <SelectContent>
                       {departments.map((dept) => (
-                        <SelectItem key={dept} value={dept.toLowerCase()}>
+                        <SelectItem key={dept} value={dept}>
                           {dept}
                         </SelectItem>
                       ))}
@@ -102,8 +104,8 @@ export default function CourseSearch({
                   type="number"
                   min={9}
                   max={12}
-                  value={grade ?? ""}
-                  onChange={(e) => setGrade(e.target.valueAsNumber)}
+                  value={typedGrade ?? ""}
+                  onChange={(e) => setTypedGrade(e.target.valueAsNumber)}
                   onBlur={(e) =>
                     setGrade(Math.max(9, Math.min(12, e.target.valueAsNumber)))
                   }
@@ -175,7 +177,7 @@ export default function CourseSearch({
                     </SelectTrigger>
                     <SelectContent>
                       {pathways.map((path) => (
-                        <SelectItem key={path} value={path.toLowerCase()}>
+                        <SelectItem key={path} value={path}>
                           {path}
                         </SelectItem>
                       ))}

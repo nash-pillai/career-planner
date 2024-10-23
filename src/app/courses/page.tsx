@@ -1,7 +1,7 @@
 "use client";
 
 import CourseCard from "@/components/course-card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Course, departments, pathways } from "types";
 import CourseSearch from "@/components/course-search";
 import { courses } from "@/lib/courses";
@@ -18,6 +18,19 @@ export default function Courses() {
   const [pathway, setPathway] = useState<(typeof pathways)[number] | null>(
     null,
   );
+
+  useEffect(() => {
+    setFilteredCourses(
+      courses.filter(
+        (course) =>
+          (!subject || course.department === subject) &&
+          (!grade || course.eligible_grades.includes(grade)) &&
+          (!credits || course.credits === credits) &&
+          (!weight || course.rank_weighting === weight) &&
+          (!pathway || course.pathway === pathway),
+      ),
+    );
+  }, [subject, grade, credits, weight, pathway]);
 
   return (
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
