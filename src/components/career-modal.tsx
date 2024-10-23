@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -23,111 +22,42 @@ import {
 } from "lucide-react";
 import { FullCareer } from "types";
 import CareerCard from "./career-card";
+import { courses } from "@/lib/courses";
 
 export default function CareerModal({ career }: { career: FullCareer }) {
-  // const careerData = {
-  //   name: "Software Developer",
-  //   alsoCalled: ["Programmer", "Software Engineer", "Application Developer"],
-  //   description: "Develops and maintains software applications and systems.",
-  //   duties: [
-  //     "Write and test code",
-  //     "Debug and troubleshoot software issues",
-  //     "Collaborate with other developers and stakeholders",
-  //     "Implement software updates and fixes",
-  //   ],
-  //   knowledge: [
-  //     {
-  //       topic: "Computer Science",
-  //       details: [
-  //         "Algorithms and data structures",
-  //         "Software design patterns",
-  //         "Database management systems",
-  //       ],
-  //     },
-  //     {
-  //       topic: "Programming Languages",
-  //       details: ["Java", "Python", "JavaScript", "C++"],
-  //     },
-  //   ],
-  //   skills: [
-  //     {
-  //       name: "Problem Solving",
-  //       details: ["Analytical thinking", "Logical reasoning", "Creativity"],
-  //     },
-  //     {
-  //       name: "Communication",
-  //       details: [
-  //         "Technical writing",
-  //         "Verbal explanation of complex concepts",
-  //       ],
-  //     },
-  //   ],
-  //   abilities: [
-  //     {
-  //       name: "Attention to Detail",
-  //       details: [
-  //         "Spotting errors in code",
-  //         "Ensuring code quality and efficiency",
-  //       ],
-  //     },
-  //     {
-  //       name: "Adaptability",
-  //       details: [
-  //         "Learning new technologies quickly",
-  //         "Adjusting to changing project requirements",
-  //       ],
-  //     },
-  //   ],
-  //   personality: {
-  //     trait:
-  //       "Analytical and logical thinker with a creative problem-solving approach.",
-  //     workStyles: [
-  //       "Detail-oriented",
-  //       "Self-motivated",
-  //       "Team player",
-  //       "Continuous learner",
-  //     ],
-  //   },
-  //   technology: [
-  //     {
-  //       category: "Programming Languages",
-  //       tools: ["Python", "JavaScript", "Java", "C++"],
-  //     },
-  //     {
-  //       category: "Web Technologies",
-  //       tools: ["React", "Node.js", "Angular", "Vue.js"],
-  //     },
-  //     {
-  //       category: "Databases",
-  //       tools: ["MySQL", "MongoDB", "PostgreSQL"],
-  //     },
-  //   ],
-  //   education: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     "Master's degree (optional)",
-  //   ],
-  //   outlook: {
-  //     rating: "Bright",
-  //     description:
-  //       "Much faster than average job growth expected over the next decade.",
-  //     income: {
-  //       median: 110000,
-  //       tenthPercentile: 65000,
-  //       ninetiethPercentile: 170000,
-  //     },
-  //     hourlyWage: {
-  //       median: 52.88,
-  //       tenthPercentile: 31.25,
-  //       ninetiethPercentile: 81.73,
-  //     },
-  //   },
-  //   relatedCareers: [
-  //     "Web Developer",
-  //     "Database Administrator",
-  //     "Systems Analyst",
-  //     "DevOps Engineer",
-  //   ],
-  // };
+  console.log(career.knowledge);
+
+  const recommendedCourses = courses
+    .filter((course) =>
+      course.tags.some((tag) =>
+        career.knowledge.group.some(
+          (knowledge) => knowledge.title.name === tag,
+        ),
+      ),
+    )
+    .sort((a, b) => {
+      const aMatchCount = a.tags.reduce(
+        (count, tag) =>
+          count +
+          (career.knowledge.group.some((knowledge) =>
+            knowledge.element.some((element) => element.name === tag),
+          )
+            ? 1
+            : 0),
+        0,
+      );
+      const bMatchCount = b.tags.reduce(
+        (count, tag) =>
+          count +
+          (career.knowledge.group.some((knowledge) =>
+            knowledge.element.some((element) => element.name === tag),
+          )
+            ? 1
+            : 0),
+        0,
+      );
+      return bMatchCount - aMatchCount;
+    });
 
   return (
     <Dialog>
@@ -143,7 +73,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
         </DialogHeader>
         <ScrollArea className="h-[calc(90vh-120px)] pr-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2 lg:col-span-3">
+            <Card className="col-span-1 border-none bg-[#D8FFD8] md:col-span-2 lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Briefcase className="mr-2" />
@@ -158,6 +88,20 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                     <li key={index}>{duty}</li>
                   ))}
                 </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2 lg:col-span-3">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <GraduationCap className="mr-2" />
+                  Recommended Courses
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                {recommendedCourses.map((course) => (
+                  <div key={course.course_code}>{course.course_name}</div>
+                ))}
               </CardContent>
             </Card>
 

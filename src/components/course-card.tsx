@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Book, GraduationCap, Scale, Award, ListChecks } from "lucide-react";
-import { Course, departments } from "types";
+import { Course } from "types";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
