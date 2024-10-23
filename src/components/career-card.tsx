@@ -18,7 +18,7 @@ export default function CareerCard({ career }: { career: FullCareer }) {
               </p> */}
           </div>
           {career.career.tags.bright_outlook && (
-            <Badge variant="brightOutlook" className="text-sm">
+            <Badge variant="green" className="text-sm">
               Bright Outlook
             </Badge>
           )}

@@ -242,10 +242,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                         <li key={elementIndex} className="flex items-center">
                           {element.name}
                           {element.hot_technology && (
-                            <Badge
-                              variant="secondary"
-                              className="ml-2 bg-orange-500/30 hover:bg-orange-500/30"
-                            >
+                            <Badge variant="orange" className="ml-2">
                               🔥 Hot Technology
                             </Badge>
                           )}
@@ -315,16 +312,10 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                   <Badge
                     variant={
                       career.job_outlook.outlook.category === "Bright"
-                        ? "brightOutlook"
-                        : "secondary"
-                    }
-                    className={
-                      career.job_outlook.outlook.category === "Average"
-                        ? "bg-yellow-500/50 hover:bg-yellow-500/50"
-                        : career.job_outlook.outlook.category ===
-                            "Below Average"
-                          ? "bg-red-500/50 hover:bg-red-500/50"
-                          : ""
+                        ? "green"
+                        : career.job_outlook.outlook.category === "Average"
+                          ? "yellow"
+                          : "red"
                     }
                   >
                     {career.job_outlook.outlook.category}
@@ -386,7 +377,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                       <li key={index}>
                         {relatedCareer.title}
                         {relatedCareer.tags.bright_outlook && (
-                          <Badge variant="brightOutlook" className="ml-2">
+                          <Badge variant="green" className="ml-2">
                             Bright Outlook
                           </Badge>
                         )}
