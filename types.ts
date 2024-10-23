@@ -130,13 +130,15 @@ export interface FullCareer {
 }
 
 export interface Course {
-  name: string;
-  description: string;
+  course_name: string;
+  course_code: string;
   credits: number;
-  weight: number;
-  recommendedGrades: number[];
+  rank_weighting: number;
+  eligible_grades: number[];
   prerequisites: string[];
   department: string;
+  pathways: string[];
+  description: string;
 }
 
 export type PersonalityArea =
