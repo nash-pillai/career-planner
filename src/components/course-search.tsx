@@ -26,22 +26,26 @@ export default function CourseSearch({
   credits,
   weight,
   pathway,
+  searchQuery,
   setSubject,
   setGrade,
   setCredits,
   setWeight,
   setPathway,
+  setSearchQuery,
 }: {
   subject: (typeof departments)[number] | null;
   grade: number | null;
   credits: number | null;
   weight: number | null;
   pathway: (typeof pathways)[number] | null;
+  searchQuery: string;
   setSubject: Dispatch<SetStateAction<(typeof departments)[number] | null>>;
   setGrade: Dispatch<SetStateAction<number | null>>;
   setCredits: Dispatch<SetStateAction<number | null>>;
   setWeight: Dispatch<SetStateAction<number | null>>;
   setPathway: Dispatch<SetStateAction<(typeof pathways)[number] | null>>;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
 }) {
   const [typedGrade, setTypedGrade] = useState<number | null>(null);
 
@@ -54,6 +58,8 @@ export default function CourseSearch({
             type="text"
             placeholder="Search courses..."
             className="w-full py-2 pl-8 pr-4"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
         <Popover>
