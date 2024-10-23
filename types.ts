@@ -1,7 +1,7 @@
 import {
-  departments,
-  educationTags,
-  pathways,
+  type departments,
+  type educationTags,
+  type pathways,
   personalityAreas,
 } from "@/lib/constants";
 
