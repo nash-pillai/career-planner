@@ -332,12 +332,14 @@ export const departments = [
   "Math",
   "Technology",
   "Science",
+  "Social Studies",
 ] as const;
 
 export const pathways = [
   "CTE Pathway",
   "Project Lead The Way (PLTW)",
   "Science Research Program",
+  "4+1 Pathway",
 ] as const;
 
 export const educationTags = [
