@@ -109,7 +109,7 @@ export default function CareerSearch({
                       min={0}
                       max={40}
                       step={1}
-                      value={[value as number]}
+                      value={[value]}
                       onValueChange={(value) =>
                         handleSliderChange(category, value)
                       }

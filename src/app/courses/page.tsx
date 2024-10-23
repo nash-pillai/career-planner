@@ -40,22 +40,20 @@ export default function Courses() {
 
     setFilteredCourses(
       courses
-        .filter((course) => {
-          return (
-            course.course_name.toLowerCase().includes(searchTerm) ||
-            course.course_code.toLowerCase().includes(searchTerm) ||
-            course.department.toLowerCase().includes(searchTerm) ||
-            course.description.toLowerCase().includes(searchTerm) ||
-            (course.pathway &&
-              course.pathway.toLowerCase().includes(searchTerm)) ||
+        .filter(
+          (course) =>
+            course.course_name.toLowerCase().includes(searchTerm) ??
+            course.course_code.toLowerCase().includes(searchTerm) ??
+            course.department.toLowerCase().includes(searchTerm) ??
+            course.description.toLowerCase().includes(searchTerm) ??
+            course.pathway?.toLowerCase().includes(searchTerm) ??
             course.prerequisites.some((prereq) =>
               prereq.toLowerCase().includes(searchTerm),
-            ) ||
+            ) ??
             course.eligible_grades.some((grade) =>
               grade.toString().includes(searchTerm),
-            )
-          );
-        })
+            ),
+        )
         .sort((a, b) => {
           if (
             a.course_name.toLowerCase().includes(searchTerm) &&
