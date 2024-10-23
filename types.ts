@@ -1,4 +1,9 @@
-import { departments, pathways } from "@/lib/constants";
+import {
+  departments,
+  educationTags,
+  pathways,
+  personalityAreas,
+} from "@/lib/constants";
 
 export interface CareerListing {
   code: string;
@@ -141,12 +146,5 @@ export interface Course {
   department: (typeof departments)[number];
   pathway?: (typeof pathways)[number];
   description: string;
+  tags: (typeof educationTags)[number]["name"][];
 }
-
-export type PersonalityArea =
-  | "Realistic"
-  | "Investigative"
-  | "Artistic"
-  | "Social"
-  | "Enterprising"
-  | "Conventional";
