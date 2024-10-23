@@ -55,7 +55,7 @@ export const courses = [
   {
     department: "Business",
     course_name: "College Virtual Enterprise I and II",
-    course_code: "B800/B801",
+    course_code: "B800/ B801",
 
     eligible_grades: [11, 12],
     credits: 1,
@@ -63,7 +63,7 @@ export const courses = [
     prerequisites: ["None (Business Ownership or Accounting is suggested)"],
     pathway: "CTE Pathway",
     description:
-      "This college-level course provides students the opportunity to run a virtual business that sells products/services to other virtual businesses globally. Students participate in business operations, competitions, and personal finance management. College credits may be available through Dutchess Community College.",
+      "This college-level course provides students the opportunity to run a virtual business that sells products/ services to other virtual businesses globally. Students participate in business operations, competitions, and personal finance management. College credits may be available through Dutchess Community College.",
   },
   {
     department: "Business",
@@ -211,7 +211,7 @@ export const courses = [
     ],
     pathway: "CTE Pathway",
     description:
-      "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/hex conversions, data storage and transmission protocols, data visualization ofpublicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May.",
+      "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/ hex conversions, data storage and transmission protocols, data visualization ofpublicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May.",
   },
   {
     department: "English",
@@ -343,7 +343,7 @@ export const courses = [
     prerequisites: ["Pass English 11"],
 
     description:
-      "This course will explore the identity of self through the concept of journeys, major cultural events/movements, and an author’s ability to tell a story. Literature and nonfiction works will be analyzed to reveal challenges and how the meeting or succumbing to these challenges shapes one’s identity of self. Emphasis will be placed on cultural factors and how the world community influences its individual inhabitants.",
+      "This course will explore the identity of self through the concept of journeys, major cultural events/ movements, and an author’s ability to tell a story. Literature and nonfiction works will be analyzed to reveal challenges and how the meeting or succumbing to these challenges shapes one’s identity of self. Emphasis will be placed on cultural factors and how the world community influences its individual inhabitants.",
   },
   {
     department: "English",
@@ -370,7 +370,7 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: [
       "Must have passed English 11 and the English Regents exam with at least 85%.",
-      "Students must also have the recommendation of their grade 11 English teacher and/or the approval of the Director of English Language Arts.",
+      "Students must also have the recommendation of their grade 11 English teacher and/ or the approval of the Director of English Language Arts.",
     ],
 
     description:
@@ -387,7 +387,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course seeks to empower students to challenge themselves by taking a medium that they are familiar with, while using literary techniques to analyze film. The goal is to derive greater meaning from both the films they watch as well as to more fully realize their potential as thoughtful young members of our society. This course will also expose students to new ideas through the medium of film, to evaluate how these films are effective using devices/elements common to the ELA classroom, and to gain a better understanding of the medium in general. The goal is to use film and nonfiction articles as a way to focus upon and assess students’ critical thinking skills.",
+      "This course seeks to empower students to challenge themselves by taking a medium that they are familiar with, while using literary techniques to analyze film. The goal is to derive greater meaning from both the films they watch as well as to more fully realize their potential as thoughtful young members of our society. This course will also expose students to new ideas through the medium of film, to evaluate how these films are effective using devices/ elements common to the ELA classroom, and to gain a better understanding of the medium in general. The goal is to use film and nonfiction articles as a way to focus upon and assess students’ critical thinking skills.",
   },
   {
     department: "English",
@@ -478,7 +478,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course is an introduction to theatre arts. It is a participatory course in which students will learn basic stage movement and voice training, introductory acting and improvisational techniques as well as backstage elements such as lighting and costuming. It is intended for both the student who has always wanted to try their hand at the stage as well as the student who has a real interest in performing. Students are evaluated based on participation, grades, acting exercises, written projects, reading assignments, final projects and tests. NOTE: This course may be used to meet the 1 unit Regents Art/Music graduation requirement.",
+      "This course is an introduction to theatre arts. It is a participatory course in which students will learn basic stage movement and voice training, introductory acting and improvisational techniques as well as backstage elements such as lighting and costuming. It is intended for both the student who has always wanted to try their hand at the stage as well as the student who has a real interest in performing. Students are evaluated based on participation, grades, acting exercises, written projects, reading assignments, final projects and tests. NOTE: This course may be used to meet the 1 unit Regents Art/ Music graduation requirement.",
   },
   {
     department: "English",
@@ -661,11 +661,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: ["Recommendation of Art Staff"],
     description:
-      "This course is a full-year foundation course designed to meet the Art/Music graduation requirement. It is the prerequisite for Advanced Art I, Advertising Design, and SIA/Communications Systems. Areas of study include drawing skills developed as a basis for work in painting, printmaking, three-dimensional design, perceptual skills development, elements and principles of art and design, career options, and portfolio development. Student assessment is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook assignments, and the WCSD Portfolio Assessment results. This course can be used to fulfill the 1 credit Arts requirement for graduation.",
+      "This course is a full-year foundation course designed to meet the Art/ Music graduation requirement. It is the prerequisite for Advanced Art I, Advertising Design, and SIA/ Communications Systems. Areas of study include drawing skills developed as a basis for work in painting, printmaking, three-dimensional design, perceptual skills development, elements and principles of art and design, career options, and portfolio development. Student assessment is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook assignments, and the WCSD Portfolio Assessment results. This course can be used to fulfill the 1 credit Arts requirement for graduation.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Communications Systems",
+    course_name: "Studio-In-Art/ Communications Systems",
     course_code: "1100",
 
     eligible_grades: [9, 10, 11, 12],
@@ -677,7 +677,7 @@ export const courses = [
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/3-Dimensional Design",
+    course_name: "Studio-In-Art/ 3D Design",
     course_code: "F607",
 
     eligible_grades: [9, 10, 11, 12],
@@ -685,23 +685,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. Students will develop studio skills, including drawing skills, while creating functional as well as aesthetic art. It is a prerequisite for 3-D Design/Crafts II and Studio-In-Sculpture. Areas of study include: an introduction to a wide variety of art experiences; design and production of 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
+      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. Students will develop studio skills, including drawing skills, while creating functional as well as aesthetic art. It is a prerequisite for 3-D Design/ Crafts II and Studio-In-Sculpture. Areas of study include: an introduction to a wide variety of art experiences; design and production of 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/ or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/3-Dimensional Design",
-    course_code: "F707",
-
-    eligible_grades: [9, 10, 11, 12],
-    credits: 0.5,
-    rank_weighting: 1.0,
-    prerequisites: [],
-    description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. Students will develop studio skills, including drawing skills, while creating functional as well as aesthetic art. It is a prerequisite for 3-D Design/Crafts II and Studio-In-Sculpture. Areas of study include: an introduction to a wide variety of art experiences; design and production of 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
-  },
-  {
-    department: "Fine Arts",
-    course_name: "Studio-In-Art/Ceramics",
+    course_name: "Studio-In-Art/ Ceramics",
     course_code: "F591",
 
     eligible_grades: [9, 10, 11, 12],
@@ -709,11 +697,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
+      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Ceramics",
+    course_name: "Studio-In-Art/ Ceramics",
     course_code: "F791",
 
     eligible_grades: [9, 10, 11, 12],
@@ -721,11 +709,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
+      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Digital Art",
+    course_name: "Studio-In-Art/ Digital Art",
     course_code: "F576",
 
     eligible_grades: [9, 10, 11, 12],
@@ -738,7 +726,7 @@ export const courses = [
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Photomedia",
+    course_name: "Studio-In-Art/ Photomedia",
     course_code: "F635",
 
     eligible_grades: [9, 10, 11, 12],
@@ -746,11 +734,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
+      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Photomedia",
+    course_name: "Studio-In-Art/ Photomedia",
     course_code: "F735",
 
     eligible_grades: [9, 10, 11, 12],
@@ -758,11 +746,11 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description:
-      "This course is a demanding foundation course designed to meet the Art/Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
+      "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Designworks A",
+    course_name: "Studio-In-Art/ Designworks A",
     course_code: "F611",
 
     eligible_grades: [9, 10, 11, 12],
@@ -771,11 +759,11 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course is a foundation course designed to meet the Art/Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
+      "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Designworks B",
+    course_name: "Studio-In-Art/ Designworks B",
     course_code: "F612",
 
     eligible_grades: [9, 10, 11, 12],
@@ -784,11 +772,11 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course is a foundation course designed to meet the Art/Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
+      "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
   {
     department: "Fine Arts",
-    course_name: "Studio-In-Art/Designworks - Full Year",
+    course_name: "Studio-In-Art/ Designworks - Full Year",
     course_code: "F613",
 
     eligible_grades: [9, 10, 11, 12],
@@ -797,20 +785,20 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course is a foundation course designed to meet the Art/Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
+      "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
   {
     department: "Fine Arts",
-    course_name: "3-D Design/Crafts II",
+    course_name: "3-D Design/ Crafts II",
     course_code: "F608",
 
     eligible_grades: [10, 11, 12],
     credits: 1,
     rank_weighting: 1.0,
-    prerequisites: ["Studio-In-Art/3-D Design", "Full Year"],
+    prerequisites: ["Studio-In-Art/ 3-D Design", "Full Year"],
 
     description:
-      "This course is designed to develop in students the advanced techniques and skills of the studio crafts media, while creating functional as well as aesthetic art. Areas of study include: development of advanced skills and techniques in design and production of advanced 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook, portfolio, and other assignments.",
+      "This course is designed to develop in students the advanced techniques and skills of the studio crafts media, while creating functional as well as aesthetic art. Areas of study include: development of advanced skills and techniques in design and production of advanced 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/ or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook, portfolio, and other assignments.",
   },
   {
     department: "Fine Arts",
@@ -835,10 +823,10 @@ export const courses = [
     eligible_grades: [10, 11, 12],
     credits: 1,
     rank_weighting: 1,
-    prerequisites: ["Studio-In-Art/Ceramics, full year"],
+    prerequisites: ["Studio-In-Art/ Ceramics, full year"],
 
     description:
-      "This course is designed to develop in students the advanced techniques and skills of the studio ceramics medium. Areas of study include development of advanced skills and techniques in ceramics, wheel-throwing of clay, hand-building of clay, glaze technology and application, an analysis of various ceramic traditions (historical/cultural), drawing skills, sketchbook, sculpting in clay (with wheel and hand), portfolio (including a digital portfolio as technology is available), and career options.",
+      "This course is designed to develop in students the advanced techniques and skills of the studio ceramics medium. Areas of study include development of advanced skills and techniques in ceramics, wheel-throwing of clay, hand-building of clay, glaze technology and application, an analysis of various ceramic traditions (historical/ cultural), drawing skills, sketchbook, sculpting in clay (with wheel and hand), portfolio (including a digital portfolio as technology is available), and career options.",
   },
   {
     department: "Fine Arts",
@@ -849,7 +837,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [
-      "Studio-In-Art/3-D Design or Studio-in-Art/Ceramics, or permission of the instructor",
+      "Studio-In-Art/ 3-D Design or Studio-in-Art/ Ceramics, or permission of the instructor",
     ],
 
     description:
@@ -864,11 +852,11 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [
-      "Studio-ln-Art/Photomedia Full Year with a final average of 80 or higher",
+      "Studio-ln-Art/ Photomedia Full Year with a final average of 80 or higher",
     ],
 
     description:
-      "This course is designed to develop in students advanced techniques and skills of photography. Assignments are aimed at enriching the expressive use of the camera and darkroom. Areas of study include advanced skills and techniques in photography, technology (computer, digital camera, software applications), experimental film (high contrast), digital and macro photography, mixed media processes, commercial Photography, studio and environmental portraiture, still life/advertising photography, portfolio development, and career options.",
+      "This course is designed to develop in students advanced techniques and skills of photography. Assignments are aimed at enriching the expressive use of the camera and darkroom. Areas of study include advanced skills and techniques in photography, technology (computer, digital camera, software applications), experimental film (high contrast), digital and macro photography, mixed media processes, commercial Photography, studio and environmental portraiture, still life/ advertising photography, portfolio development, and career options.",
   },
   {
     department: "Fine Arts",
@@ -879,7 +867,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [
-      "Studio-In-Art/Photomedia Full Year with a final average of 80 or higher",
+      "Studio-In-Art/ Photomedia Full Year with a final average of 80 or higher",
     ],
 
     description:
@@ -894,7 +882,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [
-      "Studio-ln-Art/3-D Design or Studio-in-Art/Ceramics, Studio-ln-Sculpture",
+      "Studio-ln-Art/ 3-D Design or Studio-in-Art/ Ceramics, Studio-ln-Sculpture",
     ],
 
     description:
@@ -974,7 +962,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [
-      "Studio-In-Art/Photomedia",
+      "Studio-In-Art/ Photomedia",
       "Photography II, with an average of 80 or higher",
     ],
 
@@ -989,7 +977,7 @@ export const courses = [
     eligible_grades: [11, 12],
     credits: 1,
     rank_weighting: 1.0,
-    prerequisites: ["Studio-ln-Art/Photomedia", "Media Arts II"],
+    prerequisites: ["Studio-ln-Art/ Photomedia", "Media Arts II"],
 
     description: "",
   },
@@ -1002,7 +990,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [
-      "Studio-In-Art/Ceramics",
+      "Studio-In-Art/ Ceramics",
       "Ceramics II, with an average of 80 or higher.",
     ],
 
@@ -1010,13 +998,13 @@ export const courses = [
   },
   {
     department: "Fine Arts",
-    course_name: "3-D Design/Crafts III",
+    course_name: "3-D Design/ Crafts III",
     course_code: "F637",
 
     eligible_grades: [11, 12],
     credits: 1,
     rank_weighting: 1.0,
-    prerequisites: ["Studio-ln-Art/3-D Design", "3-D Design/Crafts II"],
+    prerequisites: ["Studio-ln-Art/ 3-D Design", "3-D Design/ Crafts II"],
 
     description: "",
   },
@@ -1122,11 +1110,11 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "*This course is intended for the accelerated/honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
+      "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
   },
   {
     department: "Foreign Language",
-    course_name: "Italian IV Honors*/College Credit**",
+    course_name: "Italian IV Honors*/ College Credit**",
     course_code: "L345",
 
     eligible_grades: [11, 12],
@@ -1148,11 +1136,11 @@ export const courses = [
     prerequisites: ["Must have passed the same foreign language in Level 3."],
 
     description:
-      "*This course is intended for the accelerated/honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
+      "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
   },
   {
     department: "Foreign Language",
-    course_name: "AP French V*/College Credit**",
+    course_name: "AP French V*/ College Credit**",
     course_code: "L156",
 
     eligible_grades: [11, 12],
@@ -1161,11 +1149,11 @@ export const courses = [
     prerequisites: ["Must have passed the same foreign language in Level 4."],
 
     description:
-      "*This course is intended for the accelerated/honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
+      "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
   {
     department: "Foreign Language",
-    course_name: "Italian V - Honors/College Credit**",
+    course_name: "Italian V - Honors/ College Credit**",
     course_code: "L355",
 
     eligible_grades: [11, 12],
@@ -1187,7 +1175,7 @@ export const courses = [
     prerequisites: ["Must have passed the same foreign language in Level 4."],
 
     description:
-      "*This course is intended for the accelerated/honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
+      "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
   {
     department: "Foreign Language",
@@ -1200,7 +1188,7 @@ export const courses = [
     prerequisites: ["Must have passed the same foreign language in Level 4."],
 
     description:
-      "*This course is intended for the accelerated/honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
+      "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
   {
     department: "Foreign Language",
@@ -1216,7 +1204,7 @@ export const courses = [
     ],
 
     description:
-      "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/food/drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
+      "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/ food/ drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
   },
   {
     department: "Foreign Language",
@@ -1232,7 +1220,7 @@ export const courses = [
     ],
 
     description:
-      "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/food/drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
+      "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/ food/ drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
   },
   {
     department: "Math",
@@ -1273,7 +1261,7 @@ export const courses = [
     prerequisites: ["For those with less than a 75% average in Math 8"],
 
     description:
-      "This Regents course focuses on developing algebra concepts and skills through a multiple representations approach. Major topics include, but are not limited to, identifying and solving Linear and Exponential models, Statistics, Operations with Polynomials, Factoring and Solving Quadratic Functions, and System of Equations. Algebra+ consists of an additional, attached lab period that allows students additional time to explore/discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra I Regents Examination is a New York State graduation requirement.",
+      "This Regents course focuses on developing algebra concepts and skills through a multiple representations approach. Major topics include, but are not limited to, identifying and solving Linear and Exponential models, Statistics, Operations with Polynomials, Factoring and Solving Quadratic Functions, and System of Equations. Algebra+ consists of an additional, attached lab period that allows students additional time to explore/ discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra I Regents Examination is a New York State graduation requirement.",
   },
   {
     department: "Math",
@@ -1286,7 +1274,7 @@ export const courses = [
     prerequisites: ["For those with less than a 70% average in Math 8"],
 
     description:
-      "This course is the first year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Solving Linear Equations and Inequalities, Writing and Graphing Linear Functions, Systems of Equations, Exponential Functions and Sequences. Upon successful completion of this course, students will be enrolled in Algebra 1B. Successful completion of the Algebra 1A/1B sequence satisfies the New York State graduation requirement for Algebra I.",
+      "This course is the first year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Solving Linear Equations and Inequalities, Writing and Graphing Linear Functions, Systems of Equations, Exponential Functions and Sequences. Upon successful completion of this course, students will be enrolled in Algebra 1B. Successful completion of the Algebra 1A/ 1B sequence satisfies the New York State graduation requirement for Algebra I.",
   },
   {
     department: "Math",
@@ -1299,7 +1287,7 @@ export const courses = [
     prerequisites: ["Successful completion of Algebra 1A"],
 
     description:
-      "This course is the second year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Polynomials & Factoring, Quadratic & Radical Functions, Data Analysis and Displays. This course ends with a New York State Regents Examination. Successful completion of the Algebra 1A/1B sequence and the Algebra I Regents Examination satisfies the New York State graduation requirement for Algebra I.",
+      "This course is the second year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Polynomials & Factoring, Quadratic & Radical Functions, Data Analysis and Displays. This course ends with a New York State Regents Examination. Successful completion of the Algebra 1A/ 1B sequence and the Algebra I Regents Examination satisfies the New York State graduation requirement for Algebra I.",
   },
   {
     department: "Math",
@@ -1342,7 +1330,7 @@ export const courses = [
     prerequisites: ["Successful completion of Algebra I."],
 
     description:
-      "Focuses on the properties of geometric figures and geometric relationships. Major topics include, but are not limited to, Constructions & Transformations, Right Triangles, Circles, Trigonometry, Geometric Measurement & Dimensions, and Modeling with Geometry. Students will be expected to present valid arguments justified by axioms, definitions and theorems. This course ends in a New York State Regents Examination. Geometry+ consists of an additional, attached lab period that allows students additional time to explore/discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Geometry Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
+      "Focuses on the properties of geometric figures and geometric relationships. Major topics include, but are not limited to, Constructions & Transformations, Right Triangles, Circles, Trigonometry, Geometric Measurement & Dimensions, and Modeling with Geometry. Students will be expected to present valid arguments justified by axioms, definitions and theorems. This course ends in a New York State Regents Examination. Geometry+ consists of an additional, attached lab period that allows students additional time to explore/ discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Geometry Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
   {
     department: "Math",
@@ -1355,7 +1343,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/she passes the Algebra I Regents Exam.",
+      "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/ she passes the Algebra I Regents Exam.",
   },
   {
     department: "Math",
@@ -1368,7 +1356,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/she passes the Algebra I Regents Exam.",
+      "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/ she passes the Algebra I Regents Exam.",
   },
   {
     department: "Math",
@@ -1383,7 +1371,7 @@ export const courses = [
     ],
 
     description:
-      "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
+      "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/ or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
   {
     department: "Math",
@@ -1398,7 +1386,7 @@ export const courses = [
     ],
 
     description:
-      "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. Algebra II Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Algebra II Regents course. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
+      "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/ or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. Algebra II Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Algebra II Regents course. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
   {
     department: "Math",
@@ -1444,7 +1432,7 @@ export const courses = [
   },
   {
     department: "Math",
-    course_name: "AP/College Pre-Calculus",
+    course_name: "AP/ College Pre-Calculus",
     course_code: "M661",
 
     eligible_grades: [11, 12],
@@ -1505,7 +1493,7 @@ export const courses = [
   },
   {
     department: "Math",
-    course_name: "AP/College Statistics",
+    course_name: "AP/ College Statistics",
     course_code: "M655",
 
     eligible_grades: [11, 12],
@@ -1589,7 +1577,7 @@ export const courses = [
   },
   {
     department: "Technology",
-    course_name: "SIA/Communication Systems",
+    course_name: "SIA/ Communication Systems",
     course_code: "T710",
 
     eligible_grades: [9, 10, 11, 12],
@@ -1598,11 +1586,11 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "Communication Systems is a HALF YEAR, half credit course, taught by the Department of Technology. Students learn about the different systems of communications including, audio, audio/visual, visual, and electronic. Students will use various Communication Technology Equipment including mixing boards, video cameras, Apple Computers, and other video production equipment. Students work will be displayed on MSG Varsity Network.",
+      "Communication Systems is a HALF YEAR, half credit course, taught by the Department of Technology. Students learn about the different systems of communications including, audio, audio/ visual, visual, and electronic. Students will use various Communication Technology Equipment including mixing boards, video cameras, Apple Computers, and other video production equipment. Students work will be displayed on MSG Varsity Network.",
   },
   {
     department: "Technology",
-    course_name: "SIA/Communication Systems",
+    course_name: "SIA/ Communication Systems",
     course_code: "I100",
 
     eligible_grades: [9, 10, 11, 12],
@@ -1611,7 +1599,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "Communication Systems is a FULL YEAR, full credit course, taught by the Department of Technology in conjunction with the Art Department (Studio-In-Art). Upon completion of both Communication Systems and Studio-In-Art, students will receive credit in Technology and Art. Student’s NYS Regents Art/Music requirement will be fulfilled.",
+      "Communication Systems is a FULL YEAR, full credit course, taught by the Department of Technology in conjunction with the Art Department (Studio-In-Art). Upon completion of both Communication Systems and Studio-In-Art, students will receive credit in Technology and Art. Student’s NYS Regents Art/ Music requirement will be fulfilled.",
   },
   {
     department: "Technology",
@@ -1637,7 +1625,7 @@ export const courses = [
     prerequisites: ["Successful Completion of Computer Graphics"],
 
     description:
-      "This course is a continuation of Computer Graphics. Students will broaden their skills in Adobe Illustrator, Photoshop, and Flash to complete projects using Dreamweaver. Students will utilize the graphic design process to create both professional and personal websites. Students will gain knowledge in the areas of basic computer programming, design, and site maintenance/management while understanding the theory and history of Web Design. Students utilize official Adobe training material, which make them eligible to take Adobe Certification Exams (ACE).",
+      "This course is a continuation of Computer Graphics. Students will broaden their skills in Adobe Illustrator, Photoshop, and Flash to complete projects using Dreamweaver. Students will utilize the graphic design process to create both professional and personal websites. Students will gain knowledge in the areas of basic computer programming, design, and site maintenance/ management while understanding the theory and history of Web Design. Students utilize official Adobe training material, which make them eligible to take Adobe Certification Exams (ACE).",
   },
   {
     department: "Technology",
@@ -1650,7 +1638,7 @@ export const courses = [
     prerequisites: ["Technical Drawing"],
 
     description:
-      "Computer Aided Design is a half year, half credit course designed to acquaint the student with hands-on activities using a PC platform workstation. Students will exercise a variety of drafting and design software tools using CAD to produce both two and three-dimensional drawings and illustrations. Drawings will be produced by students of their own designs as well as assigned exercises. Drawings will be electronically saved, printed and/or plotted for evaluation.",
+      "Computer Aided Design is a half year, half credit course designed to acquaint the student with hands-on activities using a PC platform workstation. Students will exercise a variety of drafting and design software tools using CAD to produce both two and three-dimensional drawings and illustrations. Drawings will be produced by students of their own designs as well as assigned exercises. Drawings will be electronically saved, printed and/ or plotted for evaluation.",
   },
   {
     department: "Technology",
@@ -1719,7 +1707,7 @@ export const courses = [
   },
   {
     department: "Technology",
-    course_name: "Basic Electricity/Electronics",
+    course_name: "Basic Electricity/ Electronics",
     course_code: "T725",
 
     eligible_grades: [9, 10, 11, 12],
@@ -1741,7 +1729,7 @@ export const courses = [
     prerequisites: [],
 
     description:
-      "This course is designed to present to the student the concepts of technical drawing, and traces its evolution from manual drafting techniques to modern computer aided drafting/CAD techniques. Major topics include: types of drawings, types of technical drawings, their purpose, applications, and regulations.",
+      "This course is designed to present to the student the concepts of technical drawing, and traces its evolution from manual drafting techniques to modern computer aided drafting/ CAD techniques. Major topics include: types of drawings, types of technical drawings, their purpose, applications, and regulations.",
   },
   {
     department: "Technology",
@@ -2002,7 +1990,7 @@ export const courses = [
   },
   {
     department: "Science",
-    course_name: "AP Biology/College Biology",
+    course_name: "AP Biology/ College Biology",
     course_code: "S688 + S688L",
 
     eligible_grades: [11, 12],

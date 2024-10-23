@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Book, GraduationCap, Scale, Award, ListChecks } from "lucide-react";
-import { Course } from "types";
+import { Course, departments } from "types";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
@@ -21,11 +21,36 @@ export default function CourseCard({ course }: { course: Course }) {
             </p>
           </div>
           <div className="ml-2 flex flex-col items-end space-y-2">
-            <Badge variant="secondary" className="text-sm">
-              {course.department}
+            <Badge
+              variant={
+                {
+                  Business: "teal",
+                  English: "red",
+                  "Family and Consumer Science": "yellow",
+                  "Fine Arts": "pink",
+                  "Foreign Language": "blue",
+                  Math: "purple",
+                  Science: "green",
+                  Technology: "orange",
+                }[course.department] as keyof typeof badgeVariants
+              }
+              className="whitespace-nowrap text-sm"
+            >
+              {course.department === "Family and Consumer Science"
+                ? "FCS"
+                : course.department}
             </Badge>
             {course.pathway && (
-              <Badge variant="secondary" className="whitespace-nowrap text-sm">
+              <Badge
+                variant={
+                  {
+                    "CTE Pathway": "purple",
+                    "Project Lead The Way (PLTW)": "pink",
+                    "Science Research Program": "blue",
+                  }[course.pathway] as keyof typeof badgeVariants
+                }
+                className="whitespace-nowrap text-sm"
+              >
                 {
                   {
                     "CTE Pathway": "CTE",
@@ -64,21 +89,23 @@ export default function CourseCard({ course }: { course: Course }) {
           </h3>
           <p className="text-sm text-muted-foreground">{course.description}</p>
         </div>
-        <div>
-          <h3 className="mb-2 flex items-center text-sm font-medium">
-            <ListChecks className="mr-2 h-5 w-5 text-muted-foreground" />
-            Prerequisites
-          </h3>
-          <ul className="list-inside list-disc text-sm text-muted-foreground">
-            {course.prerequisites.length > 0 ? (
-              course.prerequisites.map((prerequisite) => (
-                <li key={prerequisite}>{prerequisite}</li>
-              ))
-            ) : (
-              <li>None</li>
-            )}
-          </ul>
-        </div>
+        {
+          <div>
+            <h3 className="mb-2 flex items-center text-sm font-medium">
+              <ListChecks className="mr-2 h-5 w-5 text-muted-foreground" />
+              Prerequisites
+            </h3>
+            <ul className="list-inside list-disc text-sm text-muted-foreground">
+              {course.prerequisites.length > 0 ? (
+                course.prerequisites.map((prerequisite) => (
+                  <li key={prerequisite}>{prerequisite}</li>
+                ))
+              ) : (
+                <li>None</li>
+              )}
+            </ul>
+          </div>
+        }
       </CardContent>
     </Card>
   );
