@@ -20,9 +20,22 @@ export default function CourseCard({ course }: { course: Course }) {
                 : course.eligible_grades[0]}
             </p>
           </div>
-          <Badge variant="secondary" className="text-sm">
-            {course.department}
-          </Badge>
+          <div className="ml-2 flex flex-col items-end space-y-2">
+            <Badge variant="secondary" className="text-sm">
+              {course.department}
+            </Badge>
+            {course.pathway && (
+              <Badge variant="secondary" className="whitespace-nowrap text-sm">
+                {
+                  {
+                    "CTE Pathway": "CTE",
+                    "Project Lead The Way (PLTW)": "PLTW",
+                    "Science Research Program": "Science Research",
+                  }[course.pathway]
+                }
+              </Badge>
+            )}
+          </div>
         </div>
       </CardHeader>
       <CardContent className="grid gap-4">
