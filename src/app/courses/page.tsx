@@ -2,67 +2,41 @@
 
 import CourseCard from "@/components/course-card";
 import { useState } from "react";
-import { Course } from "types";
+import { Course, departments, pathways } from "types";
+import CourseSearch from "@/components/course-search";
+import { courses } from "@/lib/courses";
 
 export default function Courses() {
-  const [courses, setCourses] = useState<Course[]>([
-    {
-      name: "Advanced Mathematics",
-      description:
-        "This course covers complex topics including calculus, linear algebra, and probability theory. Students will develop strong problem-solving skills and gain a deep understanding of mathematical concepts applicable to various scientific and engineering fields.",
-      credits: 1,
-      weight: 1.1,
-      recommendedGrades: [11, 12],
-      prerequisites: [],
-      department: "Mathematics",
-    },
-    {
-      name: "Advanced Physics",
-      description:
-        "This course covers complex topics including calculus, linear algebra, and probability theory. Students will develop strong problem-solving skills and gain a deep understanding of mathematical concepts applicable to various scientific and engineering fields.",
-      credits: 1,
-      weight: 1.1,
-      recommendedGrades: [10],
-      prerequisites: ["Algebra II", "Pre-Calculus"],
-      department: "Mathematics",
-    },
-    {
-      name: "Advanced Physics",
-      description:
-        "This course covers complex topics including calculus, linear algebra, and probability theory. Students will develop strong problem-solving skills and gain a deep understanding of mathematical concepts applicable to various scientific and engineering fields.",
-      credits: 1,
-      weight: 1,
-      recommendedGrades: [11, 12],
-      prerequisites: ["Algebra II", "Pre-Calculus"],
-      department: "Science",
-    },
-    {
-      name: "Advanced Physics",
-      description:
-        "This course covers complex topics including calculus, linear algebra, and probability theory. Students will develop strong problem-solving skills and gain a deep understanding of mathematical concepts applicable to various scientific and engineering fields.",
-      credits: 0.5,
-      weight: 1.05,
-      recommendedGrades: [11, 12],
-      prerequisites: ["Algebra II", "Pre-Calculus"],
-      department: "Mathematics",
-    },
-    {
-      name: "Advanced Physics",
-      description:
-        "This course covers complex topics including calculus, linear algebra, and probability theory. Students will develop strong problem-solving skills and gain a deep understanding of mathematical concepts applicable to various scientific and engineering fields.",
-      credits: 1,
-      weight: 1.1,
-      recommendedGrades: [11, 12],
-      prerequisites: ["Algebra II", "Pre-Calculus"],
-      department: "Mathematics",
-    },
-  ]);
+  const [filteredCourses, setFilteredCourses] = useState<Course[]>(courses);
+
+  const [subject, setSubject] = useState<(typeof departments)[number] | null>(
+    null,
+  );
+  const [grade, setGrade] = useState<number | null>(null);
+  const [credits, setCredits] = useState<number | null>(null);
+  const [weight, setWeight] = useState<number | null>(null);
+  const [pathway, setPathway] = useState<(typeof pathways)[number] | null>(
+    null,
+  );
+
   return (
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Courses</h1>
+      <CourseSearch
+        subject={subject}
+        grade={grade}
+        credits={credits}
+        weight={weight}
+        pathway={pathway}
+        setSubject={setSubject}
+        setGrade={setGrade}
+        setCredits={setCredits}
+        setWeight={setWeight}
+        setPathway={setPathway}
+      />
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {courses.map((course) => (
-          <CourseCard key={course.name} course={course} />
+        {filteredCourses.map((course) => (
+          <CourseCard key={course.course_name} course={course} />
         ))}
       </div>
     </div>

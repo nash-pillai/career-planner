@@ -9,13 +9,15 @@ export default function CourseCard({ course }: { course: Course }) {
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <div>
-            <CardTitle className="text-2xl font-bold">{course.name}</CardTitle>
+            <CardTitle className="text-2xl font-bold">
+              {course.course_name}
+            </CardTitle>
             <p className="mt-1 flex items-center text-sm text-muted-foreground">
               <GraduationCap className="mr-1 h-4 w-4" />
-              Grade{course.recommendedGrades.length > 1 ? "s" : ""}{" "}
-              {course.recommendedGrades.length > 1
-                ? `${course.recommendedGrades[0]}-${course.recommendedGrades[course.recommendedGrades.length - 1]}`
-                : course.recommendedGrades[0]}
+              Grade{course.eligible_grades.length > 1 ? "s" : ""}{" "}
+              {course.eligible_grades.length > 1
+                ? `${course.eligible_grades[0]}-${course.eligible_grades[course.eligible_grades.length - 1]}`
+                : course.eligible_grades[0]}
             </p>
           </div>
           <Badge variant="secondary" className="text-sm">
@@ -29,7 +31,9 @@ export default function CourseCard({ course }: { course: Course }) {
             <Scale className="mr-2 h-5 w-5 text-muted-foreground" />
             <div>
               <p className="text-sm font-medium">Weight</p>
-              <p className="text-base font-bold">{course.weight.toFixed(2)}</p>
+              <p className="text-base font-bold">
+                {course.rank_weighting.toFixed(2)}
+              </p>
             </div>
           </div>
           <div className="flex items-center">

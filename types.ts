@@ -129,6 +129,23 @@ export interface FullCareer {
   // where_do_they_work
 }
 
+export const departments = [
+  "Business",
+  "English",
+  "Family and Consumer Science",
+  "Fine Arts",
+  "Foreign Language",
+  "Math",
+  "Technology",
+  "Science",
+] as const;
+
+export const pathways = [
+  "CTE Pathway",
+  "Project Lead The Way (PLTW)",
+  "Science Research Program",
+] as const;
+
 export interface Course {
   course_name: string;
   course_code: string;
@@ -136,8 +153,8 @@ export interface Course {
   rank_weighting: number;
   eligible_grades: number[];
   prerequisites: string[];
-  department: string;
-  pathways: string[];
+  department: (typeof departments)[number];
+  pathway?: (typeof pathways)[number];
   description: string;
 }
 
