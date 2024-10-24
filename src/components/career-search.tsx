@@ -27,23 +27,23 @@ export default function CareerSearch({
   searchText: string;
   setSearchText: Dispatch<SetStateAction<string>>;
   personality: {
-    realistic: number;
-    investigative: number;
-    artistic: number;
-    social: number;
-    enterprising: number;
-    conventional: number;
+    Realistic: number;
+    Investigative: number;
+    Artistic: number;
+    Social: number;
+    Enterprising: number;
+    Conventional: number;
   };
   trainingLevel: number;
   brightOutlook: boolean;
   setPersonality: Dispatch<
     SetStateAction<{
-      realistic: number;
-      investigative: number;
-      artistic: number;
-      social: number;
-      enterprising: number;
-      conventional: number;
+      Realistic: number;
+      Investigative: number;
+      Artistic: number;
+      Social: number;
+      Enterprising: number;
+      Conventional: number;
     }>
   >;
   setTrainingLevel: Dispatch<SetStateAction<number>>;
