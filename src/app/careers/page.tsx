@@ -25,18 +25,23 @@ export default function Careers() {
 
   useEffect(() => {
     setCareers([]);
+    let isCurrent = true;
     void searchCareers(searchText).then((data) => {
       console.log(data);
       if (!data.error && data.occupation) {
         // eslint-disable-next-line @typescript-eslint/no-misused-promises
         data.occupation.forEach(async (career: { code: string }) => {
+          if (!isCurrent) return;
           const careerDetails = await getCareerReport(career.code);
-          if (careerDetails.error) return;
+          if (careerDetails.error || !isCurrent) return;
           if (!careerDetails.career) console.log(careerDetails);
           setCareers((prev) => [...prev, careerDetails]);
         });
       }
     });
+    return () => {
+      isCurrent = false;
+    };
   }, [searchText]);
 
   return (
