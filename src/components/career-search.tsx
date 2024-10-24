@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { type Dispatch, type SetStateAction, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,6 +15,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Filter, Search } from "lucide-react";
 
 export default function CareerSearch({
+  searchText,
+  setSearchText,
   personality,
   trainingLevel,
   brightOutlook,
@@ -22,6 +24,8 @@ export default function CareerSearch({
   setTrainingLevel,
   setBrightOutlook,
 }: {
+  searchText: string;
+  setSearchText: Dispatch<SetStateAction<string>>;
   personality: {
     realistic: number;
     investigative: number;
@@ -72,6 +76,8 @@ export default function CareerSearch({
             type="text"
             placeholder="Search careers..."
             className="w-full py-2 pl-8 pr-4"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
           />
         </div>
         <Popover>

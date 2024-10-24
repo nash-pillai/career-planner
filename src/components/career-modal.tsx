@@ -29,7 +29,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
   const recommendedCourses = courses
     .filter((course) =>
       course.tags.some((tag) =>
-        career.knowledge.group.some(
+        career.knowledge?.group.some(
           (knowledge) => knowledge.title.name === tag,
         ),
       ),
@@ -38,7 +38,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
       const aMatchCount = a.tags.reduce(
         (count, tag) =>
           count +
-          (career.knowledge.group.some((knowledge) =>
+          (career.knowledge?.group.some((knowledge) =>
             knowledge.element.some((element) => element.name === tag),
           )
             ? 1
@@ -48,7 +48,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
       const bMatchCount = b.tags.reduce(
         (count, tag) =>
           count +
-          (career.knowledge.group.some((knowledge) =>
+          (career.knowledge?.group.some((knowledge) =>
             knowledge.element.some((element) => element.name === tag),
           )
             ? 1
@@ -66,9 +66,11 @@ export default function CareerModal({ career }: { career: FullCareer }) {
       <DialogContent className="max-h-[90vh] max-w-[90vw]">
         <DialogHeader>
           <DialogTitle>{career.career.title}</DialogTitle>
-          <DialogDescription>
-            Also known as: {career.career.also_called.title.join(", ")}
-          </DialogDescription>
+          {career.career.also_called && (
+            <DialogDescription>
+              Also known as: {career.career.also_called.title.join(", ")}
+            </DialogDescription>
+          )}
         </DialogHeader>
         <ScrollArea className="h-[calc(90vh-120px)] pr-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -117,7 +119,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {career.knowledge.group.map((group, index) => (
+                {career.knowledge?.group.map((group, index) => (
                   <div key={index} className="mb-4">
                     <h4 className="mb-2 font-semibold">{group.title.name}</h4>
                     <ul className="list-disc pl-5">
@@ -138,7 +140,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {career.skills.group.map((group, index) => (
+                {career.skills?.group.map((group, index) => (
                   <div key={index} className="mb-4">
                     <h4 className="mb-2 font-semibold">{group.title.name}</h4>
                     <ul className="list-disc pl-5">
@@ -159,7 +161,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {career.abilities.group.map((group, index) => (
+                {career.abilities?.group.map((group, index) => (
                   <div key={index} className="mb-4">
                     <h4 className="mb-2 font-semibold">{group.title.name}</h4>
                     <ul className="list-disc pl-5">

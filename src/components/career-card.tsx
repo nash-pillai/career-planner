@@ -34,8 +34,8 @@ export default function CareerCard({ career }: { career: FullCareer }) {
           <p className="text-2xl font-bold">
             $
             {career.job_outlook.salary.annual_median
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+              ?.toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",") ?? "Unavailable"}
             /year
           </p>
         </div>

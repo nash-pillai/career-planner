@@ -6,9 +6,11 @@ import CareerSearch from "@/components/career-search";
 import { getCareerReport, searchCareers } from "@/server/serverActions";
 import { useEffect, useState } from "react";
 import { type FullCareer } from "types";
+import { uniqBy } from "@/lib/utils";
 
 export default function Careers() {
   const [careers, setCareers] = useState<FullCareer[]>([]);
+  const [searchText, setSearchText] = useState("");
 
   const [personality, setPersonality] = useState({
     realistic: 0,
@@ -22,25 +24,27 @@ export default function Careers() {
   const [brightOutlook, setBrightOutlook] = useState(false);
 
   useEffect(() => {
-    void searchCareers().then((data) => {
+    setCareers([]);
+    void searchCareers(searchText).then((data) => {
       console.log(data);
-      if (!data.error) {
+      if (!data.error && data.occupation) {
         // eslint-disable-next-line @typescript-eslint/no-misused-promises
         data.occupation.forEach(async (career: { code: string }) => {
           const careerDetails = await getCareerReport(career.code);
-          // console.log(careerDetails);
-
-          if (!careerDetails.error)
-            setCareers((prev) => [...prev, careerDetails]);
+          if (careerDetails.error) return;
+          if (!careerDetails.career) console.log(careerDetails);
+          setCareers((prev) => [...prev, careerDetails]);
         });
       }
     });
-  }, []);
+  }, [searchText]);
 
   return (
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Careers</h1>
       <CareerSearch
+        searchText={searchText}
+        setSearchText={setSearchText}
         personality={personality}
         trainingLevel={trainingLevel}
         brightOutlook={brightOutlook}
@@ -49,8 +53,11 @@ export default function Careers() {
         setBrightOutlook={setBrightOutlook}
       />
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {careers.map((career) => (
-          <CareerModal key={career.code} career={career} />
+        {uniqBy(careers, (val: FullCareer) => val.code).map((career) => (
+          <CareerModal
+            key={`${career.code}-${career.career.title}`}
+            career={career}
+          />
         ))}
       </div>
     </div>

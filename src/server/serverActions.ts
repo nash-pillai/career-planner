@@ -3,7 +3,7 @@
 import { type FullCareer } from "types";
 import { oNetApi } from "./serverUtils";
 
-export async function searchCareers() {
+export async function searchCareers(searchText: string) {
   return await oNetApi<{
     keyword: string;
     start: number;
@@ -17,14 +17,16 @@ export async function searchCareers() {
       title: string;
       tags: Record<string, boolean>;
     }[];
-  }>("online/search?keyword=software");
+  }>(`online/search?keyword=${searchText}`);
 }
 
 export async function getCareerReport(code: string) {
+  const careerData = await oNetApi<FullCareer>(`mnm/careers/${code}/report`);
+  if (careerData.error || !careerData.career) return { error: true as const };
   return {
     knowledge: { group: [] },
     skills: { group: [] },
     abilities: { group: [] },
-    ...(await oNetApi<FullCareer>(`mnm/careers/${code}/report`)),
+    ...careerData,
   };
 }

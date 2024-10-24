@@ -32,7 +32,7 @@ export interface CareerGroup {
 export interface FullCareer {
   code: string;
   career: CareerListing & {
-    also_called: {
+    also_called?: {
       title: string[];
     };
     what_they_do: string;
@@ -40,13 +40,13 @@ export interface FullCareer {
       task: string[];
     };
   };
-  knowledge: {
+  knowledge?: {
     group: CareerGroup[];
   };
-  skills: {
+  skills?: {
     group: CareerGroup[];
   };
-  abilities: {
+  abilities?: {
     group: CareerGroup[];
   };
   personality: {
@@ -55,7 +55,7 @@ export interface FullCareer {
       title: string;
       description: string;
     };
-    work_styles: {
+    work_styles?: {
       element: CareerGroup["element"];
     };
   };
