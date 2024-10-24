@@ -6,7 +6,7 @@ import { ThumbsDown, ThumbsUp, ArrowLeft, ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import {
   allQuestions,
-  personalityAreas,
+  type personalityAreas,
   ratings,
   trainingLevel,
 } from "@/lib/constants";
@@ -53,8 +53,32 @@ export default function Quiz() {
     }
   }, [questionIndex, selectedRatings]);
 
+  const answerQuestion = (rating: string, index: number) => {
+    setSelectedRatings([
+      ...selectedRatings.slice(0, questionIndex),
+      index,
+      ...selectedRatings.slice(questionIndex + 1),
+    ]);
+    if (questionIndex === allQuestions.length + 1)
+      router.push(
+        `/careers?${Object.entries(results)
+          .map(([area, rating]) => `${area}=${rating}`)
+          .join("&")}${
+          selectedTrainingLevel ? `&job_zone=${selectedTrainingLevel + 1}` : ""
+        }`,
+      );
+    else setQuestionIndex(questionIndex + 1);
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center space-y-12 p-12">
+    <div
+      className="flex flex-col items-center justify-center space-y-12 p-12"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (["1", "2", "3", "4", "5"].includes(e.key))
+          answerQuestion(ratings[+e.key - 1]!, +e.key - 1);
+      }}
+    >
       <h1 className="text-4xl font-bold">Quiz</h1>
       <div className="mx-auto w-full max-w-3xl space-y-6 p-6">
         {questionIndex === -1 && (
@@ -86,13 +110,7 @@ export default function Quiz() {
                       : "outline"
                   }
                   className="flex h-24 w-full flex-col items-center justify-center p-2"
-                  onClick={() =>
-                    setSelectedRatings([
-                      ...selectedRatings.slice(0, questionIndex),
-                      index,
-                      ...selectedRatings.slice(questionIndex + 1),
-                    ])
-                  }
+                  onClick={() => answerQuestion(rating, index)}
                 >
                   {index === 0 && <ThumbsDown className="mb-2 h-6 w-6" />}
                   {index === 4 && <ThumbsUp className="mb-2 h-6 w-6" />}
@@ -100,13 +118,10 @@ export default function Quiz() {
                 </Button>
               ))}
             </div>
-            {selectedRatings[questionIndex] ? (
-              <p className="text-center text-muted-foreground">
-                You selected: {ratings[selectedRatings[questionIndex]]}
-              </p>
-            ) : (
-              <div className="h-6" />
-            )}
+            <p className="text-center text-muted-foreground">
+              Select a rating by clicking the option or pressing 1-5 on your
+              keyboard
+            </p>
           </>
         )}
         {questionIndex === allQuestions.length && (
@@ -209,13 +224,6 @@ export default function Quiz() {
                 </Button>
               ))}
             </div>
-            {selectedRatings[questionIndex] ? (
-              <p className="text-center text-muted-foreground">
-                You selected: {ratings[selectedRatings[questionIndex]]}
-              </p>
-            ) : (
-              <div className="h-6" />
-            )}
           </>
         )}
         <div className="flex justify-between">
@@ -232,7 +240,7 @@ export default function Quiz() {
               selectedRatings[questionIndex] === undefined &&
               !(questionIndex >= allQuestions.length || questionIndex < 0)
             }
-            className="flex items-center"
+            className={`flex items-center ${questionIndex === -1 ? "" : "invisible"}`}
             onClick={() =>
               questionIndex === allQuestions.length + 1
                 ? router.push(
