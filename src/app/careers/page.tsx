@@ -38,7 +38,7 @@ export default function Careers() {
   );
 
   useEffect(() => {
-    if (Object.values(personality).some((val) => val > 0)) return;
+    if (filterOn) return;
     setCareers([]);
     let isCurrent = true;
     void searchCareers(searchText).then((data) => {
@@ -61,7 +61,7 @@ export default function Careers() {
   }, [searchText]);
 
   useEffect(() => {
-    if (!Object.values(personality).some((val) => val > 0)) return;
+    if (!filterOn) return;
     setCareers([]);
     let isCurrent = true;
     void careersByInterest({
