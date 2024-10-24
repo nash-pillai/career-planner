@@ -105,7 +105,7 @@ export default function Careers() {
   }, [personality, trainingLevel, brightOutlook, searchText]);
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-12 p-12">
+    <div className="flex min-h-[calc(100vh-28rem)] flex-col items-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Careers</h1>
       <CareerSearch
         searchText={searchText}
