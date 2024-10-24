@@ -363,19 +363,19 @@ export default function CareerModal({
                   <div>
                     <h4 className="mb-2 font-semibold">Annual Income</h4>
                     <p>
-                      Median: $
+                      Median:
                       {career.job_outlook.salary.annual_median
                         ? `$${career.job_outlook.salary.annual_median.toLocaleString()}`
                         : "Unavailable"}
                     </p>
                     <p>
-                      10th Percentile: $
+                      10th Percentile:
                       {career.job_outlook.salary.annual_10th_percentile
                         ? `$${career.job_outlook.salary.annual_10th_percentile.toLocaleString()}`
                         : "Unavailable"}
                     </p>
                     <p>
-                      90th Percentile: $
+                      90th Percentile:
                       {career.job_outlook.salary.annual_90th_percentile
                         ? `$${career.job_outlook.salary.annual_90th_percentile.toLocaleString()}`
                         : "Unavailable"}
