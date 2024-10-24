@@ -60,7 +60,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
 
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger className="flex h-full text-left">
         <CareerCard career={career} />
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] max-w-[90vw]">

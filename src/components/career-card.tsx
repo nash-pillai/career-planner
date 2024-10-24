@@ -5,7 +5,7 @@ import { type FullCareer } from "types";
 
 export default function CareerCard({ career }: { career: FullCareer }) {
   return (
-    <Card className="mx-auto w-full max-w-md">
+    <Card className="mx-auto h-full w-full max-w-md">
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <div>
