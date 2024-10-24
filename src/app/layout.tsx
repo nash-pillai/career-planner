@@ -5,9 +5,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Career Planner",
-  description: "Plan your future career with Career Planner!",
-  icons: [{ rel: "icon", url: "/compass.png" }],
+  title: "North Star",
+  description: "Plan your future career with North Star!",
 };
 
 export default function RootLayout({
