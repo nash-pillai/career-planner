@@ -18,6 +18,7 @@ export default function Careers() {
   const [careers, setCareers] = useState<(FullCareer & { index: number })[]>(
     [],
   );
+  const [loading, setLoading] = useState(false);
   const [searchText, setSearchText] = useState("");
 
   const [personality, setPersonality] = useState({
@@ -40,19 +41,24 @@ export default function Careers() {
   useEffect(() => {
     if (filterOn) return;
     setCareers([]);
+    setLoading(true);
     let isCurrent = true;
     void searchCareers(searchText).then((data) => {
       if (data.error || !data.occupation) return;
       // eslint-disable-next-line @typescript-eslint/no-misused-promises
-      data.occupation.forEach(async (career: { code: string }, i) => {
-        if (!isCurrent) return;
-        const careerDetails = await getCareerReport(career.code);
-        if (careerDetails.error || !isCurrent) return;
-        setCareers((prev) =>
-          [...prev, { index: i, ...careerDetails }].sort(
-            (a, b) => a.index - b.index,
-          ),
-        );
+      void Promise.all(
+        data.occupation.map(async (career: { code: string }, i) => {
+          if (!isCurrent) return;
+          const careerDetails = await getCareerReport(career.code);
+          if (careerDetails.error || !isCurrent) return;
+          setCareers((prev) =>
+            [...prev, { index: i, ...careerDetails }].sort(
+              (a, b) => a.index - b.index,
+            ),
+          );
+        }),
+      ).then(() => {
+        if (isCurrent) setLoading(false);
       });
     });
     return () => {
@@ -63,6 +69,7 @@ export default function Careers() {
   useEffect(() => {
     if (!filterOn) return;
     setCareers([]);
+    setLoading(true);
     let isCurrent = true;
     void careersByInterest({
       personality,
@@ -70,23 +77,27 @@ export default function Careers() {
       // brightOutlook,
     }).then((data) => {
       if (data.error || !data.career) return;
-      data.career.forEach(
-        // eslint-disable-next-line @typescript-eslint/no-misused-promises
-        async (career: { code: string; title: string }, i) => {
-          if (
-            !isCurrent ||
-            !career.title.toLowerCase().includes(searchText.toLowerCase())
-          )
-            return;
-          const careerDetails = await getCareerReport(career.code);
-          if (careerDetails.error || !isCurrent) return;
-          setCareers((prev) =>
-            [...prev, { index: i, ...careerDetails }].sort(
-              (a, b) => a.index - b.index,
-            ),
-          );
-        },
-      );
+      void Promise.all(
+        data.career.map(
+          // eslint-disable-next-line @typescript-eslint/no-misused-promises
+          async (career: { code: string; title: string }, i) => {
+            if (
+              !isCurrent ||
+              !career.title.toLowerCase().includes(searchText.toLowerCase())
+            )
+              return;
+            const careerDetails = await getCareerReport(career.code);
+            if (careerDetails.error || !isCurrent) return;
+            setCareers((prev) =>
+              [...prev, { index: i, ...careerDetails }].sort(
+                (a, b) => a.index - b.index,
+              ),
+            );
+          },
+        ),
+      ).then(() => {
+        if (isCurrent) setLoading(false);
+      });
     });
     return () => {
       isCurrent = false;
@@ -117,6 +128,15 @@ export default function Careers() {
           />
         ))}
       </div>
+      {loading && careers.length === 0 && (
+        <div className="m-auto text-center text-xl">Loading...</div>
+      )}
+      {!loading && careers.length === 0 && (
+        <div className="m-auto text-center text-xl">
+          No careers found. Try removing filters or using different search
+          terms.
+        </div>
+      )}
     </div>
   );
 }
