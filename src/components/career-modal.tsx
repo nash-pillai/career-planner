@@ -40,17 +40,17 @@ export default function CareerModal({
         return (
           career.knowledge?.group.some(
             (knowledge) =>
-              knowledge.title.id === id ??
+              knowledge.title.id === id ||
               knowledge.element.some((element) => element.id === id),
           ) ??
           career.skills?.group.some(
             (skill) =>
-              skill.title.id === id ??
+              skill.title.id === id ||
               skill.element.some((element) => element.id === id),
           ) ??
           career.abilities?.group.some(
             (ability) =>
-              ability.title.id === id ??
+              ability.title.id === id ||
               ability.element.some((element) => element.id === id),
           )
         );
