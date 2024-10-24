@@ -2198,7 +2198,12 @@ export const courses = [
       "Successful completion of Honors or Regents Chemistry",
       "An average of 85 or higher in all previous Honors level science courses; OR an average of 90 or higher in all previous Regents level science courses",
     ],
-    tags: ["Biological Science", "Physical Science", "Biology"],
+    tags: [
+      "Biological Science",
+      "Physical Science",
+      "Biology",
+      "Health Services",
+    ],
     description:
       "This course is a college level course which follows the curriculum for the Dutchess Community College Bio 105 & 106 curricula courses. This course serves as an interdisciplinary study of basic biological concepts, including the nature of science, matter, the cell, characteristics of living matter, a brief survey of the living world, ecology, homeostasis in organisms, genetics, evolution and a consideration of the structure and function of tissues, organs and organ systems. This course assumes a high school level of chemistry knowledge. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. This course may include labs with dissection components. Enrolled students are eligible for DCC credits for an additional fee payable directly to the College. The final exams are approved by Dutchess Community College. Successful completion of these exams can result in up to 8 college credits issued by Dutchess Community College.",
   },
@@ -2358,7 +2363,12 @@ export const courses = [
       "Successful completion of Living Environment",
       "Successful completion of at least 1 other physical science course",
     ],
-    tags: ["Biology", "Biological Science", "Physical Science"],
+    tags: [
+      "Biology",
+      "Biological Science",
+      "Physical Science",
+      "Health Services",
+    ],
     description:
       "The Animal Science course is designed to introduce students to the world of animal agriculture. Students will engage in hands-on-laboratory activities and projects. At the completion of the course, students will submit a comprehensive Producer’s Management Guide for the animal of their choice. Major topics include, but are not limited to: History & Use of Animals, Animal Handling & Safety, Cells & Tissues, Animal Nutrition, Animal Reproduction, Genetics, Animal Health, Animal Products & Marketing.",
   },

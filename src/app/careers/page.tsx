@@ -31,7 +31,11 @@ export default function Careers() {
   const [trainingLevel, setTrainingLevel] = useState(0);
   const [brightOutlook, setBrightOutlook] = useState(false);
 
-  const [filterOn, setFilterOn] = useState(false);
+  const [filterOn, setFilterOn] = useState(
+    Object.values(personality).some((val) => val > 0) ??
+      trainingLevel > 0 ??
+      brightOutlook,
+  );
 
   useEffect(() => {
     if (Object.values(personality).some((val) => val > 0)) return;
