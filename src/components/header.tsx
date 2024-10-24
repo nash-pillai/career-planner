@@ -40,7 +40,7 @@ export default function Header() {
               <li key="questionnaire">
                 <Link
                   href="/quiz"
-                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-300"} duration-300 hover:text-blue-700`}
+                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-400"} duration-300 hover:text-blue-700`}
                 >
                   Questionnaire
                 </Link>
@@ -48,7 +48,7 @@ export default function Header() {
               <li key="careers" className="flex-grow text-center">
                 <Link
                   href="/careers"
-                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-300"} duration-300 hover:text-blue-700`}
+                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-400"} duration-300 hover:text-blue-700`}
                 >
                   Careers
                 </Link>
@@ -56,7 +56,7 @@ export default function Header() {
               <li key="courses">
                 <Link
                   href="/courses"
-                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-300"} duration-300 hover:text-blue-700`}
+                  className={`text-lg ${isHovered ? "font-semibold text-blue-900" : "text-stone-400"} duration-300 hover:text-blue-700`}
                 >
                   Courses
                 </Link>

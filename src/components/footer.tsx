@@ -10,14 +10,14 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src="/northstar.png"
-                alt="Career Planner Logo"
+                alt="North Star Logo"
                 width={60}
                 height={60}
                 className="mb-4"
               />
             </Link>
             <p className="text-center text-xl text-gray-600 md:text-left">
-              Plan your future career with Career Planner!
+              Plan your future career with North Star!
             </p>
           </div>
           <div>
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold text-gray-900">
-              Career Planner
+              North Star
             </h3>
             <ul className="space-y-2">
               <li>
@@ -67,8 +67,28 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8">
+        <div>
+          <p className="text-center">
+            <a
+              href="https://services.onetcenter.org/"
+              title="This site incorporates information from ONET Web Services. Click to learn more."
+            >
+              <Image
+                src="https://www.onetcenter.org/image/link/onet-in-it.svg"
+                className="border-none"
+                alt="ONET in-it"
+                width={130}
+                height={60}
+              />
+            </a>
+          </p>
           <p className="text-sm text-gray-400">
+            This site incorporates information from{" "}
+            <a href="https://services.onetcenter.org/">O*NET Web Services</a> by
+            the U.S. Department of Labor, Employment and Training Administration
+            (USDOL/ETA). O*NET&reg; is a trademark of USDOL/ETA.
+          </p>
+          <p className="mt-3 pt-3 text-sm text-gray-400">
             North Star • Copyright © {new Date().getFullYear()}
           </p>
         </div>
