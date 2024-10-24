@@ -1,9 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Building, GraduationCap, DollarSign } from "lucide-react";
-import { type FullCareer } from "types";
+import { MatchingCareer, type FullCareer } from "types";
 
-export default function CareerCard({ career }: { career: FullCareer }) {
+export default function CareerCard({
+  career,
+  fit,
+}: {
+  career: FullCareer;
+  fit?: MatchingCareer["fit"];
+}) {
   return (
     <Card className="mx-auto h-full w-full max-w-md">
       <CardHeader className="pb-4">
@@ -17,6 +23,16 @@ export default function CareerCard({ career }: { career: FullCareer }) {
                 {career.company}
               </p> */}
           </div>
+          {fit && (
+            <Badge
+              variant={
+                fit === "Best" ? "purple" : fit === "Great" ? "blue" : "yellow"
+              }
+              className="whitespace-nowrap text-sm"
+            >
+              {fit}
+            </Badge>
+          )}
           {career.career.tags.bright_outlook && (
             <Badge variant="green" className="whitespace-nowrap text-sm">
               Bright Outlook

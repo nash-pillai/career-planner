@@ -20,13 +20,18 @@ import {
   User,
   Cpu,
 } from "lucide-react";
-import { type FullCareer } from "types";
+import { MatchingCareer, type FullCareer } from "types";
 import CareerCard from "./career-card";
 import { courses } from "@/lib/courses";
-import CourseCard from "./course-card";
 import CourseModal from "./course-modal";
 
-export default function CareerModal({ career }: { career: FullCareer }) {
+export default function CareerModal({
+  career,
+  fit,
+}: {
+  career: FullCareer;
+  fit?: MatchingCareer["fit"];
+}) {
   const recommendedCourses = courses
     .filter((course) =>
       course.tags.some((tag) =>
@@ -62,7 +67,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
   return (
     <Dialog>
       <DialogTrigger className="flex h-full text-left">
-        <CareerCard career={career} />
+        <CareerCard career={career} fit={fit} />
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] max-w-[90vw]">
         <DialogHeader>

@@ -57,6 +57,7 @@ export default function Careers() {
           <CareerModal
             key={`${career.code}-${career.career.title}`}
             career={career}
+            // fit={career.fit}
           />
         ))}
       </div>
