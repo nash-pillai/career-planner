@@ -24,6 +24,7 @@ import { MatchingCareer, type FullCareer } from "types";
 import CareerCard from "./career-card";
 import { courses } from "@/lib/courses";
 import CourseModal from "./course-modal";
+import { educationTags } from "@/lib/constants";
 
 export default function CareerModal({
   career,
@@ -34,38 +35,113 @@ export default function CareerModal({
 }) {
   const recommendedCourses = courses
     .filter((course) =>
-      course.tags.some((tag) =>
-        career.knowledge?.group.some(
-          (knowledge) => knowledge.title.name === tag,
-        ),
-      ),
+      course.tags.some((tag) => {
+        const id = educationTags.find((eduTag) => eduTag.name === tag)?.code;
+        return (
+          career.knowledge?.group.some(
+            (knowledge) =>
+              knowledge.title.id === id ??
+              knowledge.element.some((element) => element.id === id),
+          ) ??
+          career.skills?.group.some(
+            (skill) =>
+              skill.title.id === id ??
+              skill.element.some((element) => element.id === id),
+          ) ??
+          career.abilities?.group.some(
+            (ability) =>
+              ability.title.id === id ??
+              ability.element.some((element) => element.id === id),
+          )
+        );
+      }),
     )
     .sort((a, b) => {
-      const aMatchCount = a.tags.reduce(
-        (count, tag) =>
-          count +
-          (career.knowledge?.group.some((knowledge) =>
-            knowledge.element.some((element) => element.name === tag),
-          )
-            ? 1
-            : 0),
-        0,
-      );
-      const bMatchCount = b.tags.reduce(
-        (count, tag) =>
-          count +
-          (career.knowledge?.group.some((knowledge) =>
-            knowledge.element.some((element) => element.name === tag),
-          )
-            ? 1
-            : 0),
-        0,
-      );
+      const aMatchCount =
+        a.tags.reduce((count, tag) => {
+          const id = educationTags.find((eduTag) => eduTag.name === tag)?.code;
+          return (
+            count +
+            (career.knowledge?.group.reduce(
+              (knowledgeCount, knowledge) =>
+                knowledgeCount +
+                (knowledge.title.id === id ? 1 : 0) +
+                knowledge.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0) +
+            (career.abilities?.group.reduce(
+              (abilityCount, ability) =>
+                abilityCount +
+                (ability.title.id === id ? 1 : 0) +
+                ability.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0) +
+            (career.skills?.group.reduce(
+              (skillCount, skill) =>
+                skillCount +
+                (skill.title.id === id ? 1 : 0) +
+                skill.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0)
+          );
+        }, 0) / a.tags.length;
+      const bMatchCount =
+        b.tags.reduce((count, tag) => {
+          const id = educationTags.find((eduTag) => eduTag.name === tag)?.code;
+          return (
+            count +
+            (career.knowledge?.group.reduce(
+              (knowledgeCount, knowledge) =>
+                knowledgeCount +
+                (knowledge.title.id === id ? 1 : 0) +
+                knowledge.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0) +
+            (career.abilities?.group.reduce(
+              (abilityCount, ability) =>
+                abilityCount +
+                (ability.title.id === id ? 1 : 0) +
+                ability.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0) +
+            (career.skills?.group.reduce(
+              (skillCount, skill) =>
+                skillCount +
+                (skill.title.id === id ? 1 : 0) +
+                skill.element.reduce(
+                  (elementCount, element) =>
+                    elementCount + (element.id === id ? 1 : 0),
+                  0,
+                ),
+              0,
+            ) ?? 0)
+          );
+        }, 0) / b.tags.length;
       return bMatchCount - aMatchCount;
     });
 
   return (
-    <Dialog>
+    <Dialog onOpenChange={() => console.log(career)}>
       <DialogTrigger className="flex h-full text-left">
         <CareerCard career={career} fit={fit} />
       </DialogTrigger>
@@ -194,7 +270,7 @@ export default function CareerModal({
                       {category.title.name}
                     </h4>
                     <ul className="list-disc pl-5">
-                      {category.example.map((element, elementIndex) => (
+                      {category.example?.map((element, elementIndex) => (
                         <li key={elementIndex} className="flex items-center">
                           {element.name}
                           {element.hot_technology && (

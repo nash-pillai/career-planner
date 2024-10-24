@@ -11,7 +11,12 @@ export const courses = [
     pathway: "CTE Pathway",
     description:
       "College and Career Planning is one of our required courses for the CTE pathway. It is designed to give you the big picture about where your life might go in the future. You take personality and interest tests to help you make an informed decision about a good field to pursue. You look at colleges and student funding, and you plan a budget for your first shot at living on your own. You explore the basics of employment law, and consider the differences in working in different types of organizations: the military, government agencies, big business, small business, entrepreneurial endeavors and trade unions. You consider the management styles you are most likely to encounter in different working environments. Finally, you set personal, professional, and financial goals for your 60-year-old self.",
-    tags: ["Education and Training", "Education"],
+    tags: [
+      "Education and Training",
+      "Education",
+      "Resource Management Skills",
+      "Business and Management",
+    ],
   },
   {
     department: "Business",
@@ -28,6 +33,7 @@ export const courses = [
       "Computers and Electronics",
       "Telecommunications",
       "Computers and Electronics",
+      "Information Technology",
     ],
   },
   {
@@ -41,7 +47,12 @@ export const courses = [
     pathway: "CTE Pathway",
     description:
       "Every adult should have a basic grasp of finances! As you prepare to navigate through life, this course helps prepare you to be an educated consumer. Topics include emergency funds, budgeting, goal setting, paying for college, avoiding debt, insurance, investing, and retirement planning. Students have the opportunity to earn W!se Certification in financial literacy. This course is core to the CTE pathway.",
-    tags: ["Economics and Accounting", "Business and Management", "Basic Math"],
+    tags: [
+      "Economics and Accounting",
+      "Business and Management",
+      "Basic Math",
+      "Management of Financial Resources",
+    ],
   },
   {
     department: "Business",
@@ -63,6 +74,12 @@ export const courses = [
       "Business Vocational",
       "Business and Management",
       "Personnel and Human Resources",
+      "Management of Financial Resources",
+      "Management of Material Resources",
+      "Management of Personnel Resources",
+      "Management/Administration",
+      "Business Initiatives",
+      "Enterprising",
     ],
   },
   {
@@ -85,6 +102,14 @@ export const courses = [
       "Business Vocational",
       "Business and Management",
       "Personnel and Human Resources",
+      "Management of Financial Resources",
+      "Management of Material Resources",
+      "Management of Personnel Resources",
+      "Management/Administration",
+      "Sales and Marketing",
+      "Sales",
+      "Business Initiatives",
+      "Enterprising",
     ],
   },
   {
@@ -100,12 +125,13 @@ export const courses = [
       "Work-Based Learning (Business Co-Op) provides students the opportunity to work and receive high school credit while exploring career options. Students reflect on business courses and apply them in real-world work experiences, submitting journals and pay stubs for credit. This course can be taken in both junior and senior years.",
     tags: [
       "Business and Management",
-      "Education and Training",
-      "Business and Management",
       "Economics and Accounting",
       "Business Vocational",
       "Business and Management",
       "Personnel and Human Resources",
+      "Management of Financial Resources",
+      "Management of Material Resources",
+      "Management of Personnel Resources",
     ],
   },
   {
@@ -121,6 +147,9 @@ export const courses = [
       "Business and Management",
       "Business Vocational",
       "Business and Management",
+      "Law",
+      "Business Initiatives",
+      "Enterprising",
     ],
     description:
       "Business Law provides an understanding of legal rights and responsibilities in various situations, including school, car purchases, and courtroom proceedings. This course is a foundation for other business courses like Business Ownership and Sports & Entertainment Law.",
@@ -133,7 +162,7 @@ export const courses = [
     eligible_grades: [9, 10, 11, 12],
     credits: 0.5,
     rank_weighting: 1.0,
-    tags: ["Law and Government", "Physical Education"],
+    tags: ["Law and Government", "Physical Education", "Athletics"],
     description:
       "Do you like to prove a point? Are you the person who enjoys defending others? Maybe you are a huge sports fan, but do not consider yourself an athlete. Or perhaps you'd prefer to explore how the law impacts the Entertainment industry. No problem! This course will explore how the law impacts sports and entertainment. Find out what power the NCAA has over student-athletes and why players are in a union. Learn why individuals in the movie, television, music, or theater industries need to know about the law. You will study legal cases related to these industries. You will have the opportunity to review areas of law that include contracts, labor law, collective bargaining, discrimination, employment, crimes, constitutional and common law, discrimination, securities, copyright infringement, the right of privacy, libel, slander, defamation, advertising, tax, plus many more. See how you can feed your interest to work in the Sports or Entertainment industry from the legal side.",
   },
@@ -151,6 +180,7 @@ export const courses = [
       "Computer Science",
       "Design",
       "Arts",
+      "Programming",
     ],
     description:
       "Plug in your imagination for this ½ credit course in computer gaming. All types of students are encouraged to learn the basics of coding in a social and creative environment. Using drag and drop block code in Scratch, you will work individually and in teams to learn how to use loops, conditionals, variables, and functions to make games. You will even have a chance to use graphic software to design your own playing pieces and take a turn programming your own background music. This course is a great choice for anyone considering a career in Computer Science, Business Information Systems, or any STEM field. Most STEM majors require one or more courses in computer science. Students who have had exposure to coding in high school do significantly better in CS courses in college. By taking this in high school, you get to learn the basics of computational thinking in a low-stakes environment where the learning feels like fun.",
@@ -163,7 +193,14 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: ["Computer Game Design (or Proficiency on local exam)"],
-    tags: ["Computers and Electronics", "Design", "Computer Science", "Design"],
+    tags: [
+      "Computers and Electronics",
+      "Design",
+      "Computer Science",
+      "Design",
+      "Arts",
+      "Programming",
+    ],
     description:
       "This is a course for creative people. This ½ credit course is offered in the spring after the prerequisite Computer Game Design. It uses drag and drop blocks to code, but moves from games into business applications. MIT App Inventor offers more sophisticated logic and gives you the chance to use mobile features like GPS, the accelerometer, text messaging, and voice recognition in your apps. This course is a great choice for anyone considering a career in Computer Science, Business Information Systems, or any STEM field. Most STEM majors require one or more courses in computer science. Students who have had exposure to coding in high school do significantly better in CS courses in college. By taking this course in high school, you get to learn the basics of computational thinking in a low-stakes environment where the learning feels like fun. Bring your creativity to make it beautiful, make it sing, make it dance, and maybe even make some money.",
   },
@@ -180,6 +217,7 @@ export const courses = [
       "Economics and Accounting",
       "Basic Math",
       "Mathematics",
+      "Management of Financial Resources",
     ],
     description:
       "Does hearing the word math send shivers down your spine? Do you ever wonder how you will use the math taught in class? Your wondering days are over! This class will teach you what you need to know to master the financial challenges you will face after graduation. From calculating the cost of a car loan to determining which credit card gives you the best options, these topics are real-world, every day! Find out how much sales tax you need to pay before you make a purchase. Financial Math is the course that will help build your understanding of the mathematical practices to solve problems found in the real-world, including banking, finance, salary and income, payroll, loans, and insurance. For those not interested in taking Algebra 2, this course satisfies the 3rd year of Math required for graduation.",
@@ -192,7 +230,12 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: [],
-    tags: ["Economics and Accounting", "Basic Math", "Mathematics"],
+    tags: [
+      "Economics and Accounting",
+      "Basic Math",
+      "Mathematics",
+      "Management of Financial Resources",
+    ],
     description:
       "Learn the language of money. Many consider accounting to be the best route to a successful career in business because accounting has always been considered the language and basic tool of every business. Learn to analyze, record, classify, summarize, and interpret accounting data for all types of businesses. Accounting is not a math course, but a study of money. We will discuss where it comes from, where it goes, and how much it has changed. Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College.",
   },
@@ -204,7 +247,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.1,
     prerequisites: ["3 social studies credits"],
-    tags: ["Economics and Accounting", "Basic Math", "Mathematics"],
+    tags: [
+      "Economics and Accounting",
+      "Basic Math",
+      "Mathematics",
+      "Management of Financial Resources",
+    ],
     description:
       "This course satisfies the graduation requirement of a ½ credit in economics and may be taken instead of D655- Economics. This course emphasizes how economics affects you right now and provides insights into why all entrepreneurs want to come to America. Learn critical communication skills, including how to debate important economic topics that are valuable, regardless of your career path. You will even have the opportunity to learn how to make money in the stock market! Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College.",
   },
@@ -219,6 +267,7 @@ export const courses = [
     tags: [
       "Sales and Marketing",
       "Communications and Media",
+      "Marketing/Advertising",
       "Telecommunications",
     ],
     description:
@@ -236,6 +285,10 @@ export const courses = [
       "Education and Training",
       "Business and Management",
       "Business Vocational",
+      "Management of Financial Resources",
+      "Management of Material Resources",
+      "Management of Personnel Resources",
+      "Management/Administration",
     ],
     description:
       "If you are a senior and have not taken a business elective but are interested in earning one credit while working, consider Diversified Work-Based Learning (Diversified Co-Op)! Gain valuable work experience that can launch your career. Not sure what your career plan is after high school? The work experience combined with online classroom activities will allow you to connect what you are learning in the classroom to the skills required for success in today’s workplace. You will earn a credit toward graduation too! Students must complete assignments virtually to help prepare them for employment. Students are required to be employed, and submit reflective journals and copies of their pay stubs to the supervisor.",
@@ -248,7 +301,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Humanities", "Business and Management", "Philosophy and Theology"],
+    tags: [
+      "Humanities",
+      "Business and Management",
+      "Philosophy and Theology",
+      "Judgment and Decision Making",
+    ],
     description:
       "Ethics & Decision Making is the study of how to make decisions. Every day we are faced with numerous decisions. Some seem easy and some difficult. Every decision requires thought: but many times we think of our own short term benefit. Students examine what they believe, and why they believe it, by actively participating in solution planning, debates, and case studies. Ethics & Decision Making focuses not on “right versus wrong”, but on thought development and the process of making a decision. Are we thinking of others? Our family? Our school? Our community? Our environment? For today, and beyond? Elements of interest to students include, but are not limited to: Personal Law, Consumer Rights, Individual Rights, Education, Medicine, Business Decisions, Animal Rights, Economics & Poverty, and the Environment.",
   },
@@ -263,9 +321,17 @@ export const courses = [
       "Completion of Geometry with a grade of 80+ or any student who has earned a 90 or higher in Computer Programming, Computer Game Design, Mobile App Development, or Web Design.",
     ],
     pathway: "CTE Pathway",
-    tags: ["Computer Science", "Computers and Electronics"],
+    tags: [
+      "Computer Science",
+      "Computers and Electronics",
+      "Mathematics and Science",
+      "Engineering and Technology",
+      "Programming",
+      "Information Technology",
+      "Mathematics",
+    ],
     description:
-      "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/ hex conversions, data storage and transmission protocols, data visualization ofpublicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May.",
+      "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/ hex conversions, data storage and transmission protocols, data visualization of publicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May.",
   },
   {
     department: "English",
@@ -280,6 +346,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "The first year of high school is an opportunity for students to begin the journey that will lead them to who they become as adults in our world. In English 9, students will read a variety of fiction and non-fiction texts in order to explore ideas and concepts dealing with identity, self-discovery, personal journeys, power struggles, conformity and nonconformity, and digital citizenship. Students will demonstrate critical thinking, learn how to identify various forms of author’s craft to aid their analyses of texts, and express their ideas through writing and speaking.",
@@ -299,6 +369,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Honors classes generally incorporate more reading, writing and discussion and at a higher level, and use more challenging text books and other materials.",
@@ -318,6 +392,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "This course provides support in ELA skills and strategies in order to meet NY State Standards in English Language Arts. A variety of texts will be used to further develop skills and strategies.",
@@ -335,6 +413,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Second-year high school students will continue to explore their emerging independence that they began to cultivate on their ninth grade journey. In English 10, through a variety of genres, students will expand their world of reading and writing through more complex and diverse topics, such as understanding contemporary issues, contemplating moral and ethical questions, and coming to terms with difficult historical moments. In addition to adding new and more sophisticated writing skills involving fiction, students will involve themselves with more argument and opinion writing as they begin to find their voices.",
@@ -354,6 +436,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Honors classes generally incorporate more reading, writing and discussion and at a higher level, and use more challenging text books and other materials.",
@@ -371,6 +457,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "These two courses are intended for identified students who need to further develop their literacy skills in order to be successful in their course work. An emphasis will be placed on essential skills and strategies to help students read, write, listen, think, and speak effectively. A variety of texts will be used to further develop students’ skills and strategies.",
@@ -388,6 +478,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "These two courses are intended for identified students who need to further develop their literacy skills in order to be successful in their course work. An emphasis will be placed on essential skills and strategies to help students read, write, listen, think, and speak effectively. A variety of texts will be used to further develop students’ skills and strategies.",
@@ -405,6 +499,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "While students will spend a good portion of 11th grade English honing the skills they will need to excel on the Regents Examination, they will also have the opportunity to enrich their writing skills as they begin preparing for college-level writing and thinking. Much of the emphasis in English 11 will lie on the canon of American literature while leveling up sophistication in essay writing, developing the ability to write complex thesis statements, developing and supporting more nuanced arguments in writing and in speech, and writing a wide range of pieces: creative, short analysis, five-paragraph essays, research papers, presentations, and other projects.",
@@ -424,6 +522,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Students will learn about the elements of argument and composition as they develop critical reading and writing skills. They will read and analyze nonfiction from various periods and write essays with different aims: for example, to explain an idea, argue a point, or persuade a reader. Students are expected to take the Regents Examination in English in January and the AP exam for the course in May. There is a fee for this exam, which is the responsibility of the student.",
@@ -441,6 +543,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "This course will explore the identity of self through the concept of journeys, major cultural events/ movements, and an author’s ability to tell a story. Literature and nonfiction works will be analyzed to reveal challenges and how the meeting or succumbing to these challenges shapes one’s identity of self. Emphasis will be placed on cultural factors and how the world community influences its individual inhabitants.",
@@ -460,6 +566,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "This is an introductory college-level literary analysis course. Students cultivate their understanding of literature through reading and analyzing texts while exploring concepts such as character, setting, structure, perspective, figurative language and literary analysis in the context of literary works. Students are expected to take the AP exam in May. There is a fee for the exam, which is the responsibility of the student. NOTE: This course, equivalent in difficulty to a second year college English course, is designed for the exceptional student who wishes to accept the challenge of a college-level literature and writing course.",
@@ -480,6 +590,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Students will explore principles of college writing, narrative and expository writing, argumentative writing, traditional rhetorical modes, effective composing, revising and editing strategies, MLA conventions, critical reading skills, critical thinking skills, and using language appropriately and imaginatively. Enrolled students are eligible for college credits for an additional fee payable directly to DCC.",
@@ -498,6 +612,8 @@ export const courses = [
       "English/language Arts",
       "Humanities",
       "English Language",
+      "Communications",
+      "Visual Arts",
     ],
     description:
       "This course seeks to empower students to challenge themselves by taking a medium that they are familiar with, while using literary techniques to analyze film. The goal is to derive greater meaning from both the films they watch as well as to more fully realize their potential as thoughtful young members of our society. This course will also expose students to new ideas through the medium of film, to evaluate how these films are effective using devices/ elements common to the ELA classroom, and to gain a better understanding of the medium in general. The goal is to use film and nonfiction articles as a way to focus upon and assess students’ critical thinking skills.",
@@ -510,7 +626,16 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Social Science", "Humanities", "English Language"],
+    tags: [
+      "Social Science",
+      "Humanities",
+      "English Language",
+      "History and Archeology",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
+    ],
     description:
       "This course will deal with the uniqueness and universality of this momentous event in the history of mankind. Participants will study the effect of genocide on the course of humanity during the five subsequent decades. The class will consist of historical readings, fictional accounts, films and guest speakers. There will be a variety of written assignments as well as a research project.",
   },
@@ -528,6 +653,12 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
+      "Communications",
+      "Media",
     ],
     description:
       "This course will focus on writing for different types of media including television, film and print. Students will be required to master appropriate speaking techniques and writing styles and apply those to the production of television broadcasts, short films, commercials, and news articles. Participation in various production projects that will necessitate out of class involvement will be required. There will also be several readings by leaders in the field of visual and print media. Students will study media theory, mass communication, media ethics, writing for the camera, broadcast news, and journalistic writing.",
@@ -545,6 +676,10 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Media",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Monsters come in all shapes and sizes; they touch every walk of life. Throughout the ages stories of monsters and marvels have captured the imaginations of writers and readers alike, but where do monsters come from? What purpose do they serve? Why does one culture fear one type of monster and another culture, another type? Are monsters projections of our anxieties? More importantly, what exactly makes a monster? This class will examine monsters in classic and contemporary literature, culture, film and art from earliest times to modern times.",
@@ -563,6 +698,14 @@ export const courses = [
       "Humanities",
       "English Language",
       "Communications",
+      "Writing",
+      "Reading Comprehension",
+      "Active Listening",
+      "Speaking",
+      "Oral Communication",
+      "Oral Comprehension",
+      "Oral Expression",
+      "Public Speaking",
     ],
     description:
       "Public Speaking challenges students to get over the fear of presentations by simply presenting. If you want to work on your public speaking skills or if you have a fear of public speaking, this is for you. Public speaking is still the number one fear among the American population. Students are required to write and present their presentations on an ongoing basis. This is a course that will take students out of their comfort zones and challenge them in their presentations. Enrolled students are eligible for college credits for an additional fee payable directly to Dutchess Community College.",
@@ -577,9 +720,9 @@ export const courses = [
     prerequisites: [],
     tags: [
       "English Language",
-      "Communications",
-      "English/language Arts",
-      "Humanities",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "Even the most perfect world that man can conceive is flawed. Students will explore the definition and characteristics of such dystopias by reading modern and classic sci-fi, investigating theories and cultural allusions behind the works, and analyzing films in the sci-fi genre. In addition, students will analyze what these pieces say about our current society and the future of the human race.",
@@ -597,6 +740,11 @@ export const courses = [
       "Communications",
       "English/language Arts",
       "Humanities",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
+      "Performing Arts",
     ],
     description:
       "This course is excellent preparation for college English and as a supplementary course for the AP Literature Exam. Students will explore Shakespeare, the man and his writings, the Elizabethan Age, and plays as performance pieces.",
@@ -615,6 +763,7 @@ export const courses = [
       "English Language",
       "English/language Arts",
       "Humanities",
+      "Performing Arts",
     ],
     description:
       "This course is an introduction to theatre arts. It is a participatory course in which students will learn basic stage movement and voice training, introductory acting and improvisational techniques as well as backstage elements such as lighting and costuming. It is intended for both the student who has always wanted to try their hand at the stage as well as the student who has a real interest in performing. Students are evaluated based on participation, grades, acting exercises, written projects, reading assignments, final projects and tests. NOTE: This course may be used to meet the 1 unit Regents Art/ Music graduation requirement.",
@@ -627,13 +776,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: ["Theatre I or permission of instructor."],
-    tags: [
-      "Arts",
-      "Arts and Humanities",
-      "English Language",
-      "English/language Arts",
-      "Humanities",
-    ],
+    tags: ["Arts", "English Language", "Performing Arts"],
     description:
       "This class provides students with the ability to explore the genre of applied theatre. Students will grow as performers through the intensive sound and movement work improvisational forms necessitate. They will focus on stage composition, learning how to use space in an interesting and meaningful way, and explore how to create music to support the story on stage in a non-traditional, improvisational way. Most importantly, performers practice listening skills in a highly motivated and active manner. It is through this listening that they will be able to explore the different purposes that improvisational theatre has: to increase self-knowledge, to build community, and to address specific issues within a community or society at large",
   },
@@ -647,13 +790,7 @@ export const courses = [
     prerequisites: [
       "Must have successfully completed Theatre I or have permission of the instructor.",
     ],
-    tags: [
-      "Arts",
-      "Arts and Humanities",
-      "English Language",
-      "English/language Arts",
-      "Humanities",
-    ],
+    tags: ["Arts", "English Language", "Performing Arts"],
     description:
       "This course is a continuation of Theatre I for the advanced student.",
   },
@@ -665,13 +802,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Theatre II"],
-    tags: [
-      "Arts",
-      "Arts and Humanities",
-      "English Language",
-      "English/language Arts",
-      "Humanities",
-    ],
+    tags: ["Arts", "English Language", "Performing Arts"],
     description:
       "This course is a continuation of Theatre II for the advanced student.",
   },
@@ -689,6 +820,10 @@ export const courses = [
       "English Language",
       "English/language Arts",
       "Humanities",
+      "Writing",
+      "Reading Comprehension",
+      "Written Comprehension",
+      "Written Expression",
     ],
     description:
       "This is a course for the student who enjoys writing creatively. A writing journal is required of all students. A critical aspect of this class is reading and discussing all students’ work in a supportive community of writers. In this class, students are formulating ideas, exploring techniques of writing poetry and prose, studying models, drafting, revising, and preparing for publication.",
@@ -701,7 +836,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Psychology", "Humanities", "Health Services"],
+    tags: [
+      "Psychology",
+      "Humanities",
+      "Health Services",
+      "Health Care Service",
+    ],
     description:
       "Adolescent Psychology curriculum incorporates concepts and introduction to adolescent psychology, transitions of adolescences in society and contemporary issues in adolescences in today’s society. The goal is to assist students in developing skills and learning to apply these skills to real world situations.",
   },
@@ -713,7 +853,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Psychology", "Humanities", "Health Services"],
+    tags: [
+      "Psychology",
+      "Humanities",
+      "Health Services",
+      "Health Care Service",
+    ],
     description:
       "Child Development curriculum incorporates concepts and introduction into child development. Students learn to understand child, family, and community connections, prenatal development and child development from infancy through school age. The goal is to assist students in developing skills and learning to apply these skills through hands on instructions.",
   },
@@ -725,7 +870,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Humanities", "Health Services"],
+    tags: ["Humanities", "Health Services", "Health Care Service"],
     description:
       "Parenting curriculum incorporates concepts and introduces students to prenatal development, including the responsibility of child bearing and the personal health decision making and the positive ways to meet the needs of the developing child. The goal is to assist students in developing skills and learn to apply these skills through hands on instructions and working collaboratively with others.",
   },
@@ -785,7 +930,14 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Design", "Arts", "Arts and Humanities", "Humanities", "Fine Arts"],
+    tags: [
+      "Design",
+      "Arts",
+      "Arts and Humanities",
+      "Humanities",
+      "Fine Arts",
+      "Creativity",
+    ],
     description:
       "The Interior Design curriculum focuses on interior design and decoration field, enabling students to assess their abilities to plan an interior which uses the principles of design and is acceptable to a client. Students will work hands-on and collaboratively to plan and design spaces.",
   },
@@ -797,7 +949,14 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Arts and Humanities", "Arts", "Humanities", "Fine Arts", "Design"],
+    tags: [
+      "Arts and Humanities",
+      "Arts",
+      "Humanities",
+      "Fine Arts",
+      "Design",
+      "Creativity",
+    ],
     description:
       "The World of Fashion curriculum focuses on clothing and fashion. Students learn about the fashion industry, trends, textiles, wardrobe planning and careers. Students after completing this course will be able to apply what they have learned to real-life situations.",
   },
@@ -809,7 +968,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Recommendation of Art Staff"],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: ["Fine Arts", "Design", "Arts", "Visual Arts"],
     description:
       "This course is a full-year foundation course designed to meet the Art/ Music graduation requirement. It is the prerequisite for Advanced Art I, Advertising Design, and SIA/ Communications Systems. Areas of study include drawing skills developed as a basis for work in painting, printmaking, three-dimensional design, perceptual skills development, elements and principles of art and design, career options, and portfolio development. Student assessment is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook assignments, and the WCSD Portfolio Assessment results. This course can be used to fulfill the 1 credit Arts requirement for graduation.",
   },
@@ -821,7 +980,14 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Communications and Media", "Communications", "Fine Arts", "Arts"],
+    tags: [
+      "Communications and Media",
+      "Communications",
+      "Fine Arts",
+      "Arts",
+      "Visual Arts",
+      "Creativity",
+    ],
     description:
       "Students will spend a year exploring visual and technical concepts as they apply to contemporary communication systems. Students will document all work and maintain a digital portfolio for course assessment. This course is taught collaboratively by the departments of Technology and Fine Arts. Areas of study include development and role of communication systems, digital photography, traditional and new computer illustration and printing processes, sound applications, communication graphics, digital video applications, and career options. Student assessment is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook assignments, and the WCSD Portfolio Assessment results. This course can be used to fulfill the 1 credit Arts requirement for graduation.",
   },
@@ -845,7 +1011,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: ["Fine Arts", "Design", "Arts", "Creativity"],
     description:
       "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. The second semester of the Full Year course is spent on developing skills on the potter’s wheel. It is a prerequisite for Ceramics II and Studio-in-Sculpture. Areas of study include: an introduction to a wide variety of art experiences, ceramic hand building techniques including pinch, coil, slab and sculpture; glazing; development of drawing skills; portfolio sketchbooks; historic and contemporary ceramic work and traditions; digital portfolio (as computers are available); and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
@@ -857,7 +1023,13 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Computers and Electronics", "Fine Arts", "Arts", "Design"],
+    tags: [
+      "Computers and Electronics",
+      "Fine Arts",
+      "Arts",
+      "Design",
+      "Creativity",
+    ],
     description:
       "This a project-based course that teaches the skills, process and mindset of a digital artist. This course introduces digital art image making, editing and design techniques as a foundation upon which an effective visual language is built. Beginning with an investigation of the elements and principles of design, students will discover a broad range of visual ideas, concepts and techniques to use in creating images. Expressing, evaluating and communicating ideas with visual images is a primary focus of this course. During the academic school year, students will use imaging and design software consistent with the visual professions as a beginning step towards professional-standard computer proficiency.",
   },
@@ -874,6 +1046,8 @@ export const courses = [
       "Computers and Electronics",
       "Fine Arts",
       "Arts",
+      "Visual Arts",
+      "Creativity",
     ],
     description:
       "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. It is a prerequisite for Photography II and Media Arts II. Areas of study include: an introduction to a wide variety of art experiences; fundamentals of photography; black & white film processing; composition exercises using a variety of materials; a journal that includes illustrations, resource materials and writing; elements of art and principles of design as applied to photography and graphic art; portfolio development; darkroom processes; and career options.",
@@ -886,7 +1060,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Visual Arts", "Creativity"],
     description:
       "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
@@ -898,7 +1072,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Visual Arts", "Creativity"],
     description:
       "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
@@ -910,7 +1084,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Visual Arts", "Creativity"],
     description:
       "This course is a foundation course designed to meet the Art/ Music graduation requirement for non-art majors. Art making in a variety of media will be explored, visual learning capacities will be identified and developed, and interdisciplinary connections will be utilized. Areas of study include an introduction to a wide variety of art experiences, print-making, design (2-D, 3-D exercises with art elements), painting (exploring basic color theory), drawing (exercises in improving drawing skills), use of a variety of tools and media, and sketchbooks. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, and sketchbook assignments.",
   },
@@ -922,7 +1096,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Studio-In-Art/ 3-D Design", "Full Year"],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Visual Arts", "Creativity"],
     description:
       "This course is designed to develop in students the advanced techniques and skills of the studio crafts media, while creating functional as well as aesthetic art. Areas of study include: development of advanced skills and techniques in design and production of advanced 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/ or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook, portfolio, and other assignments.",
   },
@@ -936,7 +1110,13 @@ export const courses = [
     prerequisites: [
       "Any full-year art or music course or with permission of instructor (including 9th grade students)",
     ],
-    tags: ["Communications and Media", "Fine Arts", "Arts"],
+    tags: [
+      "Communications and Media",
+      "Fine Arts",
+      "Arts",
+      "Creativity",
+      "Media",
+    ],
     description:
       "This course will cover the various facets of video production and sound production, editing, and broadcast journalism. Students produce in-school news segments to be aired on “WCSD On The Air” and other venues. It does not satisfy the one credit foundation course graduation requirement; however, it can be applied as an elective credit in a sequence. Areas of study include audio-video recording methods and techniques, preparation of broadcast-ready pieces for local airing, recording, editing and mixing of sound, the art of interviewing, internet production, motion graphics, story-board design, copyright laws and their application, portfolio development, and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
@@ -948,7 +1128,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Studio-In-Art/ Ceramics, full year"],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Creativity"],
     description:
       "This course is designed to develop in students the advanced techniques and skills of the studio ceramics medium. Areas of study include development of advanced skills and techniques in ceramics, wheel-throwing of clay, hand-building of clay, glaze technology and application, an analysis of various ceramic traditions (historical/ cultural), drawing skills, sketchbook, sculpting in clay (with wheel and hand), portfolio (including a digital portfolio as technology is available), and career options.",
   },
@@ -962,7 +1142,7 @@ export const courses = [
     prerequisites: [
       "Studio-In-Art/ 3-D Design or Studio-in-Art/ Ceramics, or permission of the instructor",
     ],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Creativity"],
     description:
       "This course is designed to develop in students the aesthetic and technical experience to understand, create and appreciate sculpture. Areas of study include: development of dexterity, sensitivity and technique to control a variety of media which may include: wood, clay, wire, metal, stone, plaster, and recycled materials; self-expression in advanced three-dimensional forms; development of drawing skills; portfolio development; and career options.",
   },
@@ -981,6 +1161,8 @@ export const courses = [
       "Computers and Electronics",
       "Fine Arts",
       "Arts",
+      "Visual Arts",
+      "Creativity",
     ],
     description:
       "This course is designed to develop in students advanced techniques and skills of photography. Assignments are aimed at enriching the expressive use of the camera and darkroom. Areas of study include advanced skills and techniques in photography, technology (computer, digital camera, software applications), experimental film (high contrast), digital and macro photography, mixed media processes, commercial Photography, studio and environmental portraiture, still life/ advertising photography, portfolio development, and career options.",
@@ -1000,6 +1182,8 @@ export const courses = [
       "Computers and Electronics",
       "Fine Arts",
       "Arts",
+      "Creativity",
+      "Media",
     ],
     description:
       "This course is designed to develop in students the advanced techniques and skills of the media arts. Areas of study include development of advanced skills and techniques in media, electronic imaging, video production via multiple software applications, creative sound, computer graphics, image transfer techniques, animation (computer, stop-motion, claymation), portfolio development, and career options.",
@@ -1014,7 +1198,7 @@ export const courses = [
     prerequisites: [
       "Studio-ln-Art/ 3-D Design or Studio-in-Art/ Ceramics, Studio-ln-Sculpture",
     ],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Visual Arts", "Creativity"],
     description:
       "This course is designed to further develop in students the aesthetic and technical experience to understand, create and appreciate sculpture. Areas of study include: development of advanced dexterity, sensitivity and technique to control a variety of media which may include wood, clay, wire, metal, stone, plaster, and recycled materials; self-expression in advanced three-dimensional forms; development of drawing skills; portfolio development; and career options.",
   },
@@ -1026,7 +1210,14 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Studio-ln-Art", "F587"],
-    tags: ["Communications and Media", "Arts", "Sales and Marketing"],
+    tags: [
+      "Communications and Media",
+      "Arts",
+      "Sales and Marketing",
+      "Creativity",
+      "Sales",
+      "Marketing/Advertising",
+    ],
     description:
       "This course is an introduction to advertising design and commercial art. Learning situations will incorporate ad clients from the school and community. Computer and video equipment will be used as available. Areas of study include basic design concepts and skills, layout, lettering, product and package design, portfolio development, computer and technology, and career options.",
   },
@@ -1050,7 +1241,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Advanced Art I or permission of instructor"],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: ["Fine Arts", "Design", "Arts", "Creativity", "Visual Arts"],
     description:
       "This course is designed to provide continued emphasis in the development of visual observation, critical analysis and problem-solving skills through instruction and exploration of two-dimensional materials and techniques. Students will begin to explore potential topics and themes that will provide direction and work for personal, college and Advanced Placement portfolios.",
   },
@@ -1062,7 +1253,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Advanced Art II and permission from instructor"],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: ["Fine Arts", "Design", "Arts", "Creativity", "Visual Arts"],
     description:
       "Advanced Placement Studio Art and Design is a College Board certified course designed to provide instruction that culminates in a portfolio submission to the AP College Board for foundation level college credit. The focus of the course is the development of perceptual, problem-solving, and critical thinking skills to meet this goal. Observational work in two-dimensional media is required for this portfolio submission.",
   },
@@ -1074,7 +1265,14 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Advanced Art II or permission from instructor"],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: [
+      "Fine Arts",
+      "Design",
+      "Arts",
+      "Creativity",
+      "Visual Arts",
+      "Resource Management Skills",
+    ],
     description:
       "This course is recommended for art majors who are in the process of completing their art course sequence. They will continue to develop the advanced skills and techniques initiated in Advanced Art I and II. Portfolios will be developed that reflect personal ideas and skills in several media.",
   },
@@ -1094,6 +1292,8 @@ export const courses = [
       "Computers and Electronics",
       "Fine Arts",
       "Arts",
+      "Creativity",
+      "Visual Arts",
     ],
     description:
       "Photography III provides advanced skills and techniques in photography, and students work on their portfolios, explore advanced camera techniques and career options.",
@@ -1111,6 +1311,8 @@ export const courses = [
       "Computers and Electronics",
       "Fine Arts",
       "Arts",
+      "Creativity",
+      "Media",
     ],
     description: "",
   },
@@ -1125,7 +1327,7 @@ export const courses = [
       "Studio-In-Art/ Ceramics",
       "Ceramics II, with an average of 80 or higher.",
     ],
-    tags: ["Design", "Fine Arts", "Arts"],
+    tags: ["Design", "Fine Arts", "Arts", "Creativity", "Visual Arts"],
     description: "",
   },
   {
@@ -1136,7 +1338,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Studio-ln-Art/ 3-D Design", "3-D Design/ Crafts II"],
-    tags: ["Fine Arts", "Design", "Arts"],
+    tags: ["Fine Arts", "Design", "Arts", "Creativity", "Visual Arts"],
     description: "",
   },
   {
@@ -1147,7 +1349,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "This course is intended as a first experience in the target language and prepares students to meet the NYS Education Department’s Languages Other Than English (LOTE) Checkpoint A proficiency level. Students learn to speak and understand the language using basic vocabulary within the context of everyday situations, use grammatical structures within the context of topics, and work with vocabulary lists, original dialogues, notes and letters related to a variety of topics. A Department final assessment will be administered in June. Passing this course meets the minimum graduation requirement in foreign language.",
   },
@@ -1159,7 +1361,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description: "",
   },
   {
@@ -1170,7 +1372,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description: "",
   },
   {
@@ -1183,7 +1385,7 @@ export const courses = [
     prerequisites: [
       "Must have passed the same target language in Grades 7 & 8, including the proficiency (Checkpoint A) or Level 1.",
     ],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "In level II, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final Assessment at the end of level III (Checkpoint B). Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations.",
   },
@@ -1195,7 +1397,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description: "",
   },
   {
@@ -1206,7 +1408,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description: "",
   },
   {
@@ -1219,7 +1421,7 @@ export const courses = [
     prerequisites: [
       "Must have passed the same target language course in Level 2.",
     ],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "This is the final course preparing students for NYS Education Department’s Checkpoint B proficiency (District Level Final Assessment). Topics, functions and situations remain the same as in the previous levels, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. All students in this course level take the District Final Assessment in the foreign language in June. Students must pass this course and pass the District Final Assessment in order to qualify for an Advanced Regents Diploma.",
   },
@@ -1231,7 +1433,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.05,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
   },
@@ -1243,7 +1445,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.05,
     prerequisites: [],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "**Students of Italian 4 have the option of enrolling with SUNY Albany to receive four (4) credits for successful completion of the course (equivalent to SUNY Albany’s Intermediate Italian 1). There is a fee for students who wish to participate in this college program.",
   },
@@ -1255,7 +1457,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.05,
     prerequisites: ["Must have passed the same foreign language in Level 3."],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the first part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam at the end of Level 5. As an honors-level course, grades are weighted.",
   },
@@ -1267,7 +1469,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Must have passed the same foreign language in Level 4."],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
@@ -1279,7 +1481,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Must have passed the same foreign language in Level 4."],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "**Students of Italian V have the option of enrolling with SUNY Albany to receive four (4) credits for successful completion of the course (equivalent to SUNY Albany’s Intermediate Italian 2). There is a fee for this program.",
   },
@@ -1291,7 +1493,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Must have passed the same foreign language in Level 4."],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
@@ -1303,7 +1505,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Must have passed the same foreign language in Level 4."],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "*This course is intended for the accelerated/ honors student who is prepared to meet the rigorous academic demands of advanced placement work, as it is the final part of a two-year sequence that prepares students to meet the challenges of the College Board’s Advanced Placement exam or College Course equivalent. Grades are weighted.",
   },
@@ -1318,7 +1520,7 @@ export const courses = [
       "Must have passed the same target language in Grades 7 & 8, including the proficiency (Checkpoint A) or Level 1.",
       "Teacher recommendation and individual assessment required.",
     ],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/ food/ drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
   },
@@ -1333,7 +1535,7 @@ export const courses = [
       "Must have passed the same target language in Grades 7 & 8, including the proficiency (Checkpoint A) or Level 1.",
       "Teacher recommendation and individual assessment required.",
     ],
-    tags: ["Foreign Language"],
+    tags: ["Foreign Language", "Languages"],
     description:
       "In level 2, students move beyond the State Education Department’s LOTE Checkpoint A proficiency level and begin preparing in earnest for the District Final exam at the end of level 3 (Checkpoint B). This course is designed for students whose first language is Spanish, may have grown up using Spanish at home, or find that our traditional Spanish classes do not meet their language skills needs. While they may communicate at a high level, they need help with skills such as spelling, accents, higher grammatical structures, reading comprehension of authentic material, and writing in formal and informal situations. Heritage speakers will solidify their knowledge of Spanish, focus on comprehension of multiple regionalisms, and develop a high level of fluency. Topics, functions and situations remain the same as in the previous level, but are approached in a broader and deeper manner. Expanding vocabulary and an increasing understanding of more complicated verb forms and grammatical concepts allow students to communicate more effectively and understand the target language in authentic situations. Topics include personal identification, family life, education, house and home, leisure, shopping, community neighborhood, meal taking/ food/ drink, physical environment, travel, health and welfare, earning a living, public and private services, services and repairs, and current events. Functions include culture, socializing, providing and obtaining information, expressing personal feelings, and persuasion. Situations include listening, speaking, reading, and writing. A Department Final Assessment will be administered in June. The final exam counts as 20% of the final course average. This course is an Advanced Level II Spanish Course and will count toward the language sequence.",
   },
@@ -1345,7 +1547,12 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Math 8 with a final average of 70% or higher"],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This Regents course focuses on developing algebra concepts and skills through a multiple representations approach. Major topics include, but are not limited to, identifying and solving Linear and Exponential models, Statistics, Operations with Polynomials, Factoring and Solving Quadratic Functions, and System of Equations. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra I Regents Examination is a New York State graduation requirement.",
   },
@@ -1364,6 +1571,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "This Regents course focuses on developing algebra concepts and skills through a multiple representations approach. Major topics include, but are not limited to, identifying and solving Linear and Exponential models, Statistics, Operations with Polynomials, Factoring and Solving Quadratic Functions, and System of Equations. Algebra Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Algebra Regents course. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra I Regents Examination is a New York State graduation requirement.",
@@ -1376,7 +1584,12 @@ export const courses = [
     credits: 1.5,
     rank_weighting: 1.0,
     prerequisites: ["For those with less than a 75% average in Math 8"],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This Regents course focuses on developing algebra concepts and skills through a multiple representations approach. Major topics include, but are not limited to, identifying and solving Linear and Exponential models, Statistics, Operations with Polynomials, Factoring and Solving Quadratic Functions, and System of Equations. Algebra+ consists of an additional, attached lab period that allows students additional time to explore/ discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra I Regents Examination is a New York State graduation requirement.",
   },
@@ -1388,7 +1601,12 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["For those with less than a 70% average in Math 8"],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This course is the first year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Solving Linear Equations and Inequalities, Writing and Graphing Linear Functions, Systems of Equations, Exponential Functions and Sequences. Upon successful completion of this course, students will be enrolled in Algebra 1B. Successful completion of the Algebra 1A/ 1B sequence satisfies the New York State graduation requirement for Algebra I.",
   },
@@ -1400,7 +1618,12 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Successful completion of Algebra 1A"],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This course is the second year of a two year sequence in Algebra I, focusing on developing algebra concepts and skills through a multiple representations approach. The slower pacing of the sequence allows for students to develop and master skills needed to be successful in Algebra. Major topics include, but are not limited to, Polynomials & Factoring, Quadratic & Radical Functions, Data Analysis and Displays. This course ends with a New York State Regents Examination. Successful completion of the Algebra 1A/ 1B sequence and the Algebra I Regents Examination satisfies the New York State graduation requirement for Algebra I.",
   },
@@ -1414,7 +1637,12 @@ export const courses = [
     prerequisites: [
       "Successful completion of Algebra I and a passing score on the Algebra Regents Exam.",
     ],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This Regents course focuses on the properties of geometric figures and geometric relationships. Major topics include, but are not limited to, Constructions & Transformations, Right Triangles, Circles, Trigonometry, Geometric Measurement & Dimensions, and Modeling with Geometry. Students will be expected to present valid arguments justified by axioms, definitions and theorems. This course ends with a New York State Regents Examination. Successful completion of this course and the Geometry Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
@@ -1433,6 +1661,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "This Regents course focuses on the properties of geometric figures and geometric relationships. Major topics include, but are not limited to, Constructions & Transformations, Right Triangles, Circles, Trigonometry, Geometric Measurement & Dimensions, and Modeling with Geometry. Students will be expected to present valid arguments justified by axioms, definitions and theorems. Geometry Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Geometry Regents course. This course ends with a New York State Regents Examination. Successful completion of this course and the Geometry Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
@@ -1445,7 +1674,12 @@ export const courses = [
     credits: 1.5,
     rank_weighting: 1.0,
     prerequisites: ["Successful completion of Algebra I."],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "Focuses on the properties of geometric figures and geometric relationships. Major topics include, but are not limited to, Constructions & Transformations, Right Triangles, Circles, Trigonometry, Geometric Measurement & Dimensions, and Modeling with Geometry. Students will be expected to present valid arguments justified by axioms, definitions and theorems. This course ends in a New York State Regents Examination. Geometry+ consists of an additional, attached lab period that allows students additional time to explore/ discover concepts through labs and hands-on activities. This course ends with a New York State Regents Examination. Successful completion of this course and the Geometry Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
@@ -1457,7 +1691,12 @@ export const courses = [
     credits: 0,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/ she passes the Algebra I Regents Exam.",
   },
@@ -1469,7 +1708,12 @@ export const courses = [
     credits: 0,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "Academic Intervention Services (AIS) are mandated for all students who have failed the Algebra I Regents Exam. Students will be assigned to the course either 5 days a week or on an every other day basis. The student remains in the course until he/ she passes the Algebra I Regents Exam.",
   },
@@ -1483,7 +1727,12 @@ export const courses = [
     prerequisites: [
       "Successful completion of Geometry with a final average of 80% or higher, OR Algebra 2N with a final average of 85% or higher with teacher recommendation.",
     ],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/ or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
   },
@@ -1502,6 +1751,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "This Regents course builds a foundation of mathematics for those students going on to Pre-Calculus and/ or students who are college bound. Algebra II builds upon topics that were first introduced in Algebra I. Additional topics include, but are not limited to, Systems of Linear & Circle Equations, Rational Expressions, Rational, Irrational and Complex Numbers, Quadratic Equations & Functions, Sequences & Series, Relations & Functions, Exponents & Exponential Functions, Logarithms, and Introductory Trigonometry. Algebra II Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Algebra II Regents course. This course ends with a New York State Regents Examination. Successful completion of this course and the Algebra II Regents Examination is a requirement for a New York State Regents Diploma with Advanced Designation.",
@@ -1517,7 +1767,12 @@ export const courses = [
       "Successful completion of Algebra I.",
       "Recommendation: Geometry with a final average lower than 70%, OR Algebra 1B with a final average lower than 70%.",
     ],
-    tags: ["Mathematics", "Mathematics and Science", "Basic Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Basic Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "This non-Regents course expands upon students’ prior knowledge of Algebra and explores more advanced Algebra concepts. Major topics include, but are not limited to, the basics of functions, quadratic functions, radicals, complex numbers, rational functions, and introductory trigonometry. This course is designed for students who are not pursuing a New York State Regents Diploma with Advanced Designation.",
   },
@@ -1534,6 +1789,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "This course is intended for students who desire a 4th credit in math, but are not seeking a New York State Regents Diploma with Advanced Designation. The first half of the year focuses on Trigonometry which includes topics such as, Right Triangle Trig, Basic Trig Functions, Inverse Trig Function, Graphing Trig functions, and Trig Applications. The second half of the year focuses on Algebra which includes topics such as factoring, solving quadratics, functions, statistics, and probability.",
@@ -1551,6 +1807,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "This course is intended for students who wish to further their understanding of mathematical structure and analysis. This course is designed to expand on, make connections between, and apply concepts related to these major topics that include, but are not limited to, Trigonometry, Vectors, Matrices, Analytic Geometry, Functions and their Graphs, Polynomial Functions, Rational Functions, Exponential Functions, Logarithms & Limits.",
@@ -1571,6 +1828,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. Students enrolled in this course are eligible for 3 credits available through Marist College for an additional fee made payable directly to the college. This course is a college level course which follows the curriculum for the Dutchess Community College MAT 185 course. Major topics include, but are not Limited to, Linear, Polynomial, Rational, Trigonometric, Exponential, Logarithmic, Polar, and Inverse Functions. Modeling and data analysis techniques are also employed. Conceptual understanding is emphasized and algebraic skills are reinforced throughout the Course.",
@@ -1585,7 +1843,12 @@ export const courses = [
     prerequisites: [
       "Successful completion of Pre-Calculus or Pre-Calculus Honors.",
     ],
-    tags: ["Mathematics", "Mathematics and Science", "Advanced Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Advanced Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "Note: The final exam is approved by Dutchess Community College. Successful completion of this exam can result in up to 4 college credits issued by Dutchess Community College. This course is a college level course that follows the curriculum for the DCC MAT 221 course. Major topics include, but are not limited to: Limits, Calculating Derivatives, Curve Sketching, Motion, Optimization, Related Rates, and Integration. Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College.",
   },
@@ -1604,6 +1867,7 @@ export const courses = [
       "Mathematics and Science",
       "Basic Math",
       "Advanced Math",
+      "Mathematical Reasoning",
     ],
     description:
       "AP Calculus AB is roughly equivalent to a first semester college calculus course devoted to topics in differential and integral calculus. The AP course covers topics in these areas, including concepts and skills of limits, derivatives, definite integrals, and the Fundamental Theorem of Calculus. Students will learn how to approach calculus concepts and problems when they are represented graphically, numerically, analytically, and verbally, and how to make connections amongst these representations. Students will learn how to use technology to help solve problems, experiment, interpret results, and support conclusions. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
@@ -1618,7 +1882,12 @@ export const courses = [
     prerequisites: [
       "Successful completion of Algebra II Honors with a final average of 85% or higher OR Pre-Calculus (both options with teacher recommendation) OR AP Calculus AB",
     ],
-    tags: ["Mathematics", "Mathematics and Science", "Advanced Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Advanced Math",
+      "Mathematical Reasoning",
+    ],
     description:
       "AP Calculus BC is considerably more intensive than Advanced Placement Calculus AB. This course is roughly equivalent to both first and second semester college calculus courses. It extends the content learned in Calculus AB to different types of equations and introduces the topic of sequences and series. This course covers topics in differential and integral calculus, including concepts and skills of limits, derivatives, definite integrals, the Fundamental Theorem of Calculus, and series. Students will learn how to approach calculus concepts and problems when they are represented graphically, numerically, analytically, and verbally, and to make connections amongst these representations. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
   },
@@ -1630,7 +1899,13 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.1,
     prerequisites: ["Successful completion of Algebra II"],
-    tags: ["Mathematics", "Advanced Math"],
+    tags: [
+      "Mathematics",
+      "Mathematics and Science",
+      "Advanced Math",
+      "Mathematical Reasoning",
+      "Mathematics/Statistics",
+    ],
     description:
       "AP Statistics focuses on major concepts and tools for collecting, analyzing, and drawing conclusions from data. Students will develop analytical and critical thinking skills as they learn to describe data patterns and departures from patterns, plan and conduct studies, use probability and simulation to explore random phenomena, estimate population parameters, test hypotheses, and make statistical inferences. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. Students enrolled in this course are eligible for 3 credits available through Marist College for an additional fee made payable directly to the college.",
   },
@@ -1644,7 +1919,12 @@ export const courses = [
     prerequisites: [
       "Successful completion of Algebra II or successful completion of Algebra 2N with a final average of 85 or higher; or successful completion of Introduction of College Math",
     ],
-    tags: ["Mathematics", "Advanced Math"],
+    tags: [
+      "Mathematics",
+      "Advanced Math",
+      "Mathematics/Statistics",
+      "Mathematics and Science",
+    ],
     description:
       "This course is a college level course which follows the curriculum for the Dutchess Community College MAT 118 course. In this course, basic statistical procedures are developed. Topics include descriptive statistics, hypothesis testing, and confidence intervals and regression using both simulation and a theory-based approach. Technology will be used regularly throughout the course. Enrolled students are eligible for 3 DCC credits for an additional fee payable directly to the College.",
   },
@@ -1656,7 +1936,12 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: ["Successful completion of Algebra I AND Geometry"],
-    tags: ["Mathematics", "Applied Science", "Mathematics and Science"],
+    tags: [
+      "Mathematics",
+      "Applied Science",
+      "Mathematics and Science",
+      "Mathematical Reasoning",
+    ],
     description:
       "This course is designed to give students answer to the questions “When are we going to use this?” by providing students with a hands-on, project-oriented learning experience. Students will explore the math and science behind items they encounter in everyday life in a true STEAM class, using technology and engineering to create some of the objects discussed in class.",
   },
@@ -1670,7 +1955,14 @@ export const courses = [
     prerequisites: [
       "Concurrent enrollment in Algebra I, OR Completion of Algebra I",
     ],
-    tags: ["Computer Science", "Computers and Electronics"],
+    tags: [
+      "Computer Science",
+      "Computers and Electronics",
+      "Mathematics and Science",
+      "Mathematical Reasoning",
+      "Programming",
+      "Basic Math",
+    ],
     description:
       "This course is an introduction to the field of computer science and the fundamentals of computer programming. Students will learn structured, object oriented event based programming and will include the development, debugging, and verification of programs. Using the VisualBasic.net language, programming projects are used to reinforce key concepts including data types, decision making structures, loops, procedures and functions. Prior programming experience is not required.",
   },
@@ -1687,6 +1979,9 @@ export const courses = [
       "Mathematics",
       "Basic Math",
       "Computers and Electronics",
+      "Programming",
+      "Mathematical Reasoning",
+      "Mathematics and Science",
     ],
     description:
       "This course provides additional practice and builds on the core programming concepts taught in Computer Programming 1. Using the VisualBasic.net language, programming projects are used to reinforce advanced programming topics such as class design, arrays, structures, graphics and files.",
@@ -1701,7 +1996,13 @@ export const courses = [
     prerequisites: [
       "Successful completion of Algebra II, OR Computer Programming 2",
     ],
-    tags: ["Computer Science", "Computers and Electronics"],
+    tags: [
+      "Computer Science",
+      "Computers and Electronics",
+      "Programming",
+      "Mathematical Reasoning",
+      "Mathematics and Science",
+    ],
     description:
       "AP Computer Science A focuses on core aspects of computer science which are used to create solutions that are understandable, adaptable, and when appropriate, reusable. The design and implementation of computer programs to solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
   },
@@ -1713,7 +2014,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Communications", "Arts"],
+    tags: ["Communications", "Arts", "Fine Arts"],
     description:
       "Communication Systems is a FULL YEAR, full credit course, taught by the Department of Technology in conjunction with the Art Department (Studio-In-Art). Upon completion of both Communication Systems and Studio-In-Art, students will receive credit in Technology and Art. Student’s NYS Regents Art/ Music requirement will be fulfilled.",
   },
@@ -1725,7 +2026,13 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Design", "Computer Science", "Computers and Electronics", "Arts"],
+    tags: [
+      "Design",
+      "Computer Science",
+      "Computers and Electronics",
+      "Arts",
+      "Fine Arts",
+    ],
     description:
       "This intermediate design and visual communications course will provide an overview of graphic design, digital photography, and animation. Software used includes: Adobe Photoshop, Illustrator, InDesign, and Flash. Skills developed in the course are a necessary foundation for success in Web Design and Development. Students will develop computer vocabulary related to concepts, aesthetics, and technical skills related to computer graphic technology. Students utilize official Adobe training materials which make them eligible to take Adobe Certification Exams (ACE).",
   },
@@ -1737,7 +2044,13 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: ["Successful Completion of Computer Graphics"],
-    tags: ["Design", "Computer Science", "Computers and Electronics", "Arts"],
+    tags: [
+      "Design",
+      "Computer Science",
+      "Computers and Electronics",
+      "Arts",
+      "Visual Arts",
+    ],
     description:
       "This course is a continuation of Computer Graphics. Students will broaden their skills in Adobe Illustrator, Photoshop, and Flash to complete projects using Dreamweaver. Students will utilize the graphic design process to create both professional and personal websites. Students will gain knowledge in the areas of basic computer programming, design, and site maintenance/ management while understanding the theory and history of Web Design. Students utilize official Adobe training material, which make them eligible to take Adobe Certification Exams (ACE).",
   },
@@ -1749,7 +2062,14 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: ["Technical Drawing"],
-    tags: ["Design", "Engineering and Technology", "Computers and Electronics"],
+    tags: [
+      "Design",
+      "Engineering and Technology",
+      "Computers and Electronics",
+      "Building and Construction",
+      "Spatial Abilities",
+      "Engineering",
+    ],
     description:
       "Computer Aided Design is a half year, half credit course designed to acquaint the student with hands-on activities using a PC platform workstation. Students will exercise a variety of drafting and design software tools using CAD to produce both two and three-dimensional drawings and illustrations. Drawings will be produced by students of their own designs as well as assigned exercises. Drawings will be electronically saved, printed and/ or plotted for evaluation.",
   },
@@ -1761,7 +2081,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Manufacturing and Production", "Building and Construction"],
+    tags: [
+      "Manufacturing and Production",
+      "Building and Construction",
+      "Construction/Woodwork",
+      "Mechanical",
+    ],
     description:
       "Woods Processes and Fabrication is an introduction to woods technology including materials, processes, tools, and equipment. The half year course includes fundamental manipulative work in selection, planning, cutting, forming, assembling, and finishing a variety of wood products. Students are instructed on many machinist tools and utilize many different combining techniques to form a well-rounded experience that will be an asset in any future work in the technology field or even for the home hobbyist.",
   },
@@ -1773,7 +2098,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: ["Materials Processing: Woods"],
-    tags: ["Manufacturing and Production", "Building and Construction"],
+    tags: [
+      "Manufacturing and Production",
+      "Building and Construction",
+      "Construction/Woodwork",
+      "Mechanical",
+    ],
     description:
       "Advanced woodworking is a half year course for students taking the basic woodworking class to the next level. Students will be using more advanced machinery and completing projects that entail more thought and detail while still demonstrating proper safety measures.",
   },
@@ -1797,7 +2127,12 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Building and Construction", "Engineering and Technology"],
+    tags: [
+      "Building and Construction",
+      "Engineering and Technology",
+      "Construction/Woodwork",
+      "Mechanical",
+    ],
     description:
       "Construction Systems is a ½-unit, twenty-week course offered to all students. Construction Systems explores how mankind shapes the world using current technology to provide solutions for society’s needs. This course will explore the four fields of construction-Light Construction, Commercial Construction, Industrial Construction, and Civil Construction. Seventy-five percent of the course time will be spent on hands-on activities in a laboratory setting. Lab activities will center on the most common construction activities found in Light and Commercial Construction. Careers within the construction trades will be explored throughout the course. Personal safety, energy use, conservation, and environmental issues are addressed as related to all fields of construction.",
   },
@@ -1813,6 +2148,8 @@ export const courses = [
       "Transportation",
       "Engineering and Technology",
       "Building and Construction",
+      "Transportation/Machine Operation",
+      "Mechanical",
     ],
     description:
       "Transportation systems is a course that will acquaint students with a range of methods used to move people, materials, and products, across the land sea and air. The study of these systems will be the main focus of the course. The theory of operation and the scientific principles of the transportation systems will be included. The course is full year for one period each day. The lab work will consist of 20 or more instructional topics and 60-70 lab periods for student activity. Such lab activities will include construction of model cars, planes, rockets, and boats. Students will also experiment with internal combustion engines that are used to power our transportation systems, as well as auto repair and maintenance.",
@@ -1829,6 +2166,8 @@ export const courses = [
       "Engineering and Technology",
       "Computers and Electronics",
       "Building and Construction",
+      "Mechanics/Electronics",
+      "Mechanical",
     ],
     description:
       "Basic Electronics and Electricity provides students with a background in electronics and electricity principles. Many activities involve Energy Electronics and the use of Innovative Green Electronic Technology systems. Students will also participate in household wiring projects such as wiring up a room in a house, garage door openers, “Clap on Clap off” circuits, and solar panels.",
@@ -1841,7 +2180,13 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1,
     prerequisites: [],
-    tags: ["Design", "Engineering and Technology", "Building and Construction"],
+    tags: [
+      "Design",
+      "Engineering and Technology",
+      "Building and Construction",
+      "Spatial Abilities",
+      "Engineering",
+    ],
     description:
       "This course is designed to present to the student the concepts of technical drawing, and traces its evolution from manual drafting techniques to modern computer aided drafting/ CAD techniques. Major topics include: types of drawings, types of technical drawings, their purpose, applications, and regulations.",
   },
@@ -1853,7 +2198,13 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["2 Previous Technology classes"],
-    tags: ["Manufacturing and Production", "Engineering and Technology"],
+    tags: [
+      "Manufacturing and Production",
+      "Engineering and Technology",
+      "Spatial Abilities",
+      "Production and Processing",
+      "Engineering",
+    ],
     description:
       "Students will explore the concepts of custom and mass production with an emphasis on the construction of student designed projects. This will include but not be limited to 3D computer design, prototyping, learning the entire process of CNC (computer numerical control) machining, and developing procedures to mass produce products within the Tech Ed. Labs.",
   },
@@ -1869,6 +2220,8 @@ export const courses = [
       "Engineering and Technology",
       "Transportation",
       "Building and Construction",
+      "Transportation/Machine Operation",
+      "Engineering",
     ],
     description:
       "Winner’s Circle Project is a two-period course in which students earn two elective credits. Students will build a high-performance Factory Five vehicle from the ground up. Teachers will utilize a project-based curriculum that will not only focus on the mechanics of the build, but also on aspects of racing production and the racing team.",
@@ -1888,6 +2241,9 @@ export const courses = [
       "Engineering and Technology",
       "Building and Construction",
       "Computers and Electronics",
+      "Spatial Abilities",
+      "Creativity",
+      "Engineering",
     ],
     description:
       "Design and Drawing for Production is a course in the Project Lead the Way Program that teaches students how to take an idea through a design process that will eventually be manufactured or produced. As you learn about various aspects of engineering and engineering design, such as how engineers communicate through drawing, you will apply what you learn through various activities, projects, and problems. For example, after learning about the different techniques engineers use in determining how to design a product, students will have the flexibility to explore the design and engineering processes to solve problems that are of their own interest. Students who meet certain requirements may also receive college credits through Rochester Institute of Technology at the end of the course.",
@@ -1901,7 +2257,13 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: ["75% or Higher in Math 8"],
     pathway: "Project Lead The Way (PLTW)",
-    tags: ["Engineering and Technology", "Building and Construction"],
+    tags: [
+      "Engineering and Technology",
+      "Building and Construction",
+      "Mechanics/Electronics",
+      "Mechanical",
+      "Engineering",
+    ],
     description:
       "This survey course of engineering exposes students to some of the major concepts they’ll encounter in a postsecondary engineering course of study. Students have an opportunity to investigate engineering and high-tech careers and to develop skills and understanding of course concepts. Students employ engineering and scientific concepts in the solution of engineering design problems. They develop problem-solving skills and apply their knowledge of research and design to create solutions to various challenges. Students also learn how to document their work and communicate their solutions to peers and members of the professional community. This course is designed for 10th or 11th grade students.",
   },
@@ -1914,7 +2276,13 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: ["75% or Higher in Math 8"],
     pathway: "Project Lead The Way (PLTW)",
-    tags: ["Engineering and Technology", "Building and Construction", "Design"],
+    tags: [
+      "Engineering and Technology",
+      "Building and Construction",
+      "Design",
+      "Creativity",
+      "Engineering",
+    ],
     description:
       "The major focus of this course is completing long-term projects that involve the development of property sites. As students learn about various aspects of civil engineering and architecture, they apply what they learn to the design and development of a property. The course provides teachers and students freedom to develop the property as a simulation or to students to model the experiences that civil engineers and architects face. Students work in teams, exploring hands-on activities and projects to learn the characteristics of civil engineering and architecture. In addition, students use 3D design software to help them design solutions to solve major course projects. Students learn about documenting their project, solving problems, and communicating their solutions to their peers and members of the professional community of civil engineering and architecture.",
   },
@@ -1927,7 +2295,14 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: ["75% or Higher in Math 8"],
     pathway: "Project Lead The Way (PLTW)",
-    tags: ["Engineering and Technology", "Computers and Electronics"],
+    tags: [
+      "Engineering and Technology",
+      "Computers and Electronics",
+      "Mathematical Reasoning",
+      "Mechanics/Electronics",
+      "Programming",
+      "Engineering",
+    ],
     description:
       "This course is the study of electronic circuits that are used to process and control digital signals. Digital electronics is the foundation of all modern electronic devices such as cellular phones, MP3 players, laptop computers, digital cameras, and high-definition televisions. The major focus of the DE course is to expose students to the design process of combinational and sequential logic design, teamwork, communication methods, engineering standards, and technical documentation.",
   },
@@ -1940,7 +2315,12 @@ export const courses = [
     rank_weighting: 1.05,
     prerequisites: ["Two completed PLTW courses"],
     pathway: "Project Lead The Way (PLTW)",
-    tags: ["Engineering and Technology", "Design", "Building and Construction"],
+    tags: [
+      "Engineering and Technology",
+      "Design",
+      "Building and Construction",
+      "Engineering",
+    ],
     description:
       "This capstone course allows students to design a solution to a technical problem of their choosing. They have the chance to eliminate one of the “Don’t you hate it when…” statements of the world. This is an engineering research course in which students will work in teams to research, design, test, and construct a solution to an open-ended engineering problem. The product development life cycle and a design process are used to guide and help the team to reach a solution to the problem. The team presents and defends their solution to a panel of outside reviewers at the conclusion of the course. The EDD course allows students to apply all the skills and knowledge learned in previous Project Lead The Way courses. The use of 3D design software helps students design solutions to the problem their team has chosen. This course also engages students in time management and teamwork skills, a valuable asset to students in the future.",
   },
@@ -1952,7 +2332,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Completion of Science 8"],
-    tags: ["Biology", "Physical Science"],
+    tags: ["Biology", "Physical Science", "Biological Science", "Life Science"],
     description:
       "This Regents level life-science course is a comprehensive overview of the major areas of Biology. Major topics include, but are not limited to: Scientific Method, Cell structure and function, Evolution & Classification, Ecology, Biochemistry, Genetics, and Plant & Animal Systems. Emphasis is placed on reading comprehension and language usage. This course ends with a New York State Regents Examination. Successful completion of this course is a New York State graduation requirement. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -1966,7 +2346,7 @@ export const courses = [
     prerequisites: [
       "Completion of Honors Science 8 with a final average of 85 or higher; OR completion of Science 8 with a final average of 90 or higher with teacher recommendation",
     ],
-    tags: ["Biological Science", "Physical Science"],
+    tags: ["Biological Science", "Physical Science", "Biology", "Life Science"],
     description:
       "This Regents level life-science course is a comprehensive overview of the major areas of Biology. Major topics include, but are not limited to: Scientific Method, Cell structure and function, Evolution & Classification, Ecology, Biochemistry, Genetics, and Plant & Animal Systems. Emphasis is placed on reading comprehension and language usage. Living Environment Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Living Environment Regents course. This course ends with a New York State Regents Examination. Successful completion of this course is a New York State graduation requirement. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -1981,7 +2361,7 @@ export const courses = [
       "Successful completion of Living Environment.",
       "Recommendation: For those with less than a 75% average in Math 8",
     ],
-    tags: ["Physical Science", "Biology"],
+    tags: ["Physical Science", "Biology", "Life Science"],
     description:
       "This Regents level physical-science course introduces students to Earth’s dynamic systems, the physical world, and Earth’s place in the universe. Major topics include, but are not limited to: Rocks & Minerals, Surface Processes & Landscape Formation, Mapping, Plate Tectonics, Geologic History, Meteorology, and Astronomy. This course ends with a New York State Regents Examination. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -1995,7 +2375,7 @@ export const courses = [
     prerequisites: [
       "Completion of Living Environment Honors with a final average of 85 or higher; OR completion of Living Environment with a final average of 90 or higher with teacher recommendation",
     ],
-    tags: ["Physical Science"],
+    tags: ["Physical Science", "Biology", "Life Science"],
     description:
       "This Regents level physical-science course introduces students to Earth’s dynamic systems, the physical world, and Earth’s place in the universe. Major topics include, but are not limited to: Rocks & Minerals, Surface Processes & Landscape Formation, Mapping, Plate Tectonics, Geologic History, Meteorology, and Astronomy. Earth Science Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Earth Science Regents course. This course ends with a New York State Regents Examination. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -2061,7 +2441,13 @@ export const courses = [
       "A score of 75 or higher on a previous Mathematics Regents Examination",
       "Successful completion of or concurrent enrollment in Algebra II Regents",
     ],
-    tags: ["Physics", "Physical Science", "Mathematics and Science"],
+    tags: [
+      "Physics",
+      "Physical Science",
+      "Mathematics and Science",
+      "Mechanical",
+      "Mechanics/Electronics",
+    ],
     description:
       "This Regents level physical-science course serves as an introductory course in Physics. Major topics include, but are not limited to: Motion, Forces, Energy and Power, Electricity and Magnetism, Waves (including light and sound), Gravitation, and Relationships Between Science, Technology and Society. This course ends with a New York State Regents Examination. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -2078,7 +2464,13 @@ export const courses = [
       "A score of 85 or higher on a previous Science Regents Examination",
       "Successful completion of or concurrent enrollment in Algebra II Regents",
     ],
-    tags: ["Physics", "Physical Science", "Mathematics and Science"],
+    tags: [
+      "Physics",
+      "Physical Science",
+      "Mathematics and Science",
+      "Mechanical",
+      "Mechanics/Electronics",
+    ],
     description:
       "This Regents level physical-science course serves as an introductory course in Physics. Major topics include, but are not limited to: Motion, Forces, Energy and Power, Electricity and Magnetism, Waves (including light and sound), Gravitation, and Relationships Between Science, Technology and Society. Physics Honors moves at a faster pace, goes into more depth, and covers additional topics compared to the Physics Regents course. This course ends with a New York State Regents Examination. Note: Completion of a minimum of 1200 minutes of laboratory work is required by New York State in order to be eligible for the New York State Regents Examination.",
   },
@@ -2120,7 +2512,9 @@ export const courses = [
       "Biological Science",
       "Physical Science",
       "Biology",
+      "Life Science",
       "Health Services",
+      "Health Care Service",
     ],
     description:
       "This course is a college level course which follows the curriculum for the Dutchess Community College Bio 105 & 106 curricula courses. This course serves as an interdisciplinary study of basic biological concepts, including the nature of science, matter, the cell, characteristics of living matter, a brief survey of the living world, ecology, homeostasis in organisms, genetics, evolution and a consideration of the structure and function of tissues, organs and organ systems. This course assumes a high school level of chemistry knowledge. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. This course may include labs with dissection components. Enrolled students are eligible for DCC credits for an additional fee payable directly to the College. The final exams are approved by Dutchess Community College. Successful completion of these exams can result in up to 8 college credits issued by Dutchess Community College.",
@@ -2152,7 +2546,13 @@ export const courses = [
       "Successful completion of or concurrent enrollment in a Calculus course",
       "Completion of previous Math & Science Regents courses with a final average of 80 or higher",
     ],
-    tags: ["Physics", "Physical Science", "Mathematics and Science"],
+    tags: [
+      "Physics",
+      "Physical Science",
+      "Mathematics and Science",
+      "Mechanical",
+      "Mechanics/Electronics",
+    ],
     description:
       "AP Physics C: Mechanics is a calculus-based, college-level physics course. It covers kinematics; Newton’s laws of motion; work, energy, and power; systems of particles and linear momentum; circular motion and rotation; oscillations; and gravitation. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
   },
@@ -2166,7 +2566,13 @@ export const courses = [
     prerequisites: [
       "Successful completion of Living Environment & Earth Science",
     ],
-    tags: ["Applied Science", "Physical Science", "Biology"],
+    tags: [
+      "Applied Science",
+      "Physical Science",
+      "Biology",
+      "Life Science",
+      "Biological Science",
+    ],
     description:
       "The AP Environmental Science course is designed to engage students with the scientific principles, concepts, and methodologies required to understand the interrelationships within the natural world. The course requires that students identify and analyze natural and human-made environmental problems, evaluate the relative risks associated with these problems, and examine alternative solutions for resolving or preventing them. Environmental science is interdisciplinary, embracing topics from geology, biology, environmental studies, environmental science, chemistry, and geography. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. This course may include labs with dissection components.",
   },
@@ -2182,7 +2588,12 @@ export const courses = [
       "Successful completion of 3 Regents Math courses",
       "Recommended by previous year’s science teacher",
     ],
-    tags: ["Applied Science", "Physical Science"],
+    tags: [
+      "Applied Science",
+      "Physical Science",
+      "Biology",
+      "Biological Science",
+    ],
     description:
       "Introduction to forensic science with focus upon the application of scientific methods and techniques to criminal justice and law. Methods specifically relevant to crime detection and analysis will be presented. Laboratory included. Note: The curriculum is rated for college level students. Some material presented in this course will be of graphic and explicit nature (e.g. serial killers, medico-legal death investigations and crime scenes). All material will be presented in an academic fashion and solely for the purpose of educational value, but some students may be sensitive to such topics. Students enrolled in this course are eligible for 4 credits available through Syracuse University for an additional fee made payable directly to the university.",
   },
@@ -2202,6 +2613,7 @@ export const courses = [
       "Physical Science",
       "Biology",
       "Biological Science",
+      "Life Science",
     ],
     description:
       "This non-Regents elective course is designed to provide students with a broad knowledge of Earth’s oceanic system. In this course, students will look at some of the basics of marine science that include marine conservation, marine biology, and oceanography. Through the use of visuals, readings, projects, current articles and classroom activities students will have a broader understanding of how our oceans and land are intricately connected.",
@@ -2217,7 +2629,7 @@ export const courses = [
       "Successful completion of at least 2 Regents Science courses",
       "A score of 75 or higher on at least 1 Science Regents Examination",
     ],
-    tags: ["Physical Science"],
+    tags: ["Physical Science", "Mathematics and Science"],
     description:
       "Astronomy is a non-Regents elective exploratory course into the science of our universe, covering topics such as experimental techniques; celestial sphere; scale of the universe; the solar system, sun, moon and planets; comets and meteors; stars and stellar evolution; black holes, super novae and stellar remnants; galaxies and galactic evolution; constellations; modern telescopes and optics; observing techniques; history of astronomy and space exploration; exoplanets; space travel and relativity; life in the universe; dark matter and dark energy; cosmology and the big bang. The class typically emphasizes labs, projects and other forms of hands-on learning.",
   },
@@ -2231,7 +2643,13 @@ export const courses = [
     prerequisites: [
       "Successful completion of Living Environment & Earth Science",
     ],
-    tags: ["Health Services", "Biology", "Biological Science"],
+    tags: [
+      "Health Services",
+      "Biology",
+      "Biological Science",
+      "Life Science",
+      "Life Science",
+    ],
     description:
       "This course will provide students with a comprehensive study of the human body. Students will develop an understanding of who they are, what makes their bodies work, and what happens when their bodies malfunction. Students will be performing a series of activities and laboratories that assist them in the exploration of the human body with practical everyday application. This course is designed for students with career interests in the health science fields, athletic training and in physical education.",
   },
@@ -2246,7 +2664,7 @@ export const courses = [
       "Successful completion of Living Environment",
       "Successful completion of at least 1 other physical science course",
     ],
-    tags: ["Biology", "Biological Science", "Physical Science"],
+    tags: ["Biology", "Biological Science", "Physical Science", "Life Science"],
     description:
       "This elective course teaches general plant biology and the practical application of skills related to the care and propagation of plants. Major topics include, but are not limited to: Botany, Soil Chemistry, Hydroponics, Genetics, Plant Reproduction, and Farming. Students in this course will develop valuable skills that may help them attain seasonal or career employment in the field of agriculture.",
   },
@@ -2266,6 +2684,7 @@ export const courses = [
       "Physical Science",
       "Biology",
       "Biological Science",
+      "Life Science",
     ],
     description:
       "This course aims at raising students’ awareness of their natural environment through the scope of current relevant topics in the media. Students will become knowledgeable in fundamental concepts relating to Earth systems, climate, population growth dynamics, sustainability, and natural resource management. Environmental topics will be explored through different lenses; including biological, geological, historical, and socio-political viewpoints. Students will engage in a variety of learning experiences, allowing them to become active participants in environmental stewardship.",
@@ -2286,6 +2705,8 @@ export const courses = [
       "Biological Science",
       "Physical Science",
       "Health Services",
+      "Health Care Service",
+      "Life Science",
     ],
     description:
       "The Animal Science course is designed to introduce students to the world of animal agriculture. Students will engage in hands-on-laboratory activities and projects. At the completion of the course, students will submit a comprehensive Producer’s Management Guide for the animal of their choice. Major topics include, but are not limited to: History & Use of Animals, Animal Handling & Safety, Cells & Tissues, Animal Nutrition, Animal Reproduction, Genetics, Animal Health, Animal Products & Marketing.",
@@ -2299,7 +2720,7 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: ["Successful completion of Living Environment"],
     pathway: "Science Research Program",
-    tags: ["Education and Training", "Applied Science", "Physical Science"],
+    tags: ["Applied Science", "Physical Science"],
     description:
       "This course is a year-long introduction into authentic scientific research. Students will research scientific topics of their choice, find a mentor to work with, and conduct original scientific research in partnership with their mentor. Students are also expected to read academic articles, give presentations and to write reports on their experimental results and analysis. All students must present at an annual symposium at the end of the year. Note: This course is part of a Science Research Program that is run in collaboration with the University at Albany. Students in the program can participate in the program for up to 3 years (10th through 12th grades), taking all three levels of science research (I, II and III). Students who complete the entire program, including summer courses, are eligible to receive up to 12 college credits through the University at Albany. University at Albany credits are subject to an additional fee made payable directly to the university.",
   },
@@ -2312,7 +2733,7 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: ["Successful completion of Science Research I"],
     pathway: "Science Research Program",
-    tags: ["Education and Training", "Applied Science", "Physical Science"],
+    tags: ["Applied Science", "Physical Science"],
     description:
       "Science Research II is designed for students in their second year in the Science Research Program. Students learn research methodology in the natural and social sciences by accessing scientific databases by using on-line bibliographic search techniques, consulting doctoral-level research scholars, developing hypotheses and performing experiments to test them, and writing research papers and making presentations at scientific symposia. Students enrolled in this course will only meet every other day. Note: This course is part of a Science Research Program that is run in collaboration with the University at Albany. Students in the program can participate in the program for up to 3 years (10th through 12th grades), taking all three levels of science research (I, II and III). Students who complete the entire program, including summer courses, are eligible to receive up to 12 college credits through the University at Albany. Students enrolled in this course are eligible for 4 credits available through University at Albany for an additional fee made payable directly to the university.",
   },
@@ -2325,7 +2746,7 @@ export const courses = [
     rank_weighting: 1.1,
     prerequisites: ["Successful completion of Science Research I & II"],
     pathway: "Science Research Program",
-    tags: ["Education and Training", "Applied Science", "Physical Science"],
+    tags: ["Applied Science", "Physical Science"],
     description:
       "Continuation of work undertaken in Science Research II with emphasis placed upon the communication of results. Students enrolled in this course will only meet every other day. Note: This course is part of a Science Research Program that is run in collaboration with the University at Albany. Students in the program can participate in the program for up to 3 years (10th through 12th grades), taking all three levels of science research (I, II, and III). Students who complete the entire program, including summer courses, are eligible to receive up to 12 college credits through the University at Albany. Students enrolled in this course are eligible for 4 credits available through the University at Albany for an additional fee made payable directly to the university.",
   },
@@ -2339,7 +2760,12 @@ export const courses = [
     prerequisites: [],
     description:
       "This course deals with the history, people, politics, culture, economy, geography and current events of Africa. It expands the students’ basic knowledge of the African continent and its countries beyond the framework and level of mastery established in Global History and Geography. This course broadens the students’ perspective and understanding regarding Africa. At the conclusion of the course, students will be able to think critically about Africa, demonstrate knowledge of the region and reflect an in-depth understanding of major issues related to Africa. The course will include group study and discussion, focus films, guest speakers, fictional and non- fictional literary works, lecture and research.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2350,7 +2776,12 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     description: "Continuation of African Studies I.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2362,7 +2793,12 @@ export const courses = [
     prerequisites: [],
     description:
       "The purpose of this course is to offer students the opportunity to examine the issues, personalities and the legacy of this single-most important event in American history. The course will attempt to help students understand the magnitude of the issues, the degree of personal sacrifice, and the war’s subsequent impact in shaping the modern American nation.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2377,7 +2813,12 @@ export const courses = [
     ],
     description:
       "AP European History is a college-level course. It is academically demanding and requires a significant commitment on the part of the student. This course introduces students to cultural, economic, political and social developments that played a fundamental role in shaping the world in which they live. In addition to providing a basic narrative of events and movements, since 1450. The goals of the AP program in European History are to develop an understanding of some of the principal themes in modern European History, an ability to analyze historical evidence and historical interpretation, and an ability to express historical understanding in writing. Students in this course are also expected to take the Advanced Placement European History exam in May. There is a fee for this exam which is determined by the College Board and is the responsibility of the student.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2389,7 +2830,7 @@ export const courses = [
     prerequisites: [],
     description:
       "This course is a combination of cognitive learning and actual practice in the field of teaching. Teaching is an art where one gets better as one practices. This course not only instructs students on the basic fundamentals and requirements of teaching, but it also gives them the opportunity to understand what it means to be a teacher and train to become a teacher. Enrolled students are eligible for college credits for an additional fee payable directly to Dutchess Community College.",
-    tags: ["Education and Training"],
+    tags: ["Education and Training", "Education", "Teaching/Education"],
   },
   {
     department: "Social Studies",
@@ -2406,6 +2847,8 @@ export const courses = [
       "Humanities",
       "History and Archeology",
       "Social Science",
+      "Media",
+      "Communications and Media",
     ],
   },
   {
@@ -2418,7 +2861,7 @@ export const courses = [
     prerequisites: [],
     description:
       "This course explores world history, culture and sociology and mythology. Students will examine myths, legends, and folklore that have shaped cultures and nations around the world. This course includes the study of beliefs, cultures, and history of ancient societies in order to gain knowledge beneficial to the academic disciplines of philosophy, anthropology, archaeology, art, literature, and psychology. Students work together to tell the story of human history through stories that shape our past.",
-    tags: ["Humanities"],
+    tags: ["Humanities", "Social Science", "History and Archeology"],
   },
   {
     department: "Social Studies",
@@ -2430,7 +2873,7 @@ export const courses = [
     prerequisites: [],
     description:
       "In this half year course, students examine the development of sports and competition throughout history. They concentrate on how sports have grown to play a large role in the political, economic and social aspects of our everyday lives. There are connections made to show the impact that sports had on a particular era in history. Issues and developments related to gender, race, ethnicity, and social class are examined and the pioneers of each sport are studied.",
-    tags: ["Social Science", "Arts and Humanities", "Humanities"],
+    tags: ["Social Science", "Arts and Humanities", "Humanities", "Athletics"],
   },
   {
     department: "Social Studies",
@@ -2442,7 +2885,12 @@ export const courses = [
     prerequisites: [],
     description:
       "This course will deal with the uniqueness and universality of this momentous event in history. It will examine the causes and events of the Holocaust, as well as its effect on the course of humanity. The course will begin with a history of the Jews and early examples of anti-Semitism and conclude with current issues in the Middle East, utilizing historical readings, fictional accounts, films and guest speakers.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2454,7 +2902,13 @@ export const courses = [
     prerequisites: [],
     description:
       "This course deals with the struggle of all people to achieve and maintain human rights. Students study various documents of human rights, violations of human rights and hate groups which attempt to curtail human rights. Particular emphasis is given to events and documents relating to the history of the United States. The class includes projects that help teach tolerance and respect for all people. Focus films, guest speakers and fictional and non-fictional literary works are included.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+      "Law and Government",
+    ],
   },
   {
     department: "Social Studies",
@@ -2466,7 +2920,12 @@ export const courses = [
     prerequisites: [],
     description:
       "This course focuses on the history, people, politics, culture, economy, geography and current events of Latin America, Central America, South America and the Caribbean. It expands the students’ basic knowledge of Central and South America beyond the framework and level of mastery established in Global History and Geography, and broadens the students’ perspective and understanding regarding this region. The course includes group study and discussion, focus films, guest speakers, fictional and non-fictional literary works, lecture and research. At the conclusion of the course, students are able to think critically about Latin America, demonstrate knowledge of the region and reflect an in-depth understanding of major issues related to Latin America.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+    ],
   },
   {
     department: "Social Studies",
@@ -2478,7 +2937,15 @@ export const courses = [
     prerequisites: [],
     description:
       "This course is designed to provide students with a general understanding of their legal rights and responsibilities and knowledge of daily legal problems faced in society. The course examines the purposes and origins of law using both criminal and civil law. A variety of other laws will be discussed, including individual rights and freedoms, family law and consumer law. There will be extensive use of current events and issues.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Law and Government",
+      "Law",
+      "Law and Public Safety",
+      "Social",
+    ],
   },
   {
     department: "Social Studies",
@@ -2490,7 +2957,12 @@ export const courses = [
     prerequisites: [],
     description:
       "This course serves as an introductory level philosophy course. Presented are many philosophical traditions and theories from a myriad of global perspectives. Students learn about the role of thought, inquiry, ideas, modalities of discourse, and the practical application of philosophical theories.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Philosophy and Theology",
+    ],
   },
   {
     department: "Social Studies",
@@ -2531,6 +3003,8 @@ export const courses = [
       "Social Science",
       "Psychology",
       "Philosophy and Theology",
+      "Social",
+      "Social Perceptiveness",
     ],
   },
   {
@@ -2543,7 +3017,7 @@ export const courses = [
     prerequisites: [],
     description:
       "The goal of this course is to assess the major developments which shaped the social and cultural values of the American people in the twentieth century. This is a course in social history that examines the way ordinary Americans lived and what they believed as reflected in their music, art, literature and popular institutions. To gain a better understanding of what it means to be an American today, we examine how previous generations of Americans went about their daily lives and what was important to them.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: ["Humanities", "History and Archeology", "Social Science", "Social"],
   },
   {
     department: "Social Studies",
@@ -2555,7 +3029,12 @@ export const courses = [
     prerequisites: [],
     description:
       "This course is designed to give students an in-depth look at World War I and World War II, as well as other military conflicts of the twentieth century. The course will be lecture-driven, highlighted by historical-based videos, group discussions, readings and analysis, and essay writing. The goal of the course is the analysis of the events that occurred and the decisions that were made leading up to and throughout the war, trying to answer the question of 'why,' and not just a survey of who, what, where and when.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Law and Public Safety",
+    ],
   },
   {
     department: "Social Studies",
@@ -2693,7 +3172,14 @@ export const courses = [
     pathway: "4+1 Pathway",
     description:
       "This course begins with the colonial and constitutional foundations of the United States and explores the structure and functions of government. It covers key historical events leading up to the modern era and prepares students for the NYS United States History and Government Regents examination.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Geography",
+      "Law and Government",
+      "Law",
+    ],
   },
   {
     department: "Social Studies",
@@ -2710,7 +3196,13 @@ export const courses = [
     pathway: "4+1 Pathway",
     description:
       "This honors-level course examines the same content as U.S. History & Government Regents but with an increased focus on analytical skills and critical thinking. Students will be prepared for both the Regents and other advanced assessments.",
-    tags: ["Humanities", "History and Archeology", "Social Science"],
+    tags: [
+      "Humanities",
+      "History and Archeology",
+      "Social Science",
+      "Law",
+      "Law and Government",
+    ],
   },
   {
     department: "Social Studies",
@@ -2734,6 +3226,7 @@ export const courses = [
       "Social Science",
       "Geography",
       "Law and Government",
+      "Law",
     ],
   },
   {
@@ -2751,6 +3244,7 @@ export const courses = [
       "History and Archeology",
       "Social Science",
       "Law and Government",
+      "Law",
     ],
   },
   {
@@ -2772,6 +3266,7 @@ export const courses = [
       "History and Archeology",
       "Social Science",
       "Law and Government",
+      "Law",
     ],
   },
   {
@@ -2789,6 +3284,7 @@ export const courses = [
       "History and Archeology",
       "Social Science",
       "Law and Government",
+      "Law",
     ],
   },
   {
@@ -2806,6 +3302,9 @@ export const courses = [
       "History and Archeology",
       "Social Science",
       "Law and Government",
+      "Economics and Accounting",
+      "Finance",
+      "Management of Financial Resources",
     ],
   },
   {
@@ -2828,6 +3327,8 @@ export const courses = [
       "Social Science",
       "Law and Government",
       "Economics and Accounting",
+      "Finance",
+      "Management of Financial Resources",
     ],
   },
   {
@@ -2850,6 +3351,8 @@ export const courses = [
       "Social Science",
       "Law and Government",
       "Economics and Accounting",
+      "Finance",
+      "Management of Financial Resources",
     ],
   },
 ] satisfies Course[];

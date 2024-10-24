@@ -344,6 +344,1313 @@ export const pathways = [
 
 export const educationTags = [
   {
+    code: "1",
+    name: "Worker Characteristics",
+    description: "Worker Characteristics",
+  },
+  {
+    code: "1.A",
+    name: "Abilities",
+    description:
+      "Enduring attributes of the individual that influence performance",
+  },
+  {
+    code: "1.A.1",
+    name: "Cognitive Abilities",
+    description:
+      "Abilities that influence the acquisition and application of knowledge in problem solving",
+  },
+  {
+    code: "1.A.1.a",
+    name: "Verbal Abilities",
+    description:
+      "Abilities that influence the acquisition and application of verbal information in problem solving",
+  },
+  {
+    code: "1.A.1.a.1",
+    name: "Oral Comprehension",
+    description:
+      "The ability to listen to and understand information and ideas presented through spoken words and sentences.",
+  },
+  {
+    code: "1.A.1.a.2",
+    name: "Written Comprehension",
+    description:
+      "The ability to read and understand information and ideas presented in writing.",
+  },
+  {
+    code: "1.A.1.a.3",
+    name: "Oral Expression",
+    description:
+      "The ability to communicate information and ideas in speaking so others will understand.",
+  },
+  {
+    code: "1.A.1.a.4",
+    name: "Written Expression",
+    description:
+      "The ability to communicate information and ideas in writing so others will understand.",
+  },
+  {
+    code: "1.A.1.b",
+    name: "Idea Generation and Reasoning Abilities",
+    description:
+      "Abilities that influence the application and manipulation of information in problem solving",
+  },
+  {
+    code: "1.A.1.b.1",
+    name: "Fluency of Ideas",
+    description:
+      "The ability to come up with a number of ideas about a topic (the number of ideas is important, not their quality, correctness, or creativity).",
+  },
+  {
+    code: "1.A.1.b.2",
+    name: "Originality",
+    description:
+      "The ability to come up with unusual or clever ideas about a given topic or situation, or to develop creative ways to solve a problem.",
+  },
+  {
+    code: "1.A.1.b.3",
+    name: "Problem Sensitivity",
+    description:
+      "The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing that there is a problem.",
+  },
+  {
+    code: "1.A.1.b.4",
+    name: "Deductive Reasoning",
+    description:
+      "The ability to apply general rules to specific problems to produce answers that make sense.",
+  },
+  {
+    code: "1.A.1.b.5",
+    name: "Inductive Reasoning",
+    description:
+      "The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events).",
+  },
+  {
+    code: "1.A.1.b.6",
+    name: "Information Ordering",
+    description:
+      "The ability to arrange things or actions in a certain order or pattern according to a specific rule or set of rules (e.g., patterns of numbers, letters, words, pictures, mathematical operations).",
+  },
+  {
+    code: "1.A.1.b.7",
+    name: "Category Flexibility",
+    description:
+      "The ability to generate or use different sets of rules for combining or grouping things in different ways.",
+  },
+  {
+    code: "1.A.1.c",
+    name: "Quantitative Abilities",
+    description:
+      "Abilities that influence the solution of problems involving mathematical relationships",
+  },
+  {
+    code: "1.A.1.c.1",
+    name: "Mathematical Reasoning",
+    description:
+      "The ability to choose the right mathematical methods or formulas to solve a problem.",
+  },
+  {
+    code: "1.A.1.c.2",
+    name: "Number Facility",
+    description:
+      "The ability to add, subtract, multiply, or divide quickly and correctly.",
+  },
+  {
+    code: "1.A.1.d",
+    name: "Memory",
+    description: "Abilities related to the recall of available information",
+  },
+  {
+    code: "1.A.1.d.1",
+    name: "Memorization",
+    description:
+      "The ability to remember information such as words, numbers, pictures, and procedures.",
+  },
+  {
+    code: "1.A.1.e",
+    name: "Perceptual Abilities",
+    description:
+      "Abilities related to the acquisition and organization of visual information",
+  },
+  {
+    code: "1.A.1.e.1",
+    name: "Speed of Closure",
+    description:
+      "The ability to quickly make sense of, combine, and organize information into meaningful patterns.",
+  },
+  {
+    code: "1.A.1.e.2",
+    name: "Flexibility of Closure",
+    description:
+      "The ability to identify or detect a known pattern (a figure, object, word, or sound) that is hidden in other distracting material.",
+  },
+  {
+    code: "1.A.1.e.3",
+    name: "Perceptual Speed",
+    description:
+      "The ability to quickly and accurately compare similarities and differences among sets of letters, numbers, objects, pictures, or patterns. The things to be compared may be presented at the same time or one after the other. This ability also includes comparing a presented object with a remembered object.",
+  },
+  {
+    code: "1.A.1.f",
+    name: "Spatial Abilities",
+    description:
+      "Abilities related to the manipulation and organization of spatial information",
+  },
+  {
+    code: "1.A.1.f.1",
+    name: "Spatial Orientation",
+    description:
+      "The ability to know your location in relation to the environment or to know where other objects are in relation to you.",
+  },
+  {
+    code: "1.A.1.f.2",
+    name: "Visualization",
+    description:
+      "The ability to imagine how something will look after it is moved around or when its parts are moved or rearranged.",
+  },
+  {
+    code: "1.A.1.g",
+    name: "Attentiveness",
+    description: "Abilities related to application of attention",
+  },
+  {
+    code: "1.A.1.g.1",
+    name: "Selective Attention",
+    description:
+      "The ability to concentrate on a task over a period of time without being distracted.",
+  },
+  {
+    code: "1.A.1.g.2",
+    name: "Time Sharing",
+    description:
+      "The ability to shift back and forth between two or more activities or sources of information (such as speech, sounds, touch, or other sources).",
+  },
+  {
+    code: "1.A.2",
+    name: "Psychomotor Abilities",
+    description:
+      "Abilities that influence the capacity to manipulate and control objects",
+  },
+  {
+    code: "1.A.2.a",
+    name: "Fine Manipulative Abilities",
+    description: "Abilities related to the manipulation of objects",
+  },
+  {
+    code: "1.A.2.a.1",
+    name: "Arm-Hand Steadiness",
+    description:
+      "The ability to keep your hand and arm steady while moving your arm or while holding your arm and hand in one position.",
+  },
+  {
+    code: "1.A.2.a.2",
+    name: "Manual Dexterity",
+    description:
+      "The ability to quickly move your hand, your hand together with your arm, or your two hands to grasp, manipulate, or assemble objects.",
+  },
+  {
+    code: "1.A.2.a.3",
+    name: "Finger Dexterity",
+    description:
+      "The ability to make precisely coordinated movements of the fingers of one or both hands to grasp, manipulate, or assemble very small objects.",
+  },
+  {
+    code: "1.A.2.b",
+    name: "Control Movement Abilities",
+    description:
+      "Abilities related to the control and manipulation of objects in time and space",
+  },
+  {
+    code: "1.A.2.b.1",
+    name: "Control Precision",
+    description:
+      "The ability to quickly and repeatedly adjust the controls of a machine or a vehicle to exact positions.",
+  },
+  {
+    code: "1.A.2.b.2",
+    name: "Multilimb Coordination",
+    description:
+      "The ability to coordinate two or more limbs (for example, two arms, two legs, or one leg and one arm) while sitting, standing, or lying down. It does not involve performing the activities while the whole body is in motion.",
+  },
+  {
+    code: "1.A.2.b.3",
+    name: "Response Orientation",
+    description:
+      "The ability to choose quickly between two or more movements in response to two or more different signals (lights, sounds, pictures). It includes the speed with which the correct response is started with the hand, foot, or other body part.",
+  },
+  {
+    code: "1.A.2.b.4",
+    name: "Rate Control",
+    description:
+      "The ability to time your movements or the movement of a piece of equipment in anticipation of changes in the speed and/or direction of a moving object or scene.",
+  },
+  {
+    code: "1.A.2.c",
+    name: "Reaction Time and Speed Abilities",
+    description: "Abilities related to speed of manipulation of objects",
+  },
+  {
+    code: "1.A.2.c.1",
+    name: "Reaction Time",
+    description:
+      "The ability to quickly respond (with the hand, finger, or foot) to a signal (sound, light, picture) when it appears.",
+  },
+  {
+    code: "1.A.2.c.2",
+    name: "Wrist-Finger Speed",
+    description:
+      "The ability to make fast, simple, repeated movements of the fingers, hands, and wrists.",
+  },
+  {
+    code: "1.A.2.c.3",
+    name: "Speed of Limb Movement",
+    description: "The ability to quickly move the arms and legs.",
+  },
+  {
+    code: "1.A.3",
+    name: "Physical Abilities",
+    description:
+      "Abilities that influence strength, endurance, flexibility, balance and coordination",
+  },
+  {
+    code: "1.A.3.a",
+    name: "Physical Strength Abilities",
+    description: "Abilities related to the capacity to exert force",
+  },
+  {
+    code: "1.A.3.a.1",
+    name: "Static Strength",
+    description:
+      "The ability to exert maximum muscle force to lift, push, pull, or carry objects.",
+  },
+  {
+    code: "1.A.3.a.2",
+    name: "Explosive Strength",
+    description:
+      "The ability to use short bursts of muscle force to propel oneself (as in jumping or sprinting), or to throw an object.",
+  },
+  {
+    code: "1.A.3.a.3",
+    name: "Dynamic Strength",
+    description:
+      "The ability to exert muscle force repeatedly or continuously over time. This involves muscular endurance and resistance to muscle fatigue.",
+  },
+  {
+    code: "1.A.3.a.4",
+    name: "Trunk Strength",
+    description:
+      "The ability to use your abdominal and lower back muscles to support part of the body repeatedly or continuously over time without giving out or fatiguing.",
+  },
+  {
+    code: "1.A.3.b",
+    name: "Endurance",
+    description:
+      "The ability to exert oneself physically over long periods without getting out of breath",
+  },
+  {
+    code: "1.A.3.b.1",
+    name: "Stamina",
+    description:
+      "The ability to exert yourself physically over long periods of time without getting winded or out of breath.",
+  },
+  {
+    code: "1.A.3.c",
+    name: "Flexibility, Balance, and Coordination",
+    description: "Abilities related to the control of gross body movements",
+  },
+  {
+    code: "1.A.3.c.1",
+    name: "Extent Flexibility",
+    description:
+      "The ability to bend, stretch, twist, or reach with your body, arms, and/or legs.",
+  },
+  {
+    code: "1.A.3.c.2",
+    name: "Dynamic Flexibility",
+    description:
+      "The ability to quickly and repeatedly bend, stretch, twist, or reach out with your body, arms, and/or legs.",
+  },
+  {
+    code: "1.A.3.c.3",
+    name: "Gross Body Coordination",
+    description:
+      "The ability to coordinate the movement of your arms, legs, and torso together when the whole body is in motion.",
+  },
+  {
+    code: "1.A.3.c.4",
+    name: "Gross Body Equilibrium",
+    description:
+      "The ability to keep or regain your body balance or stay upright when in an unstable position.",
+  },
+  {
+    code: "1.A.4",
+    name: "Sensory Abilities",
+    description:
+      "Abilities that influence visual, auditory and speech perception",
+  },
+  {
+    code: "1.A.4.a",
+    name: "Visual Abilities",
+    description: "Abilities related to visual sensory input",
+  },
+  {
+    code: "1.A.4.a.1",
+    name: "Near Vision",
+    description:
+      "The ability to see details at close range (within a few feet of the observer).",
+  },
+  {
+    code: "1.A.4.a.2",
+    name: "Far Vision",
+    description: "The ability to see details at a distance.",
+  },
+  {
+    code: "1.A.4.a.3",
+    name: "Visual Color Discrimination",
+    description:
+      "The ability to match or detect differences between colors, including shades of color and brightness.",
+  },
+  {
+    code: "1.A.4.a.4",
+    name: "Night Vision",
+    description: "The ability to see under low-light conditions.",
+  },
+  {
+    code: "1.A.4.a.5",
+    name: "Peripheral Vision",
+    description:
+      "The ability to see objects or movement of objects to one's side when the eyes are looking ahead.",
+  },
+  {
+    code: "1.A.4.a.6",
+    name: "Depth Perception",
+    description:
+      "The ability to judge which of several objects is closer or farther away from you, or to judge the distance between you and an object.",
+  },
+  {
+    code: "1.A.4.a.7",
+    name: "Glare Sensitivity",
+    description:
+      "The ability to see objects in the presence of a glare or bright lighting.",
+  },
+  {
+    code: "1.A.4.b",
+    name: "Auditory and Speech Abilities",
+    description: "Abilities related to auditory and oral input",
+  },
+  {
+    code: "1.A.4.b.1",
+    name: "Hearing Sensitivity",
+    description:
+      "The ability to detect or tell the differences between sounds that vary in pitch and loudness.",
+  },
+  {
+    code: "1.A.4.b.2",
+    name: "Auditory Attention",
+    description:
+      "The ability to focus on a single source of sound in the presence of other distracting sounds.",
+  },
+  {
+    code: "1.A.4.b.3",
+    name: "Sound Localization",
+    description:
+      "The ability to tell the direction from which a sound originated.",
+  },
+  {
+    code: "1.A.4.b.4",
+    name: "Speech Recognition",
+    description:
+      "The ability to identify and understand the speech of another person.",
+  },
+  {
+    code: "1.A.4.b.5",
+    name: "Speech Clarity",
+    description: "The ability to speak clearly so others can understand you.",
+  },
+  {
+    code: "1.B",
+    name: "Interests and Work Values",
+    description: "Preferences for work environments and outcomes",
+  },
+  {
+    code: "1.B.1",
+    name: "General Occupational Interests",
+    description:
+      "Preferences for work environments. Occupational Interest Profiles (OIPs) are compatible with Holland's (1997) model of personality types and work environments. Six interest categories are used to describe the work environment of occupations: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. An OIP consists of six numerical scores indicating how descriptive and characteristic each work environment (or interest area) is for an O*NET-SOC occupation. In addition, a high-point profile has been assigned indicating which interests are most characteristic of an O*NET-SOC occupation. A high-point profile consists of one to three interest codes, depending on how many interest categories meet a minimum degree of descriptiveness for the O*NET-SOC occupation.",
+  },
+  {
+    code: "1.B.1.a",
+    name: "Realistic",
+    description:
+      "Work involves designing, building, or repairing of equipment, materials, or structures, engaging in physical activity, or working outdoors. Realistic occupations are often associated with engineering, mechanics and electronics, construction, woodworking, transportation, machine operation, agriculture, animal services, physical or manual labor, athletics, or protective services.",
+  },
+  {
+    code: "1.B.1.b",
+    name: "Investigative",
+    description:
+      "Work involves studying and researching non-living objects, living organisms, disease or other forms of impairment, or human behavior. Investigative occupations are often associated with physical, life, medical, or social sciences, and can be found in the fields of humanities, mathematics/statistics, information technology, or health care service.",
+  },
+  {
+    code: "1.B.1.c",
+    name: "Artistic",
+    description:
+      "Work involves creating original visual artwork, performances, written works, food, or music for a variety of media, or applying artistic principles to the design of various objects and materials. Artistic occupations are often associated with visual arts, applied arts and design, performing arts, music, creative writing, media, or culinary art.",
+  },
+  {
+    code: "1.B.1.d",
+    name: "Social",
+    description:
+      "Work involves helping, teaching, advising, assisting, or providing service to others. Social occupations are often associated with social, health care, personal service, teaching/education, or religious activities.",
+  },
+  {
+    code: "1.B.1.e",
+    name: "Enterprising",
+    description:
+      "Work involves managing, negotiating, marketing, or selling, typically in a business setting, or leading or advising people in political and legal situations. Enterprising occupations are often associated with business initiatives, sales, marketing/advertising, finance, management/administration, professional advising, public speaking, politics, or law.",
+  },
+  {
+    code: "1.B.1.f",
+    name: "Conventional",
+    description:
+      "Work involves following procedures and regulations to organize information or data, typically in a business setting. Conventional occupations are often associated with office work, accounting, mathematics/statistics, information technology, finance, or human resources.",
+  },
+  {
+    code: "1.B.1.g",
+    name: "First Interest High-Point",
+    description: "Primary-Rank Descriptiveness",
+  },
+  {
+    code: "1.B.1.h",
+    name: "Second Interest High-Point",
+    description: "Secondary-Cutoff/Rank Descriptiveness",
+  },
+  {
+    code: "1.B.1.i",
+    name: "Third Interest High-Point",
+    description: "Tertiary-Cutoff/Rank Descriptiveness",
+  },
+  {
+    code: "1.B.2",
+    name: "Work Values",
+    description:
+      "Occupational Reinforcer Patterns (ORPs) indicate which work values and needs are likely to be reinforced or satisfied by a particular O*NET-SOC occupation. The use of work values to describe occupations is based on the Theory of Work Adjustment (TWA) developed during the Work Adjustment Project at the University of Minnesota under Research Grants from the U.S. Department of Health, Education and Welfare (Dawis, R.V., England, G.W., & Lofquist, L.H., 1964; Dawis, R.V., & Lofquist, L.H., 1984). This theory proposes that job satisfaction is directly related to the degree to which a person's values and corresponding needs are satisfied by his or her work environment. The TWA identifies six work values each with a corresponding set of needs.",
+  },
+  {
+    code: "1.B.2.a",
+    name: "Achievement",
+    description:
+      "Occupations that satisfy this work value are results oriented and allow employees to use their strongest abilities, giving them a feeling of accomplishment. Corresponding needs are Ability Utilization and Achievement.",
+  },
+  {
+    code: "1.B.2.a.1",
+    name: "Ability Utilization",
+    description: "Workers on this job make use of their individual abilities.",
+  },
+  {
+    code: "1.B.2.a.2",
+    name: "Achievement",
+    description: "Workers on this job get a feeling of accomplishment.",
+  },
+  {
+    code: "1.B.2.b",
+    name: "Working Conditions",
+    description:
+      "Occupations that satisfy this work value offer job security and good working conditions. Corresponding needs are Activity, Compensation, Independence, Security, Variety and Working Conditions.",
+  },
+  {
+    code: "1.B.2.b.1",
+    name: "Activity",
+    description: "Workers on this job are busy all the time.",
+  },
+  {
+    code: "1.B.2.b.2",
+    name: "Independence",
+    description: "Workers on this job do their work alone.",
+  },
+  {
+    code: "1.B.2.b.3",
+    name: "Variety",
+    description:
+      "Workers on this job have something different to do every day.",
+  },
+  {
+    code: "1.B.2.b.4",
+    name: "Compensation",
+    description:
+      "Workers on this job are paid well in comparison with other workers.",
+  },
+  {
+    code: "1.B.2.b.5",
+    name: "Security",
+    description: "Workers on this job have steady employment.",
+  },
+  {
+    code: "1.B.2.b.6",
+    name: "Working Conditions",
+    description: "Workers on this job have good working conditions.",
+  },
+  {
+    code: "1.B.2.c",
+    name: "Recognition",
+    description:
+      "Occupations that satisfy this work value offer advancement, potential for leadership, and are often considered prestigious. Corresponding needs are Advancement, Authority, Recognition and Social Status.",
+  },
+  {
+    code: "1.B.2.c.1",
+    name: "Advancement",
+    description: "Workers on this job have opportunities for advancement.",
+  },
+  {
+    code: "1.B.2.c.2",
+    name: "Recognition",
+    description:
+      "Workers on this job receive recognition for the work they do.",
+  },
+  {
+    code: "1.B.2.c.3",
+    name: "Authority",
+    description:
+      "Workers on this job give directions and instructions to others.",
+  },
+  {
+    code: "1.B.2.c.4",
+    name: "Social Status",
+    description:
+      "Workers on this job are looked up to by others in their company and their community.",
+  },
+  {
+    code: "1.B.2.d",
+    name: "Relationships",
+    description:
+      "Occupations that satisfy this work value allow employees to provide service to others and work with co-workers in a friendly non-competitive environment. Corresponding needs are Co-workers, Moral Values and Social Service.",
+  },
+  {
+    code: "1.B.2.d.1",
+    name: "Co-workers",
+    description:
+      "Workers on this job have co-workers who are easy to get along with.",
+  },
+  {
+    code: "1.B.2.d.2",
+    name: "Social Service",
+    description:
+      "Workers on this job have work where they do things for other people.",
+  },
+  {
+    code: "1.B.2.d.3",
+    name: "Moral Values",
+    description:
+      "Workers on this job are never pressured to do things that go against their sense of right and wrong.",
+  },
+  {
+    code: "1.B.2.e",
+    name: "Support",
+    description:
+      "Occupations that satisfy this work value offer supportive management that stands behind employees. Corresponding needs are Company Policies, Supervision: Human Relations and Supervision: Technical.",
+  },
+  {
+    code: "1.B.2.e.1",
+    name: "Company Policies and Practices",
+    description: "Workers on this job are treated fairly by the company.",
+  },
+  {
+    code: "1.B.2.e.2",
+    name: "Supervision, Human Relations",
+    description:
+      "Workers on this job have supervisors who back up their workers with management.",
+  },
+  {
+    code: "1.B.2.e.3",
+    name: "Supervision, Technical",
+    description:
+      "Workers on this job have supervisors who train their workers well.",
+  },
+  {
+    code: "1.B.2.f",
+    name: "Independence",
+    description:
+      "Occupations that satisfy this work value allow employees to work on their own and make decisions. Corresponding needs are Creativity, Responsibility and Autonomy.",
+  },
+  {
+    code: "1.B.2.f.1",
+    name: "Creativity",
+    description: "Workers on this job try out their own ideas.",
+  },
+  {
+    code: "1.B.2.f.2",
+    name: "Responsibility",
+    description: "Workers on this job make decisions on their own.",
+  },
+  {
+    code: "1.B.2.f.3",
+    name: "Autonomy",
+    description: "Workers on this job plan their work with little supervision.",
+  },
+  {
+    code: "1.B.2.g",
+    name: "First Work Value High-Point",
+    description: "Primary-Rank Descriptiveness",
+  },
+  {
+    code: "1.B.2.h",
+    name: "Second Work Value High-Point",
+    description: "Secondary-Cutoff/Rank Descriptiveness",
+  },
+  {
+    code: "1.B.2.i",
+    name: "Third Work Value High-Point",
+    description: "Tertiary-Cutoff/Rank Descriptiveness",
+  },
+  {
+    code: "1.B.3",
+    name: "Basic Occupational Interests",
+    description:
+      "Specific, homogeneous facets of interests that group together work activities that share similar properties and represent the same abstract object.",
+  },
+  {
+    code: "1.B.3.a",
+    name: "Mechanics/Electronics",
+    description:
+      "Work involves maintaining and repairing of machinery, such as automotive engines, electronic equipment, computers, and communication systems.",
+  },
+  {
+    code: "1.B.3.b",
+    name: "Construction/Woodwork",
+    description:
+      "Work involves constructing, installing, or repairing structures and fixtures made of wood.",
+  },
+  {
+    code: "1.B.3.c",
+    name: "Transportation/Machine Operation",
+    description:
+      "Work involves driving vehicles, such as vans, trucks, trains, and buses to transport people or materials. Work can also involve operating heavy equipment, such as cranes, forklifts, bulldozers, and backhoes to move materials or earth.",
+  },
+  {
+    code: "1.B.3.d",
+    name: "Physical/Manual Labor",
+    description:
+      "Work involves manually unloading and moving freight, stock, luggage, or other materials, or performing other physical labor.",
+  },
+  {
+    code: "1.B.3.e",
+    name: "Protective Service",
+    description:
+      "Work involves maintaining order and protecting life and property by conducting investigations and enforcing laws and regulations to prevent or solve crimes.",
+  },
+  {
+    code: "1.B.3.f",
+    name: "Agriculture",
+    description:
+      "Work involves planting, cultivating, and harvesting crops, plants, or trees, or raising farm animals. Work can also involve preparing plant and animal products for distribution to consumers, or protecting natural resources to maximize their use in farming.",
+  },
+  {
+    code: "1.B.3.g",
+    name: "Nature/Outdoors",
+    description:
+      "Work involves planning, restoring, and conserving natural areas and wildlife habitats.",
+  },
+  {
+    code: "1.B.3.h",
+    name: "Animal Service",
+    description:
+      "Work involves feeding, grooming, exercising, or otherwise providing care to promote and maintain the well-being of pets and other animals in settings such as kennels, animal shelters, and zoos.",
+  },
+  {
+    code: "1.B.3.i",
+    name: "Athletics",
+    description:
+      "Work involves training, practicing, or competing in athletic events, or supporting those participating in athletics through coaching, training, or officiating.",
+  },
+  {
+    code: "1.B.3.j",
+    name: "Engineering",
+    description:
+      "Work involves applying science and technology to the design, building, testing, and use of electrical and electronic components, mechanical devices and machines, automotive, marine, and aerospace equipment and vehicles, materials, or structures.",
+  },
+  {
+    code: "1.B.3.k",
+    name: "Physical Science",
+    description:
+      "Work involves studying and researching non-living objects, materials, and phenomena through scientific disciplines such as physics, chemistry, astronomy, meteorology, or geology.",
+  },
+  {
+    code: "1.B.3.l",
+    name: "Life Science",
+    description:
+      "Work involves studying and researching living organisms through scientific disciplines such as biology, botany, zoology, microbiology, physiology, biochemistry, or zoology.",
+  },
+  {
+    code: "1.B.3.m",
+    name: "Medical Science",
+    description:
+      "Work involves studying and researching the causes, nature, effects, and treatments of disease or other forms of impairment or illness.",
+  },
+  {
+    code: "1.B.3.n",
+    name: "Social Science",
+    description:
+      "Work involves studying and researching human behavior, society, politics, and social relationships through scientific disciplines such as psychology, sociology, economics, or political science.",
+  },
+  {
+    code: "1.B.3.o",
+    name: "Humanities",
+    description:
+      "Work involves studying and researching aspects of human history, culture, and language through disciplines such as history, philosophy, the language arts, or area/ethnic studies.",
+  },
+  {
+    code: "1.B.3.p",
+    name: "Mathematics/Statistics",
+    description:
+      "Work involves developing and applying mathematics and statistical theory and methods.",
+  },
+  {
+    code: "1.B.3.q",
+    name: "Information Technology",
+    description:
+      "Work involves designing, developing, testing, and maintaining computer software, hardware, networks, and systems.",
+  },
+  {
+    code: "1.B.3.r",
+    name: "Visual Arts",
+    description:
+      "Work involves creating original visual artwork for a variety of media and purposes using various techniques and software.",
+  },
+  {
+    code: "1.B.3.s",
+    name: "Applied Arts and Design",
+    description:
+      "Work involves applying artistic principles to the design and creation of various objects and materials.",
+  },
+  {
+    code: "1.B.3.t",
+    name: "Performing Arts",
+    description:
+      "Work involves acting as a performer in dance, comedy, or dramatic productions, choreographing of dance performances, or producing of live or recorded entertainment.",
+  },
+  {
+    code: "1.B.3.u",
+    name: "Music",
+    description:
+      "Work involves conducting, composing, or playing music or singing.",
+  },
+  {
+    code: "1.B.3.v",
+    name: "Creative Writing",
+    description:
+      "Work involves developing creative written works, such as novels, scripts, song lyrics, poetry, stories, or advertisements.",
+  },
+  {
+    code: "1.B.3.w",
+    name: "Media",
+    description:
+      "Work involves producing, developing, writing, directing, or presenting information through print, radio, television, or digital media.",
+  },
+  {
+    code: "1.B.3.x",
+    name: "Culinary Art",
+    description:
+      "Work involves preparing, cooking, and presenting food in a distinctive style usually associated with a specific culture or region.",
+  },
+  {
+    code: "1.B.3.y",
+    name: "Teaching/Education",
+    description:
+      "Work involves teaching through lectures, discussions, and demonstrations in one or more subjects.",
+  },
+  {
+    code: "1.B.3.z",
+    name: "Social Service",
+    description:
+      "Work involves providing social services and assistance to improve the well-being and social and psychological functioning of children and adults.",
+  },
+  {
+    code: "1.B.3.aa",
+    name: "Health Care Service",
+    description:
+      "Work involves providing health care services to individuals to include the diagnosis, prevention, or treatment of diseases and other forms of illness or impairment.",
+  },
+  {
+    code: "1.B.3.ab",
+    name: "Religious Activities",
+    description:
+      "Work involves conducting religious worship, leading a church or other religious group, and offering moral guidance associated with beliefs and practices of a religious faith.",
+  },
+  {
+    code: "1.B.3.ac",
+    name: "Personal Service",
+    description:
+      "Work involves providing personal services to individuals in need of non-medical assistance such as helping arrange or plan for travel, meals, or events.",
+  },
+  {
+    code: "1.B.3.ad",
+    name: "Professional Advising",
+    description:
+      "Work involves providing expert advice, coaching, and counseling on topics such as careers, educational opportunities, and educational and professional development.",
+  },
+  {
+    code: "1.B.3.ae",
+    name: "Business Initiatives",
+    description:
+      "Work involves creating strategic plans or taking actions to expand an organization's business or market share.",
+  },
+  {
+    code: "1.B.3.af",
+    name: "Sales",
+    description: "Work involves selling goods or services.",
+  },
+  {
+    code: "1.B.3.ag",
+    name: "Marketing/Advertising",
+    description:
+      "Work involves promoting or creating a public image for products, services, or organizations to attract interest, engagement, or sales.",
+  },
+  {
+    code: "1.B.3.ah",
+    name: "Finance",
+    description:
+      "Work involves directing and managing financial activities, such as planning and investments for an individual or organization to generate income.",
+  },
+  {
+    code: "1.B.3.ai",
+    name: "Accounting",
+    description:
+      "Work involves examining, analyzing, and interpreting accounting records for financial statements, or maintaining, auditing, or evaluating records and accounts.",
+  },
+  {
+    code: "1.B.3.aj",
+    name: "Human Resources",
+    description:
+      "Work involves recruiting, selecting, and training job applicants, maintaining employee personnel records, administering compensation and employee-benefit programs, and conducting employee performance reviews.",
+  },
+  {
+    code: "1.B.3.ak",
+    name: "Office Work",
+    description:
+      "Work involves clerical and administrative tasks for an organization such as answering phones, bookkeeping, updating records, scheduling appointments or meetings, and editing of documents and files.",
+  },
+  {
+    code: "1.B.3.al",
+    name: "Management/Administration",
+    description:
+      "Work involves planning, directing, or coordinating the daily operations of an organization, and overseeing personnel, business, or administrative services.",
+  },
+  {
+    code: "1.B.3.am",
+    name: "Public Speaking",
+    description:
+      "Work involves speaking before an audience to educate, entertain, or influence the listeners.",
+  },
+  {
+    code: "1.B.3.an",
+    name: "Politics",
+    description:
+      "Work involves engaging in political activities to influence government policy.",
+  },
+  {
+    code: "1.B.3.ao",
+    name: "Law",
+    description: "Work involves studying and applying legal knowledge.",
+  },
+  {
+    code: "1.C",
+    name: "Work Styles",
+    description:
+      "Personal characteristics that can affect how well someone performs a job.",
+  },
+  {
+    code: "1.C.1",
+    name: "Achievement Orientation",
+    description:
+      "Job requires personal goal setting, trying to succeed at those goals, and striving to be competent in own work",
+  },
+  {
+    code: "1.C.1.a",
+    name: "Achievement/Effort",
+    description:
+      "Job requires establishing and maintaining personally challenging achievement goals and exerting effort toward mastering tasks.",
+  },
+  {
+    code: "1.C.1.b",
+    name: "Persistence",
+    description: "Job requires persistence in the face of obstacles.",
+  },
+  {
+    code: "1.C.1.c",
+    name: "Initiative",
+    description:
+      "Job requires a willingness to take on responsibilities and challenges.",
+  },
+  {
+    code: "1.C.2",
+    name: "Social Influence",
+    description:
+      "Job requires having an impact on others in the organization, and displaying energy and leadership",
+  },
+  {
+    code: "1.C.2.b",
+    name: "Leadership",
+    description:
+      "Job requires a willingness to lead, take charge, and offer opinions and direction.",
+  },
+  {
+    code: "1.C.3",
+    name: "Interpersonal Orientation",
+    description:
+      "Job requires being pleasant, cooperative, sensitive to others, easy to get along with, and having a preference for associating with other organization members",
+  },
+  {
+    code: "1.C.3.a",
+    name: "Cooperation",
+    description:
+      "Job requires being pleasant with others on the job and displaying a good-natured, cooperative attitude.",
+  },
+  {
+    code: "1.C.3.b",
+    name: "Concern for Others",
+    description:
+      "Job requires being sensitive to others' needs and feelings and being understanding and helpful on the job.",
+  },
+  {
+    code: "1.C.3.c",
+    name: "Social Orientation",
+    description:
+      "Job requires preferring to work with others rather than alone, and being personally connected with others on the job.",
+  },
+  {
+    code: "1.C.4",
+    name: "Adjustment",
+    description:
+      "Job requires maturity, poise, flexibility, and restraint to cope with pressure, stress, criticism, setbacks, personal and work-related problems, etc.",
+  },
+  {
+    code: "1.C.4.a",
+    name: "Self-Control",
+    description:
+      "Job requires maintaining composure, keeping emotions in check, controlling anger, and avoiding aggressive behavior, even in very difficult situations.",
+  },
+  {
+    code: "1.C.4.b",
+    name: "Stress Tolerance",
+    description:
+      "Job requires accepting criticism and dealing calmly and effectively with high-stress situations.",
+  },
+  {
+    code: "1.C.4.c",
+    name: "Adaptability/Flexibility",
+    description:
+      "Job requires being open to change (positive or negative) and to considerable variety in the workplace.",
+  },
+  {
+    code: "1.C.5",
+    name: "Conscientiousness",
+    description:
+      "Job requires dependability, commitment to doing the job correctly and carefully, and being trustworthy, accountable, and attentive to details",
+  },
+  {
+    code: "1.C.5.a",
+    name: "Dependability",
+    description:
+      "Job requires being reliable, responsible, and dependable, and fulfilling obligations.",
+  },
+  {
+    code: "1.C.5.b",
+    name: "Attention to Detail",
+    description:
+      "Job requires being careful about detail and thorough in completing work tasks.",
+  },
+  {
+    code: "1.C.5.c",
+    name: "Integrity",
+    description: "Job requires being honest and ethical.",
+  },
+  {
+    code: "1.C.6",
+    name: "Independence",
+    description:
+      "Job requires developing one's own ways of doing things, guiding oneself with little or no supervision, and depending on oneself to get things done.",
+  },
+  {
+    code: "1.C.7",
+    name: "Practical Intelligence",
+    description:
+      "Job requires generating useful ideas and thinking things through logically",
+  },
+  {
+    code: "1.C.7.a",
+    name: "Innovation",
+    description:
+      "Job requires creativity and alternative thinking to develop new ideas for and answers to work-related problems.",
+  },
+  {
+    code: "1.C.7.b",
+    name: "Analytical Thinking",
+    description:
+      "Job requires analyzing information and using logic to address work-related issues and problems.",
+  },
+  {
+    code: "2",
+    name: "Worker Requirements",
+    description: "Worker Requirements",
+  },
+  {
+    code: "2.A",
+    name: "Basic Skills",
+    description:
+      "Developed capacities that facilitate learning or the more rapid acquisition of knowledge",
+  },
+  {
+    code: "2.A.1",
+    name: "Content",
+    description:
+      "Background structures needed to work with and acquire more specific skills in a variety of different domains",
+  },
+  {
+    code: "2.A.1.a",
+    name: "Reading Comprehension",
+    description:
+      "Understanding written sentences and paragraphs in work-related documents.",
+  },
+  {
+    code: "2.A.1.b",
+    name: "Active Listening",
+    description:
+      "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+  },
+  {
+    code: "2.A.1.c",
+    name: "Writing",
+    description:
+      "Communicating effectively in writing as appropriate for the needs of the audience.",
+  },
+  {
+    code: "2.A.1.d",
+    name: "Speaking",
+    description: "Talking to others to convey information effectively.",
+  },
+  {
+    code: "2.A.1.e",
+    name: "Mathematics",
+    description: "Using mathematics to solve problems.",
+  },
+  {
+    code: "2.A.1.f",
+    name: "Science",
+    description: "Using scientific rules and methods to solve problems.",
+  },
+  {
+    code: "2.A.2",
+    name: "Process",
+    description:
+      "Procedures that contribute to the more rapid acquisition of knowledge and skill across a variety of domains",
+  },
+  {
+    code: "2.A.2.a",
+    name: "Critical Thinking",
+    description:
+      "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+  },
+  {
+    code: "2.A.2.b",
+    name: "Active Learning",
+    description:
+      "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+  },
+  {
+    code: "2.A.2.c",
+    name: "Learning Strategies",
+    description:
+      "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.",
+  },
+  {
+    code: "2.A.2.d",
+    name: "Monitoring",
+    description:
+      "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+  },
+  {
+    code: "2.B",
+    name: "Cross-Functional Skills",
+    description:
+      "Developed capacities that facilitate performance of activities that occur across jobs",
+  },
+  {
+    code: "2.B.1",
+    name: "Social Skills",
+    description:
+      "Developed capacities used to work with people to achieve goals",
+  },
+  {
+    code: "2.B.1.a",
+    name: "Social Perceptiveness",
+    description:
+      "Being aware of others' reactions and understanding why they react as they do.",
+  },
+  {
+    code: "2.B.1.b",
+    name: "Coordination",
+    description: "Adjusting actions in relation to others' actions.",
+  },
+  {
+    code: "2.B.1.c",
+    name: "Persuasion",
+    description: "Persuading others to change their minds or behavior.",
+  },
+  {
+    code: "2.B.1.d",
+    name: "Negotiation",
+    description:
+      "Bringing others together and trying to reconcile differences.",
+  },
+  {
+    code: "2.B.1.e",
+    name: "Instructing",
+    description: "Teaching others how to do something.",
+  },
+  {
+    code: "2.B.1.f",
+    name: "Service Orientation",
+    description: "Actively looking for ways to help people.",
+  },
+  {
+    code: "2.B.2",
+    name: "Complex Problem Solving Skills",
+    description:
+      "Developed capacities used to solve novel, ill-defined problems in complex, real-world settings",
+  },
+  {
+    code: "2.B.2.i",
+    name: "Complex Problem Solving",
+    description:
+      "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.",
+  },
+  {
+    code: "2.B.3",
+    name: "Technical Skills",
+    description:
+      "Developed capacities used to design, set-up, operate, and correct malfunctions involving application of machines or technological systems",
+  },
+  {
+    code: "2.B.3.a",
+    name: "Operations Analysis",
+    description: "Analyzing needs and product requirements to create a design.",
+  },
+  {
+    code: "2.B.3.b",
+    name: "Technology Design",
+    description:
+      "Generating or adapting equipment and technology to serve user needs.",
+  },
+  {
+    code: "2.B.3.c",
+    name: "Equipment Selection",
+    description:
+      "Determining the kind of tools and equipment needed to do a job.",
+  },
+  {
+    code: "2.B.3.d",
+    name: "Installation",
+    description:
+      "Installing equipment, machines, wiring, or programs to meet specifications.",
+  },
+  {
+    code: "2.B.3.e",
+    name: "Programming",
+    description: "Writing computer programs for various purposes.",
+  },
+  {
+    code: "2.B.3.g",
+    name: "Operations Monitoring",
+    description:
+      "Watching gauges, dials, or other indicators to make sure a machine is working properly.",
+  },
+  {
+    code: "2.B.3.h",
+    name: "Operation and Control",
+    description: "Controlling operations of equipment or systems.",
+  },
+  {
+    code: "2.B.3.j",
+    name: "Equipment Maintenance",
+    description:
+      "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+  },
+  {
+    code: "2.B.3.k",
+    name: "Troubleshooting",
+    description:
+      "Determining causes of operating errors and deciding what to do about it.",
+  },
+  {
+    code: "2.B.3.l",
+    name: "Repairing",
+    description: "Repairing machines or systems using the needed tools.",
+  },
+  {
+    code: "2.B.3.m",
+    name: "Quality Control Analysis",
+    description:
+      "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+  },
+  {
+    code: "2.B.4",
+    name: "Systems Skills",
+    description:
+      "Developed capacities used to understand, monitor, and improve socio-technical systems",
+  },
+  {
+    code: "2.B.4.e",
+    name: "Judgment and Decision Making",
+    description:
+      "Considering the relative costs and benefits of potential actions to choose the most appropriate one.",
+  },
+  {
+    code: "2.B.4.g",
+    name: "Systems Analysis",
+    description:
+      "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+  },
+  {
+    code: "2.B.4.h",
+    name: "Systems Evaluation",
+    description:
+      "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+  },
+  {
+    code: "2.B.5",
+    name: "Resource Management Skills",
+    description: "Developed capacities used to allocate resources efficiently",
+  },
+  {
+    code: "2.B.5.a",
+    name: "Time Management",
+    description: "Managing one's own time and the time of others.",
+  },
+  {
+    code: "2.B.5.b",
+    name: "Management of Financial Resources",
+    description:
+      "Determining how money will be spent to get the work done, and accounting for these expenditures.",
+  },
+  {
+    code: "2.B.5.c",
+    name: "Management of Material Resources",
+    description:
+      "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+  },
+  {
+    code: "2.B.5.d",
+    name: "Management of Personnel Resources",
+    description:
+      "Motivating, developing, and directing people as they work, identifying the best people for the job.",
+  },
+  {
+    code: "2.C",
+    name: "Knowledge",
+    description:
+      "Organized sets of principles and facts applying in general domains",
+  },
+  {
     code: "2.C.1",
     name: "Business and Management",
     description:

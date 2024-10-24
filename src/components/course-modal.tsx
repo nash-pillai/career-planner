@@ -21,10 +21,8 @@ import {
 } from "lucide-react";
 import { type Course } from "types";
 import CourseCard from "./course-card";
-import { courses } from "@/lib/courses";
 
 export default function CourseModal({ course }: { course: Course }) {
-  console.log(courses.length);
   return (
     <Dialog>
       <DialogTrigger className="flex text-left">
