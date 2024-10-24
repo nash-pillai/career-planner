@@ -77,13 +77,13 @@ export default function Quiz() {
     <div
       className="flex flex-col items-center justify-center space-y-12 p-12"
       tabIndex={0}
-      onKeyDown={(e) => {
+      onKeyDown={async (e) => {
         if (
           ["1", "2", "3", "4", "5"].includes(e.key) &&
           questionIndex < allQuestions.length &&
           questionIndex > -1
         )
-          answerQuestion(ratings[+e.key - 1]!, +e.key - 1);
+          await answerQuestion(ratings[+e.key - 1]!, +e.key - 1);
       }}
     >
       <h1 className="text-4xl font-bold">Questionnaire</h1>
