@@ -11,20 +11,22 @@ import {
 import { useEffect, useState } from "react";
 import { type FullCareer } from "types";
 import { uniqBy } from "@/lib/utils";
+import { useSearchParams } from "next/navigation";
 
 export default function Careers() {
+  const searchParams = useSearchParams();
   const [careers, setCareers] = useState<(FullCareer & { index: number })[]>(
     [],
   );
   const [searchText, setSearchText] = useState("");
 
   const [personality, setPersonality] = useState({
-    Realistic: 0,
-    Investigative: 0,
-    Artistic: 0,
-    Social: 0,
-    Enterprising: 0,
-    Conventional: 0,
+    Realistic: +(searchParams.get("Realistic") ?? 0),
+    Investigative: +(searchParams.get("Investigative") ?? 0),
+    Artistic: +(searchParams.get("Artistic") ?? 0),
+    Social: +(searchParams.get("Social") ?? 0),
+    Enterprising: +(searchParams.get("Enterprising") ?? 0),
+    Conventional: +(searchParams.get("Conventional") ?? 0),
   });
   const [trainingLevel, setTrainingLevel] = useState(0);
   const [brightOutlook, setBrightOutlook] = useState(false);
