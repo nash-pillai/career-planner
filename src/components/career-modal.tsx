@@ -24,6 +24,7 @@ import { type FullCareer } from "types";
 import CareerCard from "./career-card";
 import { courses } from "@/lib/courses";
 import CourseCard from "./course-card";
+import CourseModal from "./course-modal";
 
 export default function CareerModal({ career }: { career: FullCareer }) {
   const recommendedCourses = courses
@@ -103,7 +104,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 <ScrollArea className="h-full">
                   <div className="flex h-full w-max space-x-4 pb-2">
                     {recommendedCourses.map((course) => (
-                      <CourseCard key={course.course_code} course={course} />
+                      <CourseModal key={course.course_code} course={course} />
                     ))}
                   </div>
                   <ScrollBar orientation="horizontal" />
@@ -281,38 +282,42 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                     <h4 className="mb-2 font-semibold">Annual Income</h4>
                     <p>
                       Median: $
-                      {career.job_outlook.salary.annual_median?.toLocaleString() ??
-                        "Unavailable"}
+                      {career.job_outlook.salary.annual_median
+                        ? `$${career.job_outlook.salary.annual_median.toLocaleString()}`
+                        : "Unavailable"}
                     </p>
                     <p>
                       10th Percentile: $
-                      {career.job_outlook.salary.annual_10th_percentile?.toLocaleString() ??
-                        "Unavailable"}
+                      {career.job_outlook.salary.annual_10th_percentile
+                        ? `$${career.job_outlook.salary.annual_10th_percentile.toLocaleString()}`
+                        : "Unavailable"}
                     </p>
                     <p>
                       90th Percentile: $
-                      {career.job_outlook.salary.annual_90th_percentile?.toLocaleString() ??
-                        "Unavailable"}
+                      {career.job_outlook.salary.annual_90th_percentile
+                        ? `$${career.job_outlook.salary.annual_90th_percentile.toLocaleString()}`
+                        : "Unavailable"}
                     </p>
                   </div>
                   <div>
                     <h4 className="mb-2 font-semibold">Hourly Wage</h4>
                     <p>
-                      Median: $
-                      {career.job_outlook.salary.hourly_median?.toFixed(2) ??
-                        "Unavailable"}
+                      Median:{" "}
+                      {career.job_outlook.salary.hourly_median
+                        ? `$${career.job_outlook.salary.hourly_median.toFixed(2)}`
+                        : "Unavailable"}
                     </p>
                     <p>
-                      10th Percentile: $
-                      {career.job_outlook.salary.hourly_10th_percentile?.toFixed(
-                        2,
-                      ) ?? "Unavailable"}
+                      10th Percentile:{" "}
+                      {career.job_outlook.salary.hourly_10th_percentile
+                        ? `$${career.job_outlook.salary.hourly_10th_percentile.toFixed(2)}`
+                        : "Unavailable"}
                     </p>
                     <p>
-                      90th Percentile: $
-                      {career.job_outlook.salary.hourly_90th_percentile?.toFixed(
-                        2,
-                      ) ?? "Unavailable"}
+                      90th Percentile:{" "}
+                      {career.job_outlook.salary.hourly_90th_percentile
+                        ? `$${career.job_outlook.salary.hourly_90th_percentile.toFixed(2)}`
+                        : "Unavailable"}
                     </p>
                   </div>
                 </div>

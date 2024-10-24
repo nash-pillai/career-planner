@@ -18,7 +18,7 @@ export default function CareerCard({ career }: { career: FullCareer }) {
               </p> */}
           </div>
           {career.career.tags.bright_outlook && (
-            <Badge variant="green" className="text-sm">
+            <Badge variant="green" className="whitespace-nowrap text-sm">
               Bright Outlook
             </Badge>
           )}
@@ -60,7 +60,7 @@ export default function CareerCard({ career }: { career: FullCareer }) {
             <Briefcase className="mr-2 h-5 w-5 text-muted-foreground" />
             Job Description
           </h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="line-clamp-3 text-sm text-muted-foreground">
             {career.career.what_they_do}
           </p>
         </div>

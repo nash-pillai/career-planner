@@ -27,7 +27,7 @@ export default function CourseModal({ course }: { course: Course }) {
   console.log(courses.length);
   return (
     <Dialog>
-      <DialogTrigger className="flex h-full text-left">
+      <DialogTrigger className="flex text-left">
         <CourseCard course={course} />
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] max-w-[90vw]">
