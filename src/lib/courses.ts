@@ -11,7 +11,7 @@ export const courses = [
     pathway: "CTE Pathway",
     description:
       "College and Career Planning is one of our required courses for the CTE pathway. It is designed to give you the big picture about where your life might go in the future. You take personality and interest tests to help you make an informed decision about a good field to pursue. You look at colleges and student funding, and you plan a budget for your first shot at living on your own. You explore the basics of employment law, and consider the differences in working in different types of organizations: the military, government agencies, big business, small business, entrepreneurial endeavors and trade unions. You consider the management styles you are most likely to encounter in different working environments. Finally, you set personal, professional, and financial goals for your 60-year-old self.",
-    tags: ["Education and Training", "Law and Public Safety", "Education"],
+    tags: ["Education and Training", "Education"],
   },
   {
     department: "Business",
@@ -26,7 +26,6 @@ export const courses = [
       "This ½ credit course offers you the opportunity to improve your typing skills, and use Microsoft’s Suite of Office Products in a more sophisticated manner. You will format documents, spreadsheets, and workbooks, including headers, footers, picture formatting, inserting tables, cover pages, works cited lists. You will collaborate with other students and use the editing features of Word, Excel, and PowerPoint. You will write a resume and cover letter using templates and learn the basics of Excel including creating formulas, graphing, sorting, filtering, and conditional formatting. You will also add sophistication to presentations with master slides, animations, and transitions.",
     tags: [
       "Computers and Electronics",
-      "Business and Management",
       "Telecommunications",
       "Computers and Electronics",
     ],
@@ -57,7 +56,6 @@ export const courses = [
       "Business Ownership is a survey course designed around the idea of running a small business. You explore entrepreneurship through economics, marketing, sales, accounting, finance, human resources, contract law, patents, and trademarks. The course includes public speaking coaching and culminates with a pitch project similar to Shark Tank.",
     tags: [
       "Business and Management",
-      "Law and Government",
       "Economics and Accounting",
       "Administrative",
       "Administration and Management",
@@ -135,11 +133,7 @@ export const courses = [
     eligible_grades: [9, 10, 11, 12],
     credits: 0.5,
     rank_weighting: 1.0,
-    tags: [
-      "Law and Government",
-      "Communications and Media",
-      "Physical Education",
-    ],
+    tags: ["Law and Government", "Physical Education"],
     description:
       "Do you like to prove a point? Are you the person who enjoys defending others? Maybe you are a huge sports fan, but do not consider yourself an athlete. Or perhaps you'd prefer to explore how the law impacts the Entertainment industry. No problem! This course will explore how the law impacts sports and entertainment. Find out what power the NCAA has over student-athletes and why players are in a union. Learn why individuals in the movie, television, music, or theater industries need to know about the law. You will study legal cases related to these industries. You will have the opportunity to review areas of law that include contracts, labor law, collective bargaining, discrimination, employment, crimes, constitutional and common law, discrimination, securities, copyright infringement, the right of privacy, libel, slander, defamation, advertising, tax, plus many more. See how you can feed your interest to work in the Sports or Entertainment industry from the legal side.",
   },
@@ -169,13 +163,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: ["Computer Game Design (or Proficiency on local exam)"],
-    tags: [
-      "Computers and Electronics",
-      "Design",
-      "Computer Science",
-      "Design",
-      "Arts",
-    ],
+    tags: ["Computers and Electronics", "Design", "Computer Science", "Design"],
     description:
       "This is a course for creative people. This ½ credit course is offered in the spring after the prerequisite Computer Game Design. It uses drag and drop blocks to code, but moves from games into business applications. MIT App Inventor offers more sophisticated logic and gives you the chance to use mobile features like GPS, the accelerometer, text messaging, and voice recognition in your apps. This course is a great choice for anyone considering a career in Computer Science, Business Information Systems, or any STEM field. Most STEM majors require one or more courses in computer science. Students who have had exposure to coding in high school do significantly better in CS courses in college. By taking this course in high school, you get to learn the basics of computational thinking in a low-stakes environment where the learning feels like fun. Bring your creativity to make it beautiful, make it sing, make it dance, and maybe even make some money.",
   },
@@ -248,7 +236,6 @@ export const courses = [
       "Education and Training",
       "Business and Management",
       "Business Vocational",
-      "Business and Management",
     ],
     description:
       "If you are a senior and have not taken a business elective but are interested in earning one credit while working, consider Diversified Work-Based Learning (Diversified Co-Op)! Gain valuable work experience that can launch your career. Not sure what your career plan is after high school? The work experience combined with online classroom activities will allow you to connect what you are learning in the classroom to the skills required for success in today’s workplace. You will earn a credit toward graduation too! Students must complete assignments virtually to help prepare them for employment. Students are required to be employed, and submit reflective journals and copies of their pay stubs to the supervisor.",
@@ -276,11 +263,7 @@ export const courses = [
       "Completion of Geometry with a grade of 80+ or any student who has earned a 90 or higher in Computer Programming, Computer Game Design, Mobile App Development, or Web Design.",
     ],
     pathway: "CTE Pathway",
-    tags: [
-      "Computer Science",
-      "Engineering and Technology",
-      "Computers and Electronics",
-    ],
+    tags: ["Computer Science", "Computers and Electronics"],
     description:
       "Students taking this college course do the type of work done by many STEM professionals. Students build mobile apps and work through activities to improve their writing, communication, collaboration, and creativity skills. Computer Science jobs are projected to make up 70% of all new STEM work in the next decade. The need for professionals  with coding skills can be found in every size business, in every industry, in every state. The need is driven by businesses’ desire to produce mobile apps and leverage near-ubiquitous wireless Internet to build out the Internet of Things (IoT). Topics Include:\n• Coding: emphasis on project management of\nmobile apps for a defined customer\n• Cryptography and Cybersecurity\n• Data - binary/ hex conversions, data storage and transmission protocols, data visualization ofpublicly available big data\n• Ethics - exploring the big questions of the Information Age\nThis is the capstone course for the CTE pathway in Computer Information Systems. Those seeking more instruction in pure coding might enjoy taking AP CSA - Java in the Math department after this course. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student. The exam is 40% Mobile App developed in advance, and 60% multiple choice in May.",
   },
@@ -512,11 +495,9 @@ export const courses = [
     tags: [
       "Arts",
       "Arts and Humanities",
-      "Communications and Media",
       "English/language Arts",
       "Humanities",
       "English Language",
-      "Communications",
     ],
     description:
       "This course seeks to empower students to challenge themselves by taking a medium that they are familiar with, while using literary techniques to analyze film. The goal is to derive greater meaning from both the films they watch as well as to more fully realize their potential as thoughtful young members of our society. This course will also expose students to new ideas through the medium of film, to evaluate how these films are effective using devices/ elements common to the ELA classroom, and to gain a better understanding of the medium in general. The goal is to use film and nonfiction articles as a way to focus upon and assess students’ critical thinking skills.",
@@ -529,12 +510,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: [
-      "Social Science",
-      "Humanities",
-      "English Language",
-      "Communications",
-    ],
+    tags: ["Social Science", "Humanities", "English Language"],
     description:
       "This course will deal with the uniqueness and universality of this momentous event in the history of mankind. Participants will study the effect of genocide on the course of humanity during the five subsequent decades. The class will consist of historical readings, fictional accounts, films and guest speakers. There will be a variety of written assignments as well as a research project.",
   },
@@ -547,8 +523,6 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     tags: [
-      "Arts",
-      "Arts and Humanities",
       "Communications and Media",
       "English/language Arts",
       "Humanities",
@@ -567,8 +541,6 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     tags: [
-      "Arts",
-      "Arts and Humanities",
       "English/language Arts",
       "Humanities",
       "English Language",
@@ -604,8 +576,6 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     tags: [
-      "Arts",
-      "Arts and Humanities",
       "English Language",
       "Communications",
       "English/language Arts",
@@ -623,8 +593,6 @@ export const courses = [
     rank_weighting: 1.0,
     prerequisites: [],
     tags: [
-      "Arts",
-      "Arts and Humanities",
       "English Language",
       "Communications",
       "English/language Arts",
@@ -645,11 +613,8 @@ export const courses = [
       "Arts",
       "Arts and Humanities",
       "English Language",
-      "Communications",
       "English/language Arts",
       "Humanities",
-      "Fine Arts",
-      "Oral Communication",
     ],
     description:
       "This course is an introduction to theatre arts. It is a participatory course in which students will learn basic stage movement and voice training, introductory acting and improvisational techniques as well as backstage elements such as lighting and costuming. It is intended for both the student who has always wanted to try their hand at the stage as well as the student who has a real interest in performing. Students are evaluated based on participation, grades, acting exercises, written projects, reading assignments, final projects and tests. NOTE: This course may be used to meet the 1 unit Regents Art/ Music graduation requirement.",
@@ -666,10 +631,8 @@ export const courses = [
       "Arts",
       "Arts and Humanities",
       "English Language",
-      "Communications",
       "English/language Arts",
       "Humanities",
-      "Oral Communication",
     ],
     description:
       "This class provides students with the ability to explore the genre of applied theatre. Students will grow as performers through the intensive sound and movement work improvisational forms necessitate. They will focus on stage composition, learning how to use space in an interesting and meaningful way, and explore how to create music to support the story on stage in a non-traditional, improvisational way. Most importantly, performers practice listening skills in a highly motivated and active manner. It is through this listening that they will be able to explore the different purposes that improvisational theatre has: to increase self-knowledge, to build community, and to address specific issues within a community or society at large",
@@ -688,7 +651,6 @@ export const courses = [
       "Arts",
       "Arts and Humanities",
       "English Language",
-      "Communications",
       "English/language Arts",
       "Humanities",
     ],
@@ -707,7 +669,6 @@ export const courses = [
       "Arts",
       "Arts and Humanities",
       "English Language",
-      "Communications",
       "English/language Arts",
       "Humanities",
     ],
@@ -726,7 +687,6 @@ export const courses = [
       "Arts",
       "Arts and Humanities",
       "English Language",
-      "Communications",
       "English/language Arts",
       "Humanities",
     ],
@@ -741,12 +701,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: [
-      "Psychology",
-      "Humanities",
-      "Medicine and Dentistry",
-      "Health Services",
-    ],
+    tags: ["Psychology", "Humanities", "Health Services"],
     description:
       "Adolescent Psychology curriculum incorporates concepts and introduction to adolescent psychology, transitions of adolescences in society and contemporary issues in adolescences in today’s society. The goal is to assist students in developing skills and learning to apply these skills to real world situations.",
   },
@@ -758,12 +713,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: [
-      "Psychology",
-      "Humanities",
-      "Medicine and Dentistry",
-      "Health Services",
-    ],
+    tags: ["Psychology", "Humanities", "Health Services"],
     description:
       "Child Development curriculum incorporates concepts and introduction into child development. Students learn to understand child, family, and community connections, prenatal development and child development from infancy through school age. The goal is to assist students in developing skills and learning to apply these skills through hands on instructions.",
   },
@@ -775,7 +725,7 @@ export const courses = [
     credits: 0.5,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: ["Humanities", "Medicine and Dentistry", "Health Services"],
+    tags: ["Humanities", "Health Services"],
     description:
       "Parenting curriculum incorporates concepts and introduces students to prenatal development, including the responsibility of child bearing and the personal health decision making and the positive ways to meet the needs of the developing child. The goal is to assist students in developing skills and learn to apply these skills through hands on instructions and working collaboratively with others.",
   },
@@ -871,12 +821,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: [
-      "Communications and Media",
-      "Computers and Electronics",
-      "Fine Arts",
-      "Arts",
-    ],
+    tags: ["Communications and Media", "Communications", "Fine Arts", "Arts"],
     description:
       "Students will spend a year exploring visual and technical concepts as they apply to contemporary communication systems. Students will document all work and maintain a digital portfolio for course assessment. This course is taught collaboratively by the departments of Technology and Fine Arts. Areas of study include development and role of communication systems, digital photography, traditional and new computer illustration and printing processes, sound applications, communication graphics, digital video applications, and career options. Student assessment is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments. The grade may be derived from district assessments and objective teacher evaluations and observations, including students’ demonstration of criteria-based skills and techniques in artwork, written critical analysis of artwork, sketchbook assignments, and the WCSD Portfolio Assessment results. This course can be used to fulfill the 1 credit Arts requirement for graduation.",
   },
@@ -888,13 +833,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1.0,
     prerequisites: [],
-    tags: [
-      "Design",
-      "Fine Arts",
-      "Arts",
-      "Design",
-      "Computers and Electronics",
-    ],
+    tags: ["Design", "Arts", "Design", "Computers and Electronics"],
     description:
       "This course is a demanding foundation course designed to meet the Art/ Music graduation requirement. Students will develop studio skills, including drawing skills, while creating functional as well as aesthetic art. It is a prerequisite for 3-D Design/ Crafts II and Studio-In-Sculpture. Areas of study include: an introduction to a wide variety of art experiences; design and production of 3-D objects utilizing various materials; use of metal, plaster, clay, wire, and/ or glass as possible media; portfolio development; sketchbooks; and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
@@ -997,12 +936,7 @@ export const courses = [
     prerequisites: [
       "Any full-year art or music course or with permission of instructor (including 9th grade students)",
     ],
-    tags: [
-      "Communications and Media",
-      "Computers and Electronics",
-      "Fine Arts",
-      "Arts",
-    ],
+    tags: ["Communications and Media", "Fine Arts", "Arts"],
     description:
       "This course will cover the various facets of video production and sound production, editing, and broadcast journalism. Students produce in-school news segments to be aired on “WCSD On The Air” and other venues. It does not satisfy the one credit foundation course graduation requirement; however, it can be applied as an elective credit in a sequence. Areas of study include audio-video recording methods and techniques, preparation of broadcast-ready pieces for local airing, recording, editing and mixing of sound, the art of interviewing, internet production, motion graphics, story-board design, copyright laws and their application, portfolio development, and career options. Student evaluation is reflected in the art grade, a composite of a student’s participation and achievement in assignments and assessments.",
   },
@@ -1092,13 +1026,7 @@ export const courses = [
     credits: 1,
     rank_weighting: 1,
     prerequisites: ["Studio-ln-Art", "F587"],
-    tags: [
-      "Communications and Media",
-      "Computers and Electronics",
-      "Fine Arts",
-      "Arts",
-      "Sales and Marketing",
-    ],
+    tags: ["Communications and Media", "Arts", "Sales and Marketing"],
     description:
       "This course is an introduction to advertising design and commercial art. Learning situations will incorporate ad clients from the school and community. Computer and video equipment will be used as available. Areas of study include basic design concepts and skills, layout, lettering, product and package design, portfolio development, computer and technology, and career options.",
   },
@@ -1742,12 +1670,7 @@ export const courses = [
     prerequisites: [
       "Concurrent enrollment in Algebra I, OR Completion of Algebra I",
     ],
-    tags: [
-      "Computer Science",
-      "Mathematics",
-      "Basic Math",
-      "Computers and Electronics",
-    ],
+    tags: ["Computer Science", "Computers and Electronics"],
     description:
       "This course is an introduction to the field of computer science and the fundamentals of computer programming. Students will learn structured, object oriented event based programming and will include the development, debugging, and verification of programs. Using the VisualBasic.net language, programming projects are used to reinforce key concepts including data types, decision making structures, loops, procedures and functions. Prior programming experience is not required.",
   },
@@ -1778,12 +1701,7 @@ export const courses = [
     prerequisites: [
       "Successful completion of Algebra II, OR Computer Programming 2",
     ],
-    tags: [
-      "Computer Science",
-      "Mathematics",
-      "Basic Math",
-      "Computers and Electronics",
-    ],
+    tags: ["Computer Science", "Computers and Electronics"],
     description:
       "AP Computer Science A focuses on core aspects of computer science which are used to create solutions that are understandable, adaptable, and when appropriate, reusable. The design and implementation of computer programs to solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Solve problems involve skills that are fundamental to the study of computer science. This includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. The course will cover fundamentals of programming syntax and methodology using the Java programming language. Note: This course closely follows the Advanced Placement Program of The College Board. The syllabus has been reviewed and approved by the AP audit. Each student is expected to take the Advanced Placement Examination in May. A score of 3, 4, or 5 may result in a year’s credit in coursework at many colleges. The fee is determined by The College Board and is the responsibility of the student.",
   },
