@@ -122,16 +122,15 @@ export default function CourseModal({ course }: { course: Course }) {
               </Card>
             )}
 
-            <Card
-              className={`col-span-full flex cursor-pointer items-center justify-center border-none transition-colors ${
-                course.pathway ? "bg-[#D8FFD8]" : "bg-[#E0E9FE]"
-              }`}
-            >
+            <Card className="col-span-full flex cursor-not-allowed items-center justify-center border-none bg-gray-200 transition-colors">
               <CardContent className="flex items-center justify-center p-6">
                 <span className="mr-2 text-2xl font-bold">Enroll</span>
                 <ArrowRight className="h-6 w-6" />
               </CardContent>
             </Card>
+            <span className="col-span-full text-center text-sm text-red-500">
+              Enrollment has closed for this semester.
+            </span>
           </div>
         </ScrollArea>
       </DialogContent>
