@@ -4,7 +4,7 @@ import { type FullCareer } from "types";
 import { oNetApi } from "./serverUtils";
 
 export async function searchCareers(searchText: string) {
-  return await oNetApi<{
+  return oNetApi<{
     keyword: string;
     start: number;
     end: number;
@@ -17,7 +17,7 @@ export async function searchCareers(searchText: string) {
       title: string;
       tags: Record<string, boolean>;
     }[];
-  }>(`online/search?keyword=${searchText}`);
+  }>(`online/search?start=1&end=50&keyword=${searchText || "e"}`);
 }
 
 export async function getCareerReport(code: string) {

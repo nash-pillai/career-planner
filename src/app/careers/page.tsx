@@ -9,7 +9,9 @@ import { type FullCareer } from "types";
 import { uniqBy } from "@/lib/utils";
 
 export default function Careers() {
-  const [careers, setCareers] = useState<FullCareer[]>([]);
+  const [careers, setCareers] = useState<(FullCareer & { index: number })[]>(
+    [],
+  );
   const [searchText, setSearchText] = useState("");
 
   const [personality, setPersonality] = useState({
@@ -30,12 +32,16 @@ export default function Careers() {
       console.log(data);
       if (!data.error && data.occupation) {
         // eslint-disable-next-line @typescript-eslint/no-misused-promises
-        data.occupation.forEach(async (career: { code: string }) => {
+        data.occupation.forEach(async (career: { code: string }, i) => {
           if (!isCurrent) return;
           const careerDetails = await getCareerReport(career.code);
           if (careerDetails.error || !isCurrent) return;
           if (!careerDetails.career) console.log(careerDetails);
-          setCareers((prev) => [...prev, careerDetails]);
+          setCareers((prev) =>
+            [...prev, { index: i, ...careerDetails }].sort(
+              (a, b) => a.index - b.index,
+            ),
+          );
         });
       }
     });
