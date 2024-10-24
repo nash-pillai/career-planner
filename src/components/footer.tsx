@@ -7,13 +7,15 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="flex flex-col items-center md:items-start">
-            <Image
-              src="/compass.png"
-              alt="Career Planner Logo"
-              width={60}
-              height={60}
-              className="mb-4"
-            />
+            <Link href="/">
+              <Image
+                src="/northstar.png"
+                alt="Career Planner Logo"
+                width={60}
+                height={60}
+                className="mb-4"
+              />
+            </Link>
             <p className="text-center text-xl text-gray-600 md:text-left">
               Plan your future career with Career Planner!
             </p>
