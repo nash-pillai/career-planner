@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { getCldVideoUrl } from "next-cloudinary";
 import Link from "next/link";
 
 export default function Careers() {
