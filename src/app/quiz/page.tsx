@@ -53,7 +53,7 @@ export default function Quiz() {
     }
   }, [questionIndex, selectedRatings]);
 
-  const answerQuestion = (rating: string, index: number) => {
+  const answerQuestion = async (rating: string, index: number) => {
     setSelectedRatings([
       ...selectedRatings.slice(0, questionIndex),
       index,
@@ -67,7 +67,10 @@ export default function Quiz() {
           selectedTrainingLevel ? `&job_zone=${selectedTrainingLevel + 1}` : ""
         }`,
       );
-    else setQuestionIndex(questionIndex + 1);
+    else {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      setQuestionIndex(questionIndex + 1);
+    }
   };
 
   return (
@@ -75,11 +78,15 @@ export default function Quiz() {
       className="flex flex-col items-center justify-center space-y-12 p-12"
       tabIndex={0}
       onKeyDown={(e) => {
-        if (["1", "2", "3", "4", "5"].includes(e.key))
+        if (
+          ["1", "2", "3", "4", "5"].includes(e.key) &&
+          questionIndex < allQuestions.length &&
+          questionIndex > -1
+        )
           answerQuestion(ratings[+e.key - 1]!, +e.key - 1);
       }}
     >
-      <h1 className="text-4xl font-bold">Quiz</h1>
+      <h1 className="text-4xl font-bold">Questionnaire</h1>
       <div className="mx-auto w-full max-w-3xl space-y-6 p-6">
         {questionIndex === -1 && (
           <>
@@ -127,7 +134,7 @@ export default function Quiz() {
         {questionIndex === allQuestions.length && (
           <>
             <p className="text-center text-lg font-semibold">
-              You have completed the quiz.
+              You have completed the questionnaire.
             </p>
             <p className="text-center">Here are your results:</p>
             <div className="mx-auto w-fit">
@@ -240,7 +247,7 @@ export default function Quiz() {
               selectedRatings[questionIndex] === undefined &&
               !(questionIndex >= allQuestions.length || questionIndex < 0)
             }
-            className={`flex items-center ${questionIndex === -1 ? "" : "invisible"}`}
+            className="flex items-center"
             onClick={() =>
               questionIndex === allQuestions.length + 1
                 ? router.push(

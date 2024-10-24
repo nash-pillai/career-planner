@@ -256,7 +256,7 @@ export const allQuestions = [
 export const ratings = [
   "Strongly Dislike",
   "Dislike",
-  "Neutral",
+  "Unsure",
   "Like",
   "Strongly Like",
 ];

@@ -43,7 +43,7 @@ export default function Footer() {
                   href="/quiz"
                   className="text-gray-500 hover:text-gray-700"
                 >
-                  Quiz
+                  Questionnaire
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8">
           <p className="text-sm text-gray-400">
-            Career Planner • Copyright © {new Date().getFullYear()}
+            North Star • Copyright © {new Date().getFullYear()}
           </p>
         </div>
       </div>
