@@ -25,6 +25,8 @@ export default function Careers() {
   const [trainingLevel, setTrainingLevel] = useState(0);
   const [brightOutlook, setBrightOutlook] = useState(false);
 
+  const [filterOn, setFilterOn] = useState(false);
+
   useEffect(() => {
     setCareers([]);
     let isCurrent = true;
@@ -50,6 +52,10 @@ export default function Careers() {
     };
   }, [searchText]);
 
+  useEffect(() => {
+    setFilterOn(true);
+  }, [personality, trainingLevel, brightOutlook]);
+
   return (
     <div className="flex flex-col items-center justify-center space-y-12 p-12">
       <h1 className="text-4xl font-bold">Careers</h1>
@@ -62,6 +68,8 @@ export default function Careers() {
         setPersonality={setPersonality}
         setTrainingLevel={setTrainingLevel}
         setBrightOutlook={setBrightOutlook}
+        filterOn={filterOn}
+        setFilterOn={setFilterOn}
       />
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {uniqBy(careers, (val: FullCareer) => val.code).map((career) => (

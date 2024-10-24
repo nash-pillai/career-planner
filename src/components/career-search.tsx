@@ -12,7 +12,7 @@ import { Slider } from "@/components/ui/slider";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Filter, Search } from "lucide-react";
+import { Filter, Search, X } from "lucide-react";
 
 export default function CareerSearch({
   searchText,
@@ -23,6 +23,8 @@ export default function CareerSearch({
   setPersonality,
   setTrainingLevel,
   setBrightOutlook,
+  filterOn,
+  setFilterOn,
 }: {
   searchText: string;
   setSearchText: Dispatch<SetStateAction<string>>;
@@ -48,6 +50,8 @@ export default function CareerSearch({
   >;
   setTrainingLevel: Dispatch<SetStateAction<number>>;
   setBrightOutlook: Dispatch<SetStateAction<boolean>>;
+  filterOn: boolean;
+  setFilterOn: Dispatch<SetStateAction<boolean>>;
 }) {
   const handleSliderChange = (category: string, value: number[]) => {
     setPersonality((prev) => ({ ...prev, [category]: value[0] }));
@@ -82,7 +86,7 @@ export default function CareerSearch({
         </div>
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="outline" className="px-3">
+            <Button variant={filterOn ? "default" : "outline"} className="px-3">
               <Filter className="mr-2 h-4 w-4" />
               Filters
             </Button>
@@ -156,6 +160,14 @@ export default function CareerSearch({
             </div>
           </PopoverContent>
         </Popover>
+
+        <Button
+          variant="outline"
+          className="w-32"
+          onClick={() => setFilterOn((prev) => !prev)}
+        >
+          {filterOn ? "Turn Filters Off" : "Turn Filters On"}
+        </Button>
       </div>
     </div>
   );
