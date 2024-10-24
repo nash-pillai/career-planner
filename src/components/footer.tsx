@@ -10,14 +10,14 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src="/northstar.png"
-                alt="Career Planner Logo"
+                alt="North Star Logo"
                 width={60}
                 height={60}
                 className="mb-4"
               />
             </Link>
             <p className="text-center text-xl text-gray-600 md:text-left">
-              Plan your future career with Career Planner!
+              Plan your future career with North Star!
             </p>
           </div>
           <div>
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold text-gray-900">
-              Career Planner
+              North Star
             </h3>
             <ul className="space-y-2">
               <li>
