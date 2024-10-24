@@ -138,7 +138,8 @@ export default function CareerModal({
           );
         }, 0) / b.tags.length;
       return bMatchCount - aMatchCount;
-    });
+    })
+    .slice(0, 10);
 
   return (
     <Dialog onOpenChange={() => console.log(career)}>
@@ -174,7 +175,7 @@ export default function CareerModal({
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2 lg:col-span-3">
+            <Card className="col-span-1 border-none bg-[#FBF7B8] md:col-span-2 lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <GraduationCap className="mr-2" />
@@ -183,7 +184,7 @@ export default function CareerModal({
               </CardHeader>
               <CardContent>
                 <ScrollArea className="h-full">
-                  <div className="flex h-full w-max space-x-4 pb-2">
+                  <div className="flex h-full w-max space-x-4 pb-4">
                     {recommendedCourses.map((course) => (
                       <CourseModal key={course.course_code} course={course} />
                     ))}
@@ -193,7 +194,7 @@ export default function CareerModal({
               </CardContent>
             </Card>
 
-            <Card className="border-none bg-[#FBF7B8]">
+            <Card className="border-none bg-[#E0E9FE]">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <BookOpen className="mr-2" />
@@ -235,7 +236,7 @@ export default function CareerModal({
               </CardContent>
             </Card>
 
-            <Card className="col-span-1 border-none bg-[#E0E9FE] md:col-span-2 lg:col-span-1">
+            <Card className="col-span-1 border-none bg-[#ECE5FF] md:col-span-2 lg:col-span-1">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Brain className="mr-2" />
