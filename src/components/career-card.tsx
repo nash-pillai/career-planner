@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Building, GraduationCap, DollarSign } from "lucide-react";
-import { FullCareer } from "types";
+import { type FullCareer } from "types";
 
 export default function CareerCard({ career }: { career: FullCareer }) {
   return (
@@ -45,14 +45,14 @@ export default function CareerCard({ career }: { career: FullCareer }) {
             Education
           </h3>
           <ul className="text-base">
-            {career.education.education_usually_needed.category.map(
+            {career.education.education_usually_needed?.category.map(
               (education) => (
                 <li key={education}>
                   {education.substring(0, 1).toUpperCase()}
                   {education.substring(1)}
                 </li>
               ),
-            )}
+            ) ?? "Unavailable"}
           </ul>
         </div>
         <div>

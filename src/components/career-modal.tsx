@@ -20,14 +20,12 @@ import {
   User,
   Cpu,
 } from "lucide-react";
-import { FullCareer } from "types";
+import { type FullCareer } from "types";
 import CareerCard from "./career-card";
 import { courses } from "@/lib/courses";
 import CourseCard from "./course-card";
 
 export default function CareerModal({ career }: { career: FullCareer }) {
-  console.log(career.knowledge);
-
   const recommendedCourses = courses
     .filter((course) =>
       course.tags.some((tag) =>
@@ -217,11 +215,13 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                 </p>
                 <h4 className="mb-2 font-semibold">Work Styles:</h4>
                 <ul className="list-disc pl-5">
-                  {career.personality.work_styles.element.map(
-                    (style, index) => (
-                      <li key={index}>{style.name}</li>
-                    ),
-                  )}
+                  {career.personality.work_styles
+                    ? career.personality.work_styles.element.map(
+                        (style, index) => <li key={index}>{style.name}</li>,
+                      )
+                    : career.personality.top_interest
+                      ? career.personality.top_interest.title
+                      : null}
                 </ul>
               </CardContent>
             </Card>
@@ -238,7 +238,7 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                   Education Usually Needed:
                 </h4>
                 <ul className="list-disc pl-5">
-                  {career.education.education_usually_needed.category.map(
+                  {career.education.education_usually_needed?.category.map(
                     (education, index) => (
                       <li key={index}>
                         {education.substring(0, 1).toUpperCase()}
@@ -279,34 +279,38 @@ export default function CareerModal({ career }: { career: FullCareer }) {
                     <h4 className="mb-2 font-semibold">Annual Income</h4>
                     <p>
                       Median: $
-                      {career.job_outlook.salary.annual_median.toLocaleString()}
+                      {career.job_outlook.salary.annual_median?.toLocaleString() ??
+                        "Unavailable"}
                     </p>
                     <p>
                       10th Percentile: $
-                      {career.job_outlook.salary.annual_10th_percentile.toLocaleString()}
+                      {career.job_outlook.salary.annual_10th_percentile?.toLocaleString() ??
+                        "Unavailable"}
                     </p>
                     <p>
                       90th Percentile: $
-                      {career.job_outlook.salary.annual_90th_percentile.toLocaleString()}
+                      {career.job_outlook.salary.annual_90th_percentile?.toLocaleString() ??
+                        "Unavailable"}
                     </p>
                   </div>
                   <div>
                     <h4 className="mb-2 font-semibold">Hourly Wage</h4>
                     <p>
                       Median: $
-                      {career.job_outlook.salary.hourly_median.toFixed(2)}
+                      {career.job_outlook.salary.hourly_median?.toFixed(2) ??
+                        "Unavailable"}
                     </p>
                     <p>
                       10th Percentile: $
-                      {career.job_outlook.salary.hourly_10th_percentile.toFixed(
+                      {career.job_outlook.salary.hourly_10th_percentile?.toFixed(
                         2,
-                      )}
+                      ) ?? "Unavailable"}
                     </p>
                     <p>
                       90th Percentile: $
-                      {career.job_outlook.salary.hourly_90th_percentile.toFixed(
+                      {career.job_outlook.salary.hourly_90th_percentile?.toFixed(
                         2,
-                      )}
+                      ) ?? "Unavailable"}
                     </p>
                   </div>
                 </div>
