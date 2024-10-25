@@ -10,7 +10,7 @@ export default function Careers() {
         Watch this video to learn more about our service!
       </h1>
       <video
-        src="https://res.cloudinary.com/mozzarella-tedi/video/upload/f_auto:video/q_auto/v1/northstar/rickroll.mp4"
+        src="https://res.cloudinary.com/jaybots/video/upload/v1729820950/cdn/northstar/demo.mp4"
         className="mx-auto max-w-6xl rounded-lg"
         controls
       />
